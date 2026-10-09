@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Shashka masalalari</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root { --light:#f0d9b5; --dark:#8b5a2b; --bsize:min(calc(100vw - 16px), 480px); }
+  html, body { background:#0f172a; overscroll-behavior:none; }
+  #board {
+    width:var(--bsize); aspect-ratio:1/1; display:grid;
+    grid-template-columns:repeat(8,1fr); grid-template-rows:repeat(8,1fr);
+    border:4px solid #3b2410; border-radius:8px; touch-action:none;
+    user-select:none; -webkit-user-select:none; box-shadow:0 10px 30px rgba(0,0,0,.5);
+  }
+  .cell { position:relative; display:flex; align-items:center; justify-content:center; }
+  .cell.light { background:var(--light); }
+  .cell.dark  { background:var(--dark); }
+  .cell .num  { position:absolute; top:1px; left:3px; font-size:9px; color:rgba(255,255,255,.6); pointer-events:none; }
+  .cell.last  { background-image:linear-gradient(rgba(250,204,21,.30), rgba(250,204,21,.30)); }
+  .cell.sel   { box-shadow:inset 0 0 0 3px #facc15; }
+  .cell.hint  { box-shadow:inset 0 0 0 3px #38bdf8; animation:pulse 1s infinite; }
+  .cell.target::after {
+    content:''; position:absolute; width:28%; height:28%; border-radius:50%;
+    background:rgba(34,197,94,.8); pointer-events:none;
+  }
+  .piece {
+    width:80%; height:80%; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    cursor:grab; position:relative; transition:transform .12s;
+    box-shadow:0 3px 5px rgba(0,0,0,.5), inset 0 -3px 5px rgba(0,0,0,.25), inset 0 2px 4px rgba(255,255,255,.35);
+  }
+  .piece.white { background:radial-gradient(circle at 35% 30%, #fff, #e5e7eb 55%, #b8bcc4); border:2px solid #9ca3af; color:#b45309; }
+  .piece.black { background:radial-gradient(circle at 35% 30%, #4b5563, #1f2937 55%, #0b0f17); border:2px solid #000; color:#fbbf24; }
+  .piece.king::after { content:'♛'; font-size:calc(var(--bsize) / 8 * .42); line-height:1; }
+  .piece.dragging { z-index:60; cursor:grabbing; transition:none; pointer-events:none; }
+  .piece.moved { animation:pop .25s ease-out; }
+  @keyframes pop   { from { transform:scale(1.25); } to { transform:scale(1); } }
+  @keyframes pulse { 50% { box-shadow:inset 0 0 0 5px #38bdf8; } }
+  @keyframes shake { 0%,100% { transform:translateX(0); } 20%,60% { transform:translateX(-6px); } 40%,80% { transform:translateX(6px); } }
+  #board.shake { animation:shake .35s; }
+</style>
+</head>
+<body class="text-slate-100 min-h-screen">
+<div class="max-w-md mx-auto p-2 flex flex-col items-center gap-2">
+
+  <!-- Sarlavha -->
+  <div class="w-full flex items-center justify-between px-1">
+    <div>
+      <div id="title" class="font-bold text-lg leading-tight">Yuklanmoqda…</div>
+      <div id="sub" class="text-xs text-slate-400"></div>
+    </div>
+    <div class="text-right text-sm">
+      <div>⭐ <span id="xp">0</span> XP</div>
+      <div class="text-xs text-slate-400">✅ <span id="solvedCnt">0</span>/<span id="totalCnt">0</span></div>
+    </div>
+  </div>
+
+  <div id="turn" class="text-sm text-slate-300"></div>
+  <div id="msg" class="text-center text-sm font-semibold h-6"></div>
+
+  <!-- Taxta -->
+  <div id="board"></div>
+
+  <!-- Tugmalar -->
+  <div class="w-full grid grid-cols-4 gap-2 mt-1">
+    <button id="btnHint"    class="py-2 rounded-lg bg-sky-600 active:bg-sky-700 text-sm font-semibold">💡 Maslahat</button>
+    <button id="btnRestart" class="py-2 rounded-lg bg-slate-600 active:bg-slate-700 text-sm font-semibold">↺ Qayta</button>
+    <button id="btnNum"     class="py-2 rounded-lg bg-slate-600 active:bg-slate-700 text-sm font-semibold">№ Raqam</button>
+    <button id="btnList"    class="py-2 rounded-lg bg-slate-600 active:bg-slate-700 text-sm font-semibold">📋 Ro'yxat</button>
+  </div>
+  <div class="text-xs text-slate-500 text-center">Donani bosing yoki sudrab olib boring. Urish — majburiy.</div>
+</div>
+
+<!-- Yechildi oynasi -->
+<div id="solvedModal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-[100]">
+  <div class="bg-slate-800 rounded-2xl p-6 w-full max-w-xs text-center">
+    <div class="text-5xl mb-2">🎉</div>
+    <div class="text-xl font-bold mb-1">Barakalla!</div>
+    <div id="solvedText" class="text-slate-300 mb-4"></div>
+    <button id="btnNext" class="w-full py-3 rounded-xl bg-green-600 active:bg-green-700 font-bold">Keyingi masala ▶</button>
+  </div>
+</div>
+
+<!-- Ro'yxat oynasi -->
+<div id="listModal" class="hidden fixed inset-0 bg-black/70 flex items-end sm:items-center justify-center p-4 z-[100]">
+  <div class="bg-slate-800 rounded-2xl p-4 w-full max-w-sm max-h-[80vh] overflow-y-auto">
+    <div class="flex justify-between items-center mb-2">
+      <div class="font-bold">📋 Masalalar</div>
+      <button id="btnCloseList" class="px-3 py-1 rounded-lg bg-slate-600 text-sm">Yopish</button>
+    </div>
+    <div id="listBody" class="flex flex-col gap-2"></div>
+  </div>
+</div>
+
+<!-- ===================== QOIDALAR DVIGATELI (rus shashkasi) ===================== -->
+<script id="engine">
+/*
+ * Raqamlash (1..32): taxtaning yuqori chap burchagidan boshlab, chapdan o'ngga, yuqoridan pastga,
+ * faqat to'q kataklar. Oq donalar pastda (21..32), qora donalar tepada (1..12).
+ *   qator 0 (8-gorizontal): 1  2  3  4   -> b8 d8 f8 h8
+ *   qator 7 (1-gorizontal): 29 30 31 32  -> a1 c1 e1 g1
+ * Koordinata: (r, c), r=0 tepa, c=0 chap. To'q katak: (r + c) toq.
+ */
+const Engine = (() => {
+  const DIRS = [[-1,-1],[-1,1],[1,-1],[1,1]];
+  const inB = (r, c) => r >= 0 && r < 8 && c >= 0 && c < 8;
+  const enemy = col => (col === 'white' ? 'black' : 'white');
+  const isCap = (cap, r, c) => cap.some(x => x[0] === r && x[1] === c);
+
+  function sqToRC(n) {
+    const r = Math.floor((n - 1) / 4), k = (n - 1) % 4;
+    return [r, (r % 2 === 0) ? 2 * k + 1 : 2 * k];
+  }
+  function rcToSq(r, c) {
+    const k = (r % 2 === 0) ? (c - 1) / 2 : c / 2;
+    return r * 4 + k + 1;
+  }
+
+  function clone(s) {
+    return {
+      board: s.board.map(row => row.map(p => (p ? { ...p } : null))),
+      turn: s.turn,
+      chain: s.chain ? { pos: [...s.chain.pos], captured: s.chain.captured.map(x => [...x]) } : null
+    };
+  }
+
+  // Damka urgandan keyin tushadigan katak yana urishni davom ettira oladimi?
+  function canContinueFrom(board, fr, fc, tr, tc, captured) {
+    const p = board[fr][fc];
+    board[fr][fc] = null; board[tr][tc] = p;
+    const can = jumpsFrom(board, tr, tc, captured).length > 0;
+    board[tr][tc] = null; board[fr][fc] = p;
+    return can;
+  }
+
+  // (r,c) dagi donaning barcha bitta-sakrash variantlari
+  function jumpsFrom(board, r, c, captured) {
+    const p = board[r][c];
+    const res = [];
+    for (const [dr, dc] of DIRS) {
+      if (!p.king) {
+        const mr = r + dr, mc = c + dc, lr = r + 2 * dr, lc = c + 2 * dc;
+        if (inB(lr, lc) && board[mr][mc] && board[mr][mc].color === enemy(p.color) &&
+            !isCap(captured, mr, mc) && !board[lr][lc]) {
+          res.push({ from: [r, c], to: [lr, lc], cap: [mr, mc] });
+        }
+      } else {
+        let rr = r + dr, cc = c + dc;
+        while (inB(rr, cc) && !board[rr][cc]) { rr += dr; cc += dc; }
+        if (!inB(rr, cc)) continue;
+        const t = board[rr][cc];
+        if (t.color === p.color || isCap(captured, rr, cc)) continue;
+        const lands = [];
+        let lr = rr + dr, lc = cc + dc;
+        while (inB(lr, lc) && !board[lr][lc]) { lands.push([lr, lc]); lr += dr; lc += dc; }
+        if (!lands.length) continue;
+        const newCap = captured.concat([[rr, cc]]);
+        // Qoida: urishni davom ettira oladigan katak bo'lsa, faqat shularni tanlash mumkin
+        const cont = lands.filter(([a, b]) => canContinueFrom(board, r, c, a, b, newCap));
+        for (const l of (cont.length ? cont : lands)) res.push({ from: [r, c], to: l, cap: [rr, cc] });
+      }
+    }
+    return res;
+  }
+
+  // Joriy navbatdagi tomonning barcha qonuniy yurishlari
+  function getMoves(s) {
+    const b = s.board;
+    if (s.chain) return jumpsFrom(b, s.chain.pos[0], s.chain.pos[1], s.chain.captured);
+    const caps = [];
+    for (let r = 0; r < 8; r++) for (let c = 0; c < 8; c++) {
+      const p = b[r][c];
+      if (p && p.color === s.turn) caps.push(...jumpsFrom(b, r, c, []));
+    }
+    if (caps.length) return caps;                       // urish majburiy
+    const simple = [];
+    for (let r = 0; r < 8; r++) for (let c = 0; c < 8; c++) {
+      const p = b[r][c];
+      if (!p || p.color !== s.turn) continue;
+      if (!p.king) {
+        const fwd = p.color === 'white' ? -1 : 1;
+        for (const dc of [-1, 1]) {
+          const nr = r + fwd, nc = c + dc;
+          if (inB(nr, nc) && !b[nr][nc]) simple.push({ from: [r, c], to: [nr, nc], cap: null });
+        }
+      } else {
+        for (const [dr, dc] of DIRS) {
+          let nr = r + dr, nc = c + dc;
+          while (inB(nr, nc) && !b[nr][nc]) { simple.push({ from: [r, c], to: [nr, nc], cap: null }); nr += dr; nc += dc; }
+        }
+      }
+    }
+    return simple;
+  }
+
+  // Yurishni bajaradi va yangi holatni qaytaradi
+  function apply(s, mv) {
+    const n = clone(s);
+    const [fr, fc] = mv.from, [tr, tc] = mv.to;
+    const p = n.board[fr][fc];
+    n.board[fr][fc] = null;
+    n.board[tr][tc] = p;
+    const promoRow = p.color === 'white' ? 0 : 7;
+    if (mv.cap) {
+      const captured = (n.chain ? n.chain.captured : []).concat([mv.cap]);
+      if (!p.king && tr === promoRow) p.king = true;    // urish paytida damka bo'lsa, davom etadi
+      if (jumpsFrom(n.board, tr, tc, captured).length) {
+        n.chain = { pos: [tr, tc], captured };
+        return n;                                       // navbat o'zgarmaydi
+      }
+      for (const [a, b] of captured) n.board[a][b] = null; // urilgan donalar yurish oxirida olinadi
+      n.chain = null;
+      n.turn = enemy(n.turn);
+      return n;
+    }
+    if (!p.king && tr === promoRow) p.king = true;
+    n.turn = enemy(n.turn);
+    return n;
+  }
+
+  function fromPuzzle(p) {
+    const board = Array.from({ length: 8 }, () => Array(8).fill(null));
+    const put = (list, color, king) => (list || []).forEach(n => {
+      const [r, c] = sqToRC(n); board[r][c] = { color, king: !!king };
+    });
+    const ib = p.initial_board;
+    put(ib.white, 'white', false); put(ib.white_kings, 'white', true);
+    put(ib.black, 'black', false); put(ib.black_kings, 'black', true);
+    return { board, turn: p.turn || 'white', chain: null };
+  }
+
+  return { sqToRC, rcToSq, getMoves, apply, fromPuzzle };
+})();
+</script>
+
+<!-- ===================== ILOVA MANTIQI ===================== -->
+<script>
+const $ = id => document.getElementById(id);
+const same = (a, b) => a[0] === b[0] && a[1] === b[1];
+
+// ---- Telegram ----
+const tg = window.Telegram && window.Telegram.WebApp;
+if (tg) {
+  try { tg.ready(); tg.expand(); tg.setHeaderColor('#0f172a'); tg.setBackgroundColor('#0f172a'); } catch (e) {}
+}
+const INIT_DATA = tg ? tg.initData : '';
+function haptic(kind) {
+  try { tg.HapticFeedback.notificationOccurred(kind); } catch (e) {}
+}
+
+// ---- API ----
+async function api(path, opts = {}) {
+  const res = await fetch(path, {
+    ...opts,
+    headers: { 'Content-Type': 'application/json', 'X-Init-Data': INIT_DATA, ...(opts.headers || {}) }
+  });
+  if (!res.ok) {
+    let text = '';
+    try { text = (await res.json()).error; } catch (e) {}
+    throw new Error(text || ('Xatolik: HTTP ' + res.status));
+  }
+  return res.json();
+}
+
+// ---- Holat ----
+let puzzle = null, game = null, expected = [];
+let userColor = 'white';
+let step = 0, mistakes = 0, played = [];
+let selected = null, legal = [], targets = [];
+let lastMove = null, hintSq = null;
+let busy = false, solved = false, showNums = true;
+let drag = null;
+
+// ---- Xabarlar ----
+let msgTimer;
+function toast(text, kind = 'info') {
+  const el = $('msg');
+  const colors = { err: 'text-red-400', ok: 'text-green-400', warn: 'text-amber-300', info: 'text-slate-300' };
+  el.className = 'text-center text-sm font-semibold h-6 ' + (colors[kind] || colors.info);
+  el.textContent = text;
+  clearTimeout(msgTimer);
+  msgTimer = setTimeout(() => { el.textContent = ''; }, 2200);
+}
+
+function setStats(s) {
+  if (!s) return;
+  $('xp').textContent = s.xp;
+  $('solvedCnt').textContent = s.solved;
+  $('totalCnt').textContent = s.total;
+}
+
+// ---- Chizish ----
+function render() {
+  const boardEl = $('board');
+  boardEl.innerHTML = '';
+  legal = (game && !solved) ? Engine.getMoves(game) : [];
+  targets = selected ? legal.filter(m => same(m.from, selected)) : [];
+  const flipped = userColor === 'black';
+
+  for (let dr = 0; dr < 8; dr++) {
+    for (let dc = 0; dc < 8; dc++) {
+      const r = flipped ? 7 - dr : dr, c = flipped ? 7 - dc : dc;
+      const dark = (r + c) % 2 === 1;
+      const cell = document.createElement('div');
+      cell.className = 'cell ' + (dark ? 'dark' : 'light');
+      cell.dataset.r = r; cell.dataset.c = c;
+
+      if (dark && showNums) {
+        const n = document.createElement('span');
+        n.className = 'num'; n.textContent = Engine.rcToSq(r, c);
+        cell.appendChild(n);
+      }
+      if (lastMove && (same(lastMove[0], [r, c]) || same(lastMove[1], [r, c]))) cell.classList.add('last');
+      if (selected && same(selected, [r, c])) cell.classList.add('sel');
+      if (hintSq && same(hintSq, [r, c])) cell.classList.add('hint');
+      if (targets.some(m => same(m.to, [r, c]))) cell.classList.add('target');
+
+      const p = game ? game.board[r][c] : null;
+      if (p) {
+        const pe = document.createElement('div');
+        pe.className = 'piece ' + p.color + (p.king ? ' king' : '');
+        if (lastMove && same(lastMove[1], [r, c])) pe.classList.add('moved');
+        cell.appendChild(pe);
+      }
+      boardEl.appendChild(cell);
+    }
+  }
+
+  let t = '';
+  if (game && puzzle) {
+    if (solved) t = '✅ Masala yechildi';
+    else if (game.turn === userColor) t = 'Sizning yurishingiz: ' + (userColor === 'white' ? '⚪ Oq' : '⚫ Qora');
+    else t = 'Raqib yurmoqda…';
+  }
+  $('turn').textContent = t;
+}
+
+// ---- Yurish mantiqi ----
+function select(rc) {
+  const moves = legal.filter(m => same(m.from, rc));
+  if (!moves.length) {
+    if (legal.some(m => m.cap)) toast('Urish majburiy!', 'warn');
+    selected = null; render();
+    return false;
+  }
+  selected = rc; hintSq = null; render();
+  return true;
+}
+
+function attemptMove(from, to) {
+  if (busy || solved) return;
+  const mv = legal.find(m => same(m.from, from) && same(m.to, to));
+  if (!mv) { selected = null; render(); return; }
+  const exp = expected[step];
+  const ok = exp && same(exp.from, mv.from) && same(exp.to, mv.to);
+  if (!ok) { onWrong(); return; }
+  doMove(mv);
+}
+
+function onWrong() {
+  mistakes++;
+  selected = null; hintSq = null;
+  toast('Xato yurish!', 'err');
+  haptic('error');
+  const b = $('board');
+  b.classList.remove('shake'); void b.offsetWidth; b.classList.add('shake');
+  render();   // dona o'z o'rniga qaytadi
+}
+
+function doMove(mv) {
+  game = Engine.apply(game, mv);
+  played.push({ from: Engine.rcToSq(...mv.from), to: Engine.rcToSq(...mv.to) });
+  lastMove = [mv.from, mv.to];
+  selected = null; hintSq = null;
+  step++;
+  render();
+
+  if (step >= expected.length) { onSolved(); return; }
+  if (game.turn !== userColor) {
+    busy = true;
+    setTimeout(replyMove, 650);
+  } else {
+    busy = false;
+  }
+}
+
+function replyMove() {
+  const exp = expected[step];
+  const mv = legal.find(m => same(m.from, exp.from) && same(m.to, exp.to));
+  if (!mv) {
+    busy = false;
+    toast("Masala ma'lumotida xatolik: javob yurishi qonuniy emas", 'err');
+    return;
+  }
+  doMove(mv);
+}
+
+async function onSolved() {
+  solved = true; busy = true; selected = null;
+  render();
+  haptic('success');
+  let text;
+  try {
+    const r = await api('/api/solve', {
+      method: 'POST',
+      body: JSON.stringify({ puzzle_id: puzzle.id, moves: played, mistakes })
+    });
+    setStats(r.stats);
+    text = r.already_solved
+      ? "Bu masalani avval yechgansiz (qo'shimcha XP berilmadi)."
+      : `+${r.awarded} XP oldingiz!  Jami: ${r.total_xp} XP`;
+  } catch (e) {
+    text = 'Masala yechildi, lekin natija saqlanmadi: ' + e.message;
+  }
+  $('solvedText').textContent = text;
+  $('solvedModal').classList.remove('hidden');
+}
+
+function hint() {
+  if (busy || solved || !game || game.turn !== userColor) return;
+  const exp = expected[step];
+  if (!exp) return;
+  mistakes++;                      // maslahat XP ni biroz kamaytiradi
+  hintSq = exp.from; selected = null;
+  toast("Maslahat: ko'k katakdagi donadan boshlang", 'info');
+  render();
+}
+
+// ---- Masalani yuklash ----
+function startPuzzle(p) {
+  puzzle = p;
+  expected = p.solution_moves.map(m => ({ from: Engine.sqToRC(m.from), to: Engine.sqToRC(m.to) }));
+  userColor = p.turn || 'white';
+  $('title').textContent = p.title;
+  $('sub').textContent = `${p.difficulty || ''} • +${p.xp} XP`;
+  restart();
+}
+
+function restart() {
+  if (!puzzle) return;
+  game = Engine.fromPuzzle(puzzle);
+  step = 0; mistakes = 0; played = [];
+  selected = null; lastMove = null; hintSq = null;
+  busy = false; solved = false;
+  $('solvedModal').classList.add('hidden');
+  render();
+}
+
+function showResponse(r) {
+  setStats(r.stats);
+  if (r.done) {
+    puzzle = null; game = null; solved = true;
+    $('title').textContent = '🏁 Hammasi yechildi!';
+    $('sub').textContent = "Yangi masalalar tez orada qo'shiladi";
+    render();
+    return;
+  }
+  startPuzzle(r.puzzle);
+}
+
+async function loadNext() {
+  $('solvedModal').classList.add('hidden');
+  try { showResponse(await api('/api/puzzle/next')); }
+  catch (e) { $('title').textContent = 'Xatolik'; $('sub').textContent = e.message; }
+}
+
+async function loadById(id) {
+  try { showResponse(await api('/api/puzzle/' + id)); }
+  catch (e) { toast(e.message, 'err'); }
+}
+
+async function openList() {
+  const body = $('listBody');
+  body.innerHTML = '<div class="text-slate-400 text-sm">Yuklanmoqda…</div>';
+  $('listModal').classList.remove('hidden');
+  try {
+    const r = await api('/api/puzzles');
+    body.innerHTML = '';
+    r.puzzles.forEach(p => {
+      const b = document.createElement('button');
+      b.className = 'flex justify-between items-center px-3 py-2 rounded-lg bg-slate-700 active:bg-slate-600 text-left';
+      const left = document.createElement('span');
+      left.textContent = `${p.solved ? '✅' : '🧩'} ${p.id}. ${p.title}`;
+      const right = document.createElement('span');
+      right.className = 'text-xs text-slate-400';
+      right.textContent = `${p.difficulty} • ${p.xp} XP`;
+      b.append(left, right);
+      b.onclick = () => { $('listModal').classList.add('hidden'); loadById(p.id); };
+      body.appendChild(b);
+    });
+  } catch (e) {
+    body.textContent = e.message;
+  }
+}
+
+// ---- Taxta bilan ishlash: bosish va sudrab olib borish ----
+const boardEl = $('board');
+
+boardEl.addEventListener('pointerdown', e => {
+  if (busy || solved || !game) return;
+  const cell = e.target.closest('.cell');
+  if (!cell) return;
+  const rc = [+cell.dataset.r, +cell.dataset.c];
+
+  // 1) Tanlangan dona bor va bosilgan katak mo'ljal bo'lsa — yurish (click-to-move)
+  if (selected && targets.some(m => same(m.to, rc))) {
+    attemptMove(selected, rc);
+    return;
+  }
+  // 2) O'zimizning donani tanlash (+ sudrab olib borishni boshlash)
+  const p = game.board[rc[0]][rc[1]];
+  if (p && p.color === userColor && game.turn === userColor) {
+    if (select(rc)) {
+      const nc = boardEl.querySelector(`.cell[data-r="${rc[0]}"][data-c="${rc[1]}"]`);
+      const pe = nc && nc.querySelector('.piece');
+      if (pe) {
+        drag = { rc, el: pe, cell: nc, x: e.clientX, y: e.clientY, active: false, id: e.pointerId };
+        try { boardEl.setPointerCapture(e.pointerId); } catch (err) {}
+      }
+    }
+    return;
+  }
+  // 3) Boshqa joy — tanlovni bekor qilish
+  selected = null; render();
+});
+
+boardEl.addEventListener('pointermove', e => {
+  if (!drag || e.pointerId !== drag.id) return;
+  const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+  if (!drag.active && Math.hypot(dx, dy) > 8) {
+    drag.active = true;
+    drag.el.classList.add('dragging');
+    drag.cell.style.zIndex = 60;
+  }
+  if (drag.active) drag.el.style.transform = `translate(${dx}px, ${dy}px) scale(1.12)`;
+});
+
+function endDrag(e, cancelled) {
+  if (!drag || e.pointerId !== drag.id) return;
+  const d = drag; drag = null;
+  try { boardEl.releasePointerCapture(e.pointerId); } catch (err) {}
+  if (!d.active) return;                         // oddiy bosish: tanlov saqlanadi
+
+  d.el.style.transform = '';
+  d.el.classList.remove('dragging');
+  d.cell.style.zIndex = '';
+  if (cancelled) { render(); return; }
+
+  const under = document.elementFromPoint(e.clientX, e.clientY);
+  const tcell = under && under.closest ? under.closest('.cell') : null;
+  if (tcell) {
+    const to = [+tcell.dataset.r, +tcell.dataset.c];
+    if (targets.some(m => same(m.to, to))) { attemptMove(d.rc, to); return; }
+    if (!same(to, d.rc)) toast('Bunday yurish mumkin emas', 'warn');
+  }
+  render();                                       // dona joyiga qaytadi
+}
+boardEl.addEventListener('pointerup', e => endDrag(e, false));
+boardEl.addEventListener('pointercancel', e => endDrag(e, true));
+
+// ---- Tugmalar ----
+$('btnHint').onclick = hint;
+$('btnRestart').onclick = restart;
+$('btnNum').onclick = () => { showNums = !showNums; render(); };
+$('btnList').onclick = openList;
+$('btnCloseList').onclick = () => $('listModal').classList.add('hidden');
+$('btnNext').onclick = loadNext;
+
+// ---- Boshlash ----
+render();
+loadNext();
+</script>
+</body>
+</html>
