@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Shashka masalalari</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+  :root { --bg:#17191f; --card:#222630; --txt:#eef0f4; --mut:#8d94a5; --acc:#f5b301; --ok:#3fb950; --bad:#f85149;
+          --light:#ecd9b5; --dark:#a9744a; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { margin:0; background:var(--bg); color:var(--txt); font-family:-apple-system,Segoe UI,Roboto,sans-serif; }
+  #app { max-width:520px; margin:0 auto; padding:10px 10px 24px; }
+  .top { display:flex; gap:8px; margin-bottom:8px; }
+  .chip { flex:1; background:var(--card); border-radius:12px; padding:8px 10px; text-align:center; }
+  .chip b { display:block; font-size:18px; } .chip span { font-size:11px; color:var(--mut); }
+  .tabs { display:flex; gap:6px; margin-bottom:10px; }
+  .tab { flex:1; border:0; border-radius:10px; padding:8px 2px; background:var(--card); color:var(--mut); font-size:12px; font-weight:600; }
+  .tab small { display:block; font-weight:400; font-size:10px; }
+  .tab.on { background:var(--acc); color:#1b1b1b; }
+  .info { display:flex; justify-content:space-between; align-items:center; margin:2px 4px 8px; }
+  .info .t { font-weight:700; } .info .e { color:var(--mut); font-size:13px; }
+  .turn { margin:0 4px 8px; font-size:14px; color:var(--mut); }
+  .turn i { display:inline-block; width:12px; height:12px; border-radius:50%; vertical-align:-1px; margin-right:5px; border:1px solid #888; }
+  #wrap { display:grid; grid-template-columns:18px 1fr; grid-template-rows:auto 18px; }
+  #ranks { display:flex; flex-direction:column; }
+  #files { grid-column:2; display:flex; }
+  #ranks div,#files div { flex:1; display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--mut); font-weight:600; }
+  #board { display:grid; grid-template-columns:repeat(8,1fr); aspect-ratio:1; border-radius:6px; overflow:hidden; box-shadow:0 4px 18px #0008; }
+  .c { position:relative; display:flex; align-items:center; justify-content:center; }
+  .c.l { background:var(--light); } .c.d { background:var(--dark); }
+  .c.last::before { content:""; position:absolute; inset:0; background:#f5d90055; }
+  .c.sel::before { content:""; position:absolute; inset:0; background:#3fb95066; }
+  .c.err { animation:shake .35s; }
+  @keyframes shake { 25%{transform:translateX(-4px)} 75%{transform:translateX(4px)} }
+  .p { position:relative; width:80%; height:80%; border-radius:50%; box-shadow:0 2px 3px #0009, inset 0 -3px 5px #0004; display:flex; align-items:center; justify-content:center; }
+  .p.w { background:radial-gradient(circle at 35% 30%,#fff,#d8d8d8); border:2px solid #bdbdbd; }
+  .p.b { background:radial-gradient(circle at 35% 30%,#555,#161616); border:2px solid #000; }
+  .p.k::after { content:"♛"; font-size:min(5.5vw,26px); line-height:1; color:#c58a00; }
+  .p.b.k::after { color:#f5b301; }
+  #msg { min-height:22px; margin:10px 4px 4px; font-size:14px; text-align:center; color:var(--mut); }
+  #msg.bad { color:var(--bad); } #msg.ok { color:var(--ok); }
+  .btns { display:flex; gap:8px; margin-top:6px; }
+  .btn { flex:1; border:0; border-radius:12px; padding:12px; font-size:15px; font-weight:700; background:var(--card); color:var(--txt); }
+  .btn.pri { background:var(--acc); color:#1b1b1b; }
+  #res { display:none; background:var(--card); border-radius:14px; padding:14px; margin-top:10px; text-align:center; }
+  #res .st { font-size:38px; letter-spacing:6px; color:#444; } #res .st .f { color:var(--acc); }
+  #res .rt { margin-top:4px; font-size:15px; } #res .rt b { color:var(--ok); } #res .rt b.neg { color:var(--bad); }
+  #res .btn { margin-top:12px; width:100%; }
+  #empty { display:none; text-align:center; padding:40px 10px; color:var(--mut); }
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="top">
+    <div class="chip"><b id="rating">–</b><span>ELO reyting</span></div>
+    <div class="chip"><b id="solved">–</b><span>yechilgan</span></div>
+    <div class="chip"><b id="stars">–</b><span>⭐ yulduz</span></div>
+  </div>
+  <div class="tabs" id="tabs"></div>
+
+  <div id="game">
+    <div class="info"><span class="t" id="title">…</span><span class="e" id="elo"></span></div>
+    <div class="turn" id="turn"></div>
+    <div id="wrap"><div id="ranks"></div><div id="board"></div><div></div><div id="files"></div></div>
+    <div id="msg"></div>
+    <div class="btns">
+      <button class="btn" id="restart">↺ Boshidan</button>
+      <button class="btn" id="skip">Keyingisi ›</button>
+    </div>
+    <div id="res">
+      <div class="st" id="resStars"></div>
+      <div class="rt" id="resText"></div>
+      <button class="btn pri" id="nextBtn">Keyingi masala ›</button>
+    </div>
+  </div>
+  <div id="empty">🎉 Bu darajadagi barcha masalalarni yechdingiz!<br>Boshqa darajani tanlang.</div>
+</div>
+
+<script>
+const tg = window.Telegram && Telegram.WebApp;
+if (tg) { tg.ready(); tg.expand(); }
+const INIT = tg ? tg.initData : '';
+const $ = id => document.getElementById(id);
+const LEVELS = [
+  {id:0, name:'Hammasi', range:'moslashgan'},
+  {id:1, name:'Oson', range:'500–1000'},
+  {id:2, name:"O'rta", range:'1000–1500'},
+  {id:3, name:'Qiyin', range:'1500–2500'},
+];
+let level = 0, puz = null, board = new Map(), steps = [], idx = 0, played = [];
+let mistakes = 0, user = 'w', flipped = false, sel = null, locked = true, last = null, stats = null;
+let lastMover = null, skipped = [];
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const sqToRc = n => { const r = Math.floor((n-1)/4), k = (n-1)%4; return [r, r%2===0 ? 2*k+1 : 2*k]; };
+const rcToSq = (r,c) => r*4 + (r%2===0 ? (c-1)/2 : c/2) + 1;
+const key = (r,c) => r+','+c;
+
+async function api(path, body) {
+  const r = await fetch(path, {
+    method: body ? 'POST' : 'GET',
+    headers: {'X-Init-Data': INIT, 'Content-Type': 'application/json'},
+    body: body ? JSON.stringify(body) : undefined
+  });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error || 'Xatolik');
+  return j;
+}
+
+function setMsg(t, cls) { const m = $('msg'); m.textContent = t || ''; m.className = cls || ''; }
+
+function renderStats() {
+  if (!stats) return;
+  $('rating').textContent = stats.rating;
+  $('solved').textContent = stats.solved + '/' + stats.total;
+  $('stars').textContent = stats.stars;
+  $('tabs').innerHTML = LEVELS.map(l => {
+    const s = l.id ? stats.levels[l.id] : null;
+    const sub = l.id ? (l.range + ' · ' + s.solved + '/' + s.total) : l.range;
+    return '<button class="tab' + (l.id === level ? ' on' : '') + '" data-l="' + l.id + '">' + l.name + '<small>' + sub + '</small></button>';
+  }).join('');
+  document.querySelectorAll('.tab').forEach(b => b.onclick = () => { level = +b.dataset.l; skipped = []; loadNext(); });
+}
+
+function loadBoard() {
+  board = new Map();
+  const ib = puz.initial_board;
+  for (const [k, c, king] of [['white','w',false],['white_kings','w',true],['black','b',false],['black_kings','b',true]])
+    for (const n of (ib[k] || [])) { const [r, cc] = sqToRc(n); board.set(key(r, cc), {c, k: king}); }
+  steps = puz.solution_moves.map(m => ({a: sqToRc(m.from), b: sqToRc(m.to)}));
+  idx = 0; played = []; sel = null; last = null; lastMover = null;
+}
+
+function render() {
+  const files = 'abcdefgh';
+  let h = '';
+  for (let i = 0; i < 8; i++) for (let j = 0; j < 8; j++) {
+    const r = flipped ? 7 - i : i, c = flipped ? 7 - j : j;
+    const dark = (r + c) % 2 === 1;
+    const p = board.get(key(r, c));
+    let cls = 'c ' + (dark ? 'd' : 'l');
+    if (last && ((last[0][0] === r && last[0][1] === c) || (last[1][0] === r && last[1][1] === c))) cls += ' last';
+    if (sel && sel[0] === r && sel[1] === c) cls += ' sel';
+    h += '<div class="' + cls + '" data-r="' + r + '" data-c="' + c + '">' +
+         (p ? '<div class="p ' + p.c + (p.k ? ' k' : '') + '"></div>' : '') + '</div>';
+  }
+  $('board').innerHTML = h;
+  $('board').querySelectorAll('.c').forEach(el => el.onclick = () => onCell(+el.dataset.r, +el.dataset.c));
+  // harflar va raqamlar (taxta atrofida)
+  let f = '', rk = '';
+  for (let j = 0; j < 8; j++) f += '<div>' + files[flipped ? 7 - j : j] + '</div>';
+  for (let i = 0; i < 8; i++) rk += '<div>' + (flipped ? i + 1 : 8 - i) + '</div>';
+  $('files').innerHTML = f; $('ranks').innerHTML = rk;
+}
+
+function sideAt(step) { const p = board.get(key(step.a[0], step.a[1])); return p ? p.c : null; }
+
+function applyStep(step) {
+  const [ar, ac] = step.a, [br, bc] = step.b;
+  const p = board.get(key(ar, ac));
+  board.delete(key(ar, ac));
+  const dr = Math.sign(br - ar), dc = Math.sign(bc - ac);
+  for (let r = ar + dr, c = ac + dc; r !== br; r += dr, c += dc) {
+    const q = board.get(key(r, c));
+    if (q && q.c !== p.c) board.delete(key(r, c));
+  }
+  const promo = p.c === 'w' ? 0 : 7;
+  board.set(key(br, bc), {c: p.c, k: p.k || br === promo});
+  played.push({from: rcToSq(ar, ac), to: rcToSq(br, bc)});
+  last = [step.a, step.b];
+  lastMover = p.c;
+  idx++;
+}
+
+function plausible(a, b, p) {
+  const dr = b[0] - a[0], dc = b[1] - a[1];
+  if (dr === 0 || Math.abs(dr) !== Math.abs(dc)) return false;
+  if (p.k) return true;
+  const dist = Math.abs(dr);
+  if (dist === 1) return Math.sign(dr) === (p.c === 'w' ? -1 : 1);
+  return dist === 2;
+}
+
+async function advance() {
+  // raqib yurishlarini avtomatik o'ynaydi, keyin navbat foydalanuvchiga o'tadi
+  locked = true; render();
+  while (idx < steps.length && sideAt(steps[idx]) !== user) {
+    await sleep(600); applyStep(steps[idx]); render();
+  }
+  if (idx >= steps.length) return finish();
+  locked = false;
+  sel = lastMover === user ? steps[idx].a : null;   // ketma-ket urishda shashka o'zi tanlanadi
+  render();
+}
+
+function onCell(r, c) {
+  if (locked) return;
+  const p = board.get(key(r, c));
+  if (p && p.c === user) { sel = [r, c]; setMsg(''); render(); return; }
+  if (!sel || p || (r + c) % 2 !== 1) return;
+  const exp = steps[idx], mover = board.get(key(sel[0], sel[1]));
+  if (exp.a[0] === sel[0] && exp.a[1] === sel[1] && exp.b[0] === r && exp.b[1] === c) {
+    applyStep(exp); sel = null; setMsg(''); advance();
+  } else if (mover && plausible(sel, [r, c], mover)) {
+    mistakes++; sel = null; render();
+    const el = $('board').querySelector('[data-r="' + r + '"][data-c="' + c + '"]');
+    if (el) el.classList.add('err');
+    setMsg("Noto'g'ri yurish (xatolar: " + mistakes + ')', 'bad');
+  } else {
+    setMsg("Bunday yurish mumkin emas");
+  }
+}
+
+async function finish() {
+  locked = true; render();
+  try {
+    const res = await api('/api/solve', {puzzle_id: puz.id, moves: played, mistakes});
+    stats = res.stats; renderStats();
+    const n = res.stars;
+    $('resStars').innerHTML = [1,2,3].map(i => '<span class="' + (i <= n ? 'f' : '') + '">★</span>').join('');
+    let t;
+    if (res.already_solved) t = 'Oldin yechilgan • eng yaxshi natija: ' + res.best_stars + '⭐';
+    else t = 'ELO: <b class="' + (res.delta < 0 ? 'neg' : '') + '">' + (res.delta >= 0 ? '+' : '') + res.delta + '</b> → ' + res.rating;
+    t += mistakes ? ' • xatolar: ' + mistakes : ' • xatosiz!';
+    $('resText').innerHTML = t;
+    $('res').style.display = 'block';
+    setMsg('Masala yechildi va avtomatik saqlandi ✅', 'ok');
+  } catch (e) { setMsg(e.message, 'bad'); }
+}
+
+async function loadNext() {
+  $('res').style.display = 'none'; setMsg('Yuklanmoqda…'); locked = true;
+  try {
+    const j = await api('/api/puzzle/next?level=' + level + '&skip=' + skipped.join(','));
+    stats = j.stats; renderStats();
+    if (j.done) { $('game').style.display = 'none'; $('empty').style.display = 'block'; setMsg(''); return; }
+    $('game').style.display = 'block'; $('empty').style.display = 'none';
+    puz = j.puzzle; loadBoard(); mistakes = 0;
+    user = puz.turn === 'black' ? 'b' : 'w';
+    flipped = user === 'b';   // foydalanuvchi donalari doim pastda
+    $('title').textContent = puz.title;
+    $('elo').textContent = 'ELO ' + puz.elo + ' • ' + puz.difficulty;
+    $('turn').innerHTML = '<i style="background:' + (user === 'w' ? '#fff' : '#222') + '"></i>' +
+      (user === 'w' ? 'Oq' : 'Qora') + ' yuradi va yutadi';
+    setMsg(''); await advance();
+  } catch (e) { setMsg(e.message, 'bad'); }
+}
+
+$('restart').onclick = () => { if (!puz || $('res').style.display === 'block') return; const m = mistakes; loadBoard(); mistakes = m; setMsg(''); advance(); };
+$('skip').onclick = () => { if (puz && $('res').style.display !== 'block') skipped.push(puz.id); loadNext(); };
+$('nextBtn').onclick = loadNext;
+loadNext();
+</script>
+</body>
+</html>
