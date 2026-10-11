@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Shashka masalalari</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+  :root { --bg:#17191f; --card:#222630; --txt:#eef0f4; --mut:#8d94a5; --acc:#f5b301; --ok:#3fb950; --bad:#f85149;
+          --light:#efdcb8; --dark:#b88a63; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { margin:0; height:100%; overflow:hidden; overscroll-behavior:none; touch-action:manipulation; background:var(--bg); color:var(--txt); font-family:-apple-system,Segoe UI,Roboto,sans-serif; user-select:none; -webkit-user-select:none; }
+  #app { max-width:460px; height:100dvh; margin:0 auto; padding:8px; display:flex; flex-direction:column; gap:8px; }
+  .card { background:var(--card); border-radius:16px; padding:10px; }
+  .top { display:flex; gap:6px; }
+  .chip { flex:1; background:var(--card); border-radius:12px; padding:5px 8px; text-align:center; }
+  .chip b { display:block; font-size:16px; } .chip span { font-size:10px; color:var(--mut); }
+  .tabs { display:flex; gap:6px; }
+  .tab { flex:1; border:0; border-radius:10px; padding:5px 2px; background:var(--card); color:var(--mut); font-size:12px; font-weight:600; }
+  .tab small { display:block; font-weight:400; font-size:9px; white-space:nowrap; }
+  .tab.on { background:var(--acc); color:#1b1b1b; }
+  .info { display:flex; justify-content:space-between; align-items:center; gap:8px; margin:0 2px 2px; }
+  .info .t { font-weight:700; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; } .info .e { color:var(--mut); font-size:12px; white-space:nowrap; }
+  .turn { margin:0 2px 6px; font-size:13px; color:var(--mut); height:18px; }
+  .turn i { display:inline-block; width:12px; height:12px; border-radius:50%; vertical-align:-1px; margin-right:5px; border:1px solid #888; }
+  #stage { position:relative; width:min(100%, 50dvh); margin:0 auto; }
+  #wrap { display:grid; grid-template-columns:16px 1fr; grid-template-rows:auto 16px; }
+  #ranks { display:flex; flex-direction:column; }
+  #files { grid-column:2; display:flex; }
+  #ranks div,#files div { flex:1; display:flex; align-items:center; justify-content:center; font-size:11px; color:var(--mut); font-weight:600; }
+  #board { display:grid; grid-template-columns:repeat(8,1fr); grid-template-rows:repeat(8,1fr); aspect-ratio:1; border-radius:4px; overflow:hidden; }
+  .c { position:relative; display:flex; align-items:center; justify-content:center; aspect-ratio:1; min-width:0; min-height:0; }
+  .c.l { background:var(--light); } .c.d { background:var(--dark); }
+  .c.last::before, .c.sel::before { content:""; position:absolute; inset:2px; border:2px dashed #5d5346; border-radius:2px; pointer-events:none; }
+  .c.err { animation:shake .35s; }
+  @keyframes shake { 25%{transform:translateX(-4px)} 75%{transform:translateX(4px)} }
+  .p { position:relative; width:76%; aspect-ratio:1; height:auto; border-radius:50%; box-shadow:0 2px 2px #0007; display:flex; align-items:center; justify-content:center; }
+  .p.w { background:#e3e3e3; border:2px solid #cfcfcf; }
+  .p.b { background:#4b4b4b; border:2px solid #3a3a3a; }
+  .p.k::after { content:"♛"; font-size:min(5vw,22px); line-height:1; color:#8a6100; }
+  .p.b.k::after { color:#f5c542; }
+  #msg { height:20px; line-height:20px; margin:6px 0 2px; font-size:13px; text-align:center; color:var(--mut); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  #msg.bad { color:var(--bad); } #msg.ok { color:var(--ok); }
+  .btns { display:flex; gap:8px; }
+  .btn { flex:1; border:0; border-radius:12px; padding:10px; font-size:14px; font-weight:700; background:#2f3441; color:var(--txt); }
+  .btn.pri { background:var(--acc); color:#1b1b1b; }
+  #res { display:none; position:absolute; inset:0; flex-direction:column; align-items:center; justify-content:center; background:#17191fee; border-radius:8px; text-align:center; padding:12px; }
+  #res .st { font-size:42px; letter-spacing:6px; color:#444; } #res .st .f { color:var(--acc); }
+  #res .rt { margin-top:4px; font-size:15px; } #res .rt b { color:var(--ok); } #res .rt b.neg { color:var(--bad); }
+  #res .btn { margin-top:14px; width:80%; flex:none; }
+  #empty { display:none; text-align:center; padding:40px 10px; color:var(--mut); }
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="top">
+    <div class="chip"><b id="rating">–</b><span>ELO reyting</span></div>
+    <div class="chip"><b id="solved">–</b><span>yechilgan</span></div>
+    <div class="chip"><b id="stars">–</b><span>⭐ yulduz</span></div>
+  </div>
+  <div class="tabs" id="tabs"></div>
+
+  <div id="game" class="card">
+    <div class="info"><span class="t" id="title">…</span><span class="e" id="elo"></span></div>
+    <div class="turn" id="turn"></div>
+    <div id="stage">
+      <div id="wrap"><div id="ranks"></div><div id="board"></div><div></div><div id="files"></div></div>
+      <div id="res">
+        <div class="st" id="resStars"></div>
+        <div class="rt" id="resText"></div>
+        <button class="btn pri" id="nextBtn">Keyingi masala ›</button>
+      </div>
+    </div>
+    <div id="msg"></div>
+    <div class="btns">
+      <button class="btn" id="restart">↺ Boshidan</button>
+      <button class="btn" id="skip">Keyingisi ›</button>
+    </div>
+  </div>
+  <div id="empty" class="card">🎉 Bu darajadagi barcha masalalarni yechdingiz!<br>Boshqa darajani tanlang.</div>
+</div>
+
+<script>
+const tg = window.Telegram && Telegram.WebApp;
+if (tg) { tg.ready(); tg.expand(); try { tg.disableVerticalSwipes(); } catch (e) {} }
+const INIT = tg ? tg.initData : '';
+const $ = id => document.getElementById(id);
+const LEVELS = [
+  {id:0, name:'Hammasi', range:'moslashgan'},
+  {id:1, name:'Oson', range:'500–1000'},
+  {id:2, name:"O'rta", range:'1000–1500'},
+  {id:3, name:'Qiyin', range:'1500–2500'},
+];
+let level = 0, puz = null, board = new Map(), steps = [], idx = 0, played = [];
+let mistakes = 0, user = 'w', flipped = false, sel = null, locked = true, last = null, stats = null;
+let lastMover = null, skipped = [];
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const sqToRc = n => { const r = Math.floor((n-1)/4), k = (n-1)%4; return [r, r%2===0 ? 2*k+1 : 2*k]; };
+const rcToSq = (r,c) => r*4 + (r%2===0 ? (c-1)/2 : c/2) + 1;
+const key = (r,c) => r+','+c;
+
+async function api(path, body) {
+  const r = await fetch(path, {
+    method: body ? 'POST' : 'GET',
+    headers: {'X-Init-Data': INIT, 'Content-Type': 'application/json'},
+    body: body ? JSON.stringify(body) : undefined
+  });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error || 'Xatolik');
+  return j;
+}
+
+function setMsg(t, cls) { const m = $('msg'); m.textContent = t || ''; m.className = cls || ''; }
+
+function renderStats() {
+  if (!stats) return;
+  $('rating').textContent = stats.rating;
+  $('solved').textContent = stats.solved + '/' + stats.total;
+  $('stars').textContent = stats.stars;
+  $('tabs').innerHTML = LEVELS.map(l => {
+    const s = l.id ? stats.levels[l.id] : null;
+    const sub = l.id ? (l.range + ' · ' + s.solved + '/' + s.total) : l.range;
+    return '<button class="tab' + (l.id === level ? ' on' : '') + '" data-l="' + l.id + '">' + l.name + '<small>' + sub + '</small></button>';
+  }).join('');
+  document.querySelectorAll('.tab').forEach(b => b.onclick = () => { level = +b.dataset.l; skipped = []; loadNext(); });
+}
+
+function loadBoard() {
+  board = new Map();
+  const ib = puz.initial_board;
+  for (const [k, c, king] of [['white','w',false],['white_kings','w',true],['black','b',false],['black_kings','b',true]])
+    for (const n of (ib[k] || [])) { const [r, cc] = sqToRc(n); board.set(key(r, cc), {c, k: king}); }
+  steps = puz.solution_moves.map(m => ({a: sqToRc(m.from), b: sqToRc(m.to)}));
+  idx = 0; played = []; sel = null; last = null; lastMover = null;
+}
+
+function render() {
+  const files = 'abcdefgh';
+  let h = '';
+  for (let i = 0; i < 8; i++) for (let j = 0; j < 8; j++) {
+    const r = flipped ? 7 - i : i, c = flipped ? 7 - j : j;
+    const dark = (r + c) % 2 === 1;
+    const p = board.get(key(r, c));
+    let cls = 'c ' + (dark ? 'd' : 'l');
+    if (last && ((last[0][0] === r && last[0][1] === c) || (last[1][0] === r && last[1][1] === c))) cls += ' last';
+    if (sel && sel[0] === r && sel[1] === c) cls += ' sel';
+    h += '<div class="' + cls + '" data-r="' + r + '" data-c="' + c + '">' +
+         (p ? '<div class="p ' + p.c + (p.k ? ' k' : '') + '"></div>' : '') + '</div>';
+  }
+  $('board').innerHTML = h;
+  $('board').querySelectorAll('.c').forEach(el => el.onclick = () => onCell(+el.dataset.r, +el.dataset.c));
+  // harflar va raqamlar (taxta atrofida)
+  let f = '', rk = '';
+  for (let j = 0; j < 8; j++) f += '<div>' + files[flipped ? 7 - j : j] + '</div>';
+  for (let i = 0; i < 8; i++) rk += '<div>' + (flipped ? i + 1 : 8 - i) + '</div>';
+  $('files').innerHTML = f; $('ranks').innerHTML = rk;
+}
+
+function sideAt(step) { const p = board.get(key(step.a[0], step.a[1])); return p ? p.c : null; }
+
+function applyStep(step) {
+  const [ar, ac] = step.a, [br, bc] = step.b;
+  const p = board.get(key(ar, ac));
+  board.delete(key(ar, ac));
+  const dr = Math.sign(br - ar), dc = Math.sign(bc - ac);
+  for (let r = ar + dr, c = ac + dc; r !== br; r += dr, c += dc) {
+    const q = board.get(key(r, c));
+    if (q && q.c !== p.c) board.delete(key(r, c));
+  }
+  const promo = p.c === 'w' ? 0 : 7;
+  board.set(key(br, bc), {c: p.c, k: p.k || br === promo});
+  played.push({from: rcToSq(ar, ac), to: rcToSq(br, bc)});
+  last = [step.a, step.b];
+  lastMover = p.c;
+  idx++;
+}
+
+function plausible(a, b, p) {
+  const dr = b[0] - a[0], dc = b[1] - a[1];
+  if (dr === 0 || Math.abs(dr) !== Math.abs(dc)) return false;
+  if (p.k) return true;
+  const dist = Math.abs(dr);
+  if (dist === 1) return Math.sign(dr) === (p.c === 'w' ? -1 : 1);
+  return dist === 2;
+}
+
+async function advance() {
+  // raqib yurishlarini avtomatik o'ynaydi, keyin navbat foydalanuvchiga o'tadi
+  locked = true; render();
+  while (idx < steps.length && sideAt(steps[idx]) !== user) {
+    await sleep(600); applyStep(steps[idx]); render();
+  }
+  if (idx >= steps.length) return finish();
+  locked = false;
+  sel = lastMover === user ? steps[idx].a : null;   // ketma-ket urishda shashka o'zi tanlanadi
+  render();
+}
+
+function onCell(r, c) {
+  if (locked) return;
+  const p = board.get(key(r, c));
+  if (p && p.c === user) { sel = [r, c]; setMsg(''); render(); return; }
+  if (!sel || p || (r + c) % 2 !== 1) return;
+  const exp = steps[idx], mover = board.get(key(sel[0], sel[1]));
+  if (exp.a[0] === sel[0] && exp.a[1] === sel[1] && exp.b[0] === r && exp.b[1] === c) {
+    applyStep(exp); sel = null; setMsg(''); advance();
+  } else if (mover && plausible(sel, [r, c], mover)) {
+    mistakes++; sel = null; render();
+    const el = $('board').querySelector('[data-r="' + r + '"][data-c="' + c + '"]');
+    if (el) el.classList.add('err');
+    setMsg("Noto'g'ri yurish (xatolar: " + mistakes + ')', 'bad');
+  } else {
+    setMsg("Bunday yurish mumkin emas");
+  }
+}
+
+async function finish() {
+  locked = true; render();
+  try {
+    const res = await api('/api/solve', {puzzle_id: puz.id, moves: played, mistakes});
+    stats = res.stats; renderStats();
+    const n = res.stars;
+    $('resStars').innerHTML = [1,2,3].map(i => '<span class="' + (i <= n ? 'f' : '') + '">★</span>').join('');
+    let t;
+    if (res.already_solved) t = 'Oldin yechilgan • eng yaxshi natija: ' + res.best_stars + '⭐';
+    else t = 'ELO: <b class="' + (res.delta < 0 ? 'neg' : '') + '">' + (res.delta >= 0 ? '+' : '') + res.delta + '</b> → ' + res.rating;
+    t += mistakes ? ' • xatolar: ' + mistakes : ' • xatosiz!';
+    $('resText').innerHTML = t;
+    $('res').style.display = 'flex';
+    setMsg('Masala yechildi va avtomatik saqlandi ✅', 'ok');
+  } catch (e) { setMsg(e.message, 'bad'); }
+}
+
+async function loadNext() {
+  $('res').style.display = 'none'; setMsg('Yuklanmoqda…'); locked = true;
+  try {
+    const j = await api('/api/puzzle/next?level=' + level + '&skip=' + skipped.join(','));
+    stats = j.stats; renderStats();
+    if (j.done) { $('game').style.display = 'none'; $('empty').style.display = 'block'; setMsg(''); return; }
+    $('game').style.display = 'block'; $('empty').style.display = 'none';
+    puz = j.puzzle; loadBoard(); mistakes = 0;
+    user = puz.turn === 'black' ? 'b' : 'w';
+    flipped = user === 'b';   // foydalanuvchi donalari doim pastda
+    $('title').textContent = puz.title;
+    $('elo').textContent = 'ELO ' + puz.elo + ' • ' + puz.difficulty;
+    $('turn').innerHTML = '<i style="background:' + (user === 'w' ? '#fff' : '#222') + '"></i>' +
+      (user === 'w' ? 'Oq' : 'Qora') + ' yuradi va yutadi';
+    setMsg(''); await advance();
+  } catch (e) { setMsg(e.message, 'bad'); }
+}
+
+$('restart').onclick = () => { if (!puz || $('res').style.display === 'flex') return; const m = mistakes; loadBoard(); mistakes = m; setMsg(''); advance(); };
+$('skip').onclick = () => { if (puz && $('res').style.display !== 'flex') skipped.push(puz.id); loadNext(); };
+$('nextBtn').onclick = loadNext;
+loadNext();
+</script>
+</body>
+</html>
