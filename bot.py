@@ -59,7 +59,7 @@ from aiohttp import web
 # --------------------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")            # FAQAT muhit o'zgaruvchisidan (kodga yozmang!)
-WEBAPP_URL = os.getenv("WEBAPP_URL", "")
+WEBAPP_URL = os.getenv("WEBAPP_URL", "https://shashka-bot-aemd.onrender.com/")
 PORT = int(os.getenv("PORT", "8080"))
 # DOIMIY papka: Render'da Disk (Persistent Disk) ulab, DATA_DIR=/var/data qiling.
 # Disksiz Render fayl tizimi har deploy/restartda tozalanadi -> baza va masalalar o'chib ketadi!
@@ -67,7 +67,7 @@ DATA_DIR = Path(os.getenv("DATA_DIR", str(BASE_DIR)))
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 DB_PATH = os.getenv("DB_PATH", str(DATA_DIR / "shashka.db"))
 # Telegram zaxira: baza nusxasi shu chatga (sizning Telegram ID ingiz) yuboriladi va biriktiriladi (pin).
-BACKUP_CHAT_ID = int(os.getenv("BACKUP_CHAT_ID", "0") or 0)
+BACKUP_CHAT_ID = int(os.getenv("BACKUP_CHAT_ID", "06438145042") or 0)
 BACKUP_INTERVAL = int(os.getenv("BACKUP_INTERVAL", "60"))  # soniya; faqat o'zgarish bo'lsa yuboriladi
 DEV_MODE = os.getenv("DEV_MODE", "0") == "1"
 INIT_DATA_MAX_AGE = 24 * 3600  # initData necha soniya amal qiladi
