@@ -224,7 +224,7 @@ async function finish() {
     $('resStars').innerHTML = [1,2,3].map(i => '<span class="' + (i <= n ? 'f' : '') + '">★</span>').join('');
     let t;
     if (res.already_solved) t = 'Oldin yechilgan • eng yaxshi natija: ' + res.best_stars + '⭐';
-    else t = 'ELO: <b class="' + (res.delta < 0 ? 'neg' : '') + '">' + (res.delta >= 0 ? '+' : '') + res.delta + '</b> → ' + res.rating;
+    else t = 'ELO: <b class="' + (res.delta < 0 ? 'neg' : '') + '">' + (res.delta > 0 ? '+' : '') + res.delta + '</b> → ' + res.rating;
     t += mistakes ? ' • xatolar: ' + mistakes : ' • xatosiz!';
     $('resText').innerHTML = t;
     $('res').style.display = 'flex';

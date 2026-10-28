@@ -80,6 +80,7 @@ TZ_OFFSET = "+5 hours"  # Toshkent vaqti (kunlik/haftalik reyting chegarasi)
 
 SOLID_PLIES = 6   # kombinatsiyadan keyin necha yarim-yurish chuqurlikda ustunlik tekshiriladi
 MIN_ADV = 4       # kamida 2 ta oddiy dona (dona=2, damka=5) ustunlik, yoki yutuq
+MEN_ADV = 2       # kitob masalalari uchun minimal yutuq: 1 ta dona
 FIRST_ID = 1001   # yangi tizim masalalari ID si shu yerdan boshlanadi
 LEVELS = {1: (500, 1000), 2: (1000, 1500), 3: (1500, 2500)}
 LEVEL_NAMES = {1: "Oson", 2: "O'rta", 3: "Qiyin"}
@@ -483,26 +484,186 @@ def validate_puzzle(p):
     """Yechimni dvigatel bilan qayta o'ynab tekshiradi: har yurish qonuniy, oxirida material yutuq."""
     try:
         board = board_from_puzzle(p)
-        sol = [(sq_to_rc(m['from']), sq_to_rc(m['to'])) for m in p['solution_moves']]
         user = 'w' if p.get('turn', 'white') == 'white' else 'b'
         sign = 1 if user == 'w' else -1
         base = ev(board)
-        side, i = user, 0
-        while i < len(sol):
-            ms = [m for m in moves(board, side) if list(m[0]) == sol[i:i + len(m[0])]]
-            if not ms:
-                return False
-            board = ms[0][1]
-            i += len(ms[0][0])
-            side = enemy(side)
-        if side == user:
+        final, side, _blocks, errs = replay_solution(p, board)
+        if errs or side == user:
             return False
-        if p.get('source') == 'Antologiya' or not moves(board, side):
-            return True   # kitobdagi (muallif tasdiqlagan) yutuq yoki raqib yura olmaydi
-        v = val(board, side, SOLID_PLIES)  # raqib yurishi, chuqur qidiruv
-        return sign * (v - base) >= MIN_ADV
+        if not moves(final, side):
+            return True   # raqib yura olmaydi — sof yutuq
+        need = MEN_ADV if p.get('source') == 'Antologiya' else MIN_ADV
+        v = val(final, side, SOLID_PLIES)  # raqibning eng yaxshi javobi, chuqur qidiruv
+        return sign * (v - base) >= need
     except Exception:
         return False
+
+
+# ----------------------------------------------------------------- TUZATISH
+def _promote_stuck_men(board) -> int:
+    """Oxirgi qatorga yetib qolgan oddiy donalarni damkaga aylantiradi (noto'g'ri pozitsiya)."""
+    n = 0
+    for pos, (col, king) in list(board.items()):
+        if not king and ((col == 'w' and pos[0] == 0) or (col == 'b' and pos[0] == 7)):
+            board[pos] = (col, True)
+            n += 1
+    return n
+
+
+def replay_solution(p, board=None):
+    """Yechimni qoidalar dvigateli bilan qayta o'ynaydi.
+    Qaytaradi: (taxta, kim yurishi kerak, yurish bloklari, xatolar ro'yxati)."""
+    board = board_from_puzzle(p) if board is None else dict(board)
+    user = 'w' if p.get('turn', 'white') == 'white' else 'b'
+    sol = [(sq_to_rc(int(m['from'])), sq_to_rc(int(m['to']))) for m in p.get('solution_moves', [])]
+    side, i, blocks = user, 0, []
+    while i < len(sol):
+        cand = [k for k in range(len(sol), i, -1)
+                if any(list(m[0]) == sol[i:k] for m in moves(board, side))]
+        if not cand:
+            a, b = sol[i]
+            return board, side, blocks, ["%d-%d yurish qonuniy emas" % (rc_to_sq(*a), rc_to_sq(*b))]
+        k = cand[0]
+        mv = [m for m in moves(board, side) if list(m[0]) == sol[i:k]][0]
+        blocks.append(mv[0])
+        board = mv[1]
+        i, side = k, enemy(side)
+    return board, side, blocks, []
+
+
+def solve_line(board, user, depth=4, min_adv=MEN_ADV, max_plies=11):
+    """Foydalanuvchi uchun majburiy yutuqli chiziq qidiradi (dvigatel asosiy varianti)."""
+    base = ev(board)
+    sg = 1 if user == 'w' else -1
+    b, side, line = dict(board), user, []
+    for _ in range(max_plies):
+        ms = moves(b, side)
+        if not ms:
+            return None
+        vals = [val(nb, enemy(side), depth) for _, nb, _ in ms]
+        bi = sorted(range(len(vals)), key=lambda i: -sg * vals[i])[0]
+        if sg * (vals[bi] - base) < min_adv:
+            return None
+        mover = side
+        line.append(ms[bi][0])
+        b, side = ms[bi][1], enemy(side)
+        # oxirgi yurish foydalanuvchiniki bo'lishi va ustunlik raqibning eng yaxshi
+        # javobidan keyin ham saqlanishi shart
+        if mover == user and sg * (ev(b) - base) >= min_adv \
+                and min(sg * (val(b, side, d) - base) for d in (2, 3, SOLID_PLIES)) >= min_adv:
+            return line, b
+    return None
+
+
+def elo_from_line(board, user, line, final_board) -> int:
+    """Yechim murakkabligidan ELO bahosi. Asosiy omil — foydalanuvchi topishi kerak
+    bo'lgan yurishlar soni, keyin material yutug'i, damkalar va donalar soni."""
+    sg = 1 if user == 'w' else -1
+    user_blocks = (len(line) + 1) // 2
+    gain = sg * (ev(final_board) - ev(board))
+    kings = any(k for (c, k) in board.values()) or any(k for (c, k) in final_board.values())
+    quiet_first = not any(abs(b[0] - a[0]) >= 2 for a, b in line[0])
+    e = 600
+    e += 140 * max(0, user_blocks - 1)
+    e += 40 * min(6, max(0, gain - 2))
+    e += 90 if kings else 0
+    e += 60 if quiet_first else 0
+    e += 10 * max(0, len(board) - 12)
+    return max(500, min(2400, int(round(e / 10.0)) * 10))
+
+
+def repair_puzzle(p, depth=4) -> str:
+    """Bitta masalani tekshiradi va iloji bo'lsa tuzatadi. 'ok' | 'fixed' | 'retired'."""
+    if not p.get('active', True):
+        return 'ok'                       # allaqachon ishdan chiqarilgan
+    user = 'w' if p.get('turn', 'white') == 'white' else 'b'
+    sg = 1 if user == 'w' else -1
+    board = board_from_puzzle(p)
+    before = (tuple(sorted(board.items())), json.dumps(p.get('solution_moves'), sort_keys=True),
+              p.get('turn', 'white'), bool(p.get('active', True)), p.get('elo'))
+    _promote_stuck_men(board)          # imkonsiz pozitsiyani tuzatamiz (dona -> damka)
+    final, side, blocks, errs = replay_solution(p, board)
+    def durable(b) -> bool:
+        """Yutuq raqibning eng yaxshi himoyasidan keyin ham saqlanishi shart
+        (validate_puzzle bilan bir xil chuqurliklar)."""
+        return min(sg * (val(b, side, d) - ev(board)) for d in (2, 4, SOLID_PLIES)) >= MEN_ADV
+
+    ok = not errs and side != user and sg * (ev(final) - ev(board)) >= MEN_ADV and durable(final)
+    if ok:
+        line, last = blocks, final
+    else:
+        line = last = new_user = None
+        for cand in (user, enemy(user)):              # yurish tomoni ham xato bo'lishi mumkin
+            for d in (depth, depth + 2):
+                got = solve_line(board, cand, d)
+                if got:
+                    line, last, new_user = got[0], got[1], cand
+                    break
+            if line:
+                break
+        if not line:
+            p['initial_board'] = board_to_json(board)
+            was_active = bool(p.get('active', True))
+            p['active'] = False
+            if was_active or tuple(sorted(board.items())) != before[0]:
+                p['rev'] = int(p.get('rev', 1)) + 1
+                return 'retired'
+            return 'ok'
+        p['turn'] = 'white' if new_user == 'w' else 'black'
+        p['solution_moves'] = [{'from': rc_to_sq(*a), 'to': rc_to_sq(*b)} for step in line for a, b in step]
+        user, sg = new_user, (1 if new_user == 'w' else -1)
+    p['initial_board'] = board_to_json(board)
+    p['active'] = True
+    elo = elo_from_line(board, user, line, last)
+    if elo != p.get('elo') or p.get('level') != level_for_elo(elo):
+        p['elo'], p['level'] = elo, level_for_elo(elo)
+        p['difficulty'] = LEVEL_NAMES[p['level']]
+    after = (tuple(sorted(board.items())), json.dumps(p.get('solution_moves'), sort_keys=True),
+             p.get('turn', 'white'), True, p.get('elo'))
+    if after != before:
+        p['rev'] = int(p.get('rev', 1)) + 1
+        return 'fixed'
+    return 'ok'
+
+
+def _repair_worker(job):
+    p, depth = job
+    return repair_puzzle(p, depth), p
+
+
+def repair_all(path, depth=4) -> dict:
+    """puzzles.json ni to'liq tekshiradi: noto'g'ri yechimlarni almashtiradi, umidsizlarini
+    o'chiradi emas — `active: false` qilib belgilaydi (bazadagi natijalar saqlanadi)."""
+    path = Path(path)
+    puzzles = json.loads(path.read_text(encoding='utf-8'))
+    if path.exists():
+        path.with_name(path.name + '.bak').write_bytes(path.read_bytes())
+    counts = {'ok': 0, 'fixed': 0, 'retired': 0}
+    jobs = [(p, depth) for p in puzzles]
+    workers = max(1, min(4, os.cpu_count() or 1))
+    if workers > 1:
+        with Pool(workers) as pool:
+            results = pool.map(_repair_worker, jobs, chunksize=8)
+    else:
+        results = [_repair_worker(j) for j in jobs]
+    puzzles = [p for _r, p in results]
+    for r, _p in results:
+        counts[r] += 1
+    levels = {1: 0, 2: 0, 3: 0}
+    for p in puzzles:
+        levels[p['level']] += 1
+    _save_json(path, puzzles)
+    log.info("Tuzatish: %s | darajalar: %s", counts, levels)
+    return {'counts': counts, 'levels': levels, 'path': str(path)}
+
+
+def repair_main(argv) -> None:
+    ap = argparse.ArgumentParser(prog='bot.py --repair')
+    ap.add_argument('--path', default=str(PUZZLES_PATH))
+    ap.add_argument('--depth', type=int, default=4)
+    a = ap.parse_args(argv)
+    res = repair_all(a.path, a.depth)
+    print('natija:', res['counts'], '| darajalar:', res['levels'], '| fayl:', res['path'])
 
 
 def _normalize(existing):
@@ -789,6 +950,7 @@ def init_db() -> None:
         _add_column(conn, "Puzzles", "elo", "INTEGER NOT NULL DEFAULT 1000")
         _add_column(conn, "Puzzles", "level", "INTEGER NOT NULL DEFAULT 1")
         _add_column(conn, "UserProgress", "stars", "INTEGER NOT NULL DEFAULT 0")
+        _add_column(conn, "Puzzles", "active", "INTEGER NOT NULL DEFAULT 1")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_up_solved ON UserProgress(solved, solved_at)")
 
 
@@ -814,18 +976,28 @@ def seed_puzzles() -> int:
                 continue
             for p in puzzles:
                 pid = int(p["id"])
+                level = int(p.get("level") or level_for_elo(int(p.get("elo", 1000))))
+                title = p.get("title") or ("Masala %d" % pid)
+                diff = p.get("difficulty") or LEVEL_NAMES[level]
+                elo = int(p.get("elo", 1000))
+                active = 1 if p.get("active", True) else 0
+                data = json.dumps(p, ensure_ascii=False)
                 if pid in have:
-                    # Tuzatilgan masala (rev oshgan) — yechimini yangilaymiz, foydalanuvchi natijasi saqlanadi
+                    # Tuzatilgan masala (rev oshgan) — yechimi, ELO si va holati yangilanadi.
+                    # Foydalanuvchi natijalari (UserProgress) tegilmaydi, masala bazadan o'chmaydi.
                     if int(p.get("rev", 1)) > have[pid]:
-                        conn.execute("UPDATE Puzzles SET data = ? WHERE id = ?",
-                                     (json.dumps(p, ensure_ascii=False), pid))
+                        conn.execute(
+                            "UPDATE Puzzles SET title = ?, difficulty = ?, elo = ?, level = ?, "
+                            "active = ?, data = ? WHERE id = ?",
+                            (title, diff, elo, level, active, data, pid),
+                        )
                         have[pid] = int(p["rev"])
                         fixed += 1
                     continue
                 conn.execute(
-                    "INSERT INTO Puzzles (id, title, difficulty, xp, elo, level, data) VALUES (?, ?, ?, 10, ?, ?, ?)",
-                    (pid, p["title"], p["difficulty"], int(p["elo"]), int(p["level"]),
-                     json.dumps(p, ensure_ascii=False)),
+                    "INSERT INTO Puzzles (id, title, difficulty, xp, elo, level, active, data) "
+                    "VALUES (?, ?, ?, 10, ?, ?, ?, ?)",
+                    (pid, title, diff, elo, level, active, data),
                 )
                 have[pid] = int(p.get("rev", 1))
                 added += 1
@@ -848,7 +1020,7 @@ def db_puzzle_info():
 
 def count_puzzles() -> int:
     with db() as conn:
-        return conn.execute("SELECT COUNT(*) AS n FROM Puzzles").fetchone()["n"]
+        return conn.execute("SELECT COUNT(*) AS n FROM Puzzles WHERE active = 1").fetchone()["n"]
 
 
 def upsert_user(user_id: int, username: str | None, full_name: str | None) -> None:
@@ -873,7 +1045,7 @@ def get_stats(user_id: int) -> dict:
             (user_id,),
         ).fetchone()
         solved, stars = row["n"], row["s"]
-        total = conn.execute("SELECT COUNT(*) AS n FROM Puzzles").fetchone()["n"]
+        total = conn.execute("SELECT COUNT(*) AS n FROM Puzzles WHERE active = 1").fetchone()["n"]
         rank = None
         if solved:
             rank = conn.execute(
@@ -886,6 +1058,7 @@ def get_stats(user_id: int) -> dict:
             """
             SELECT p.level AS level, COUNT(*) AS total, COALESCE(SUM(up.solved), 0) AS solved
             FROM Puzzles p LEFT JOIN UserProgress up ON up.puzzle_id = p.id AND up.user_id = ?
+            WHERE p.active = 1
             GROUP BY p.level
             """,
             (user_id,),
@@ -896,28 +1069,29 @@ def get_stats(user_id: int) -> dict:
 
 
 def get_puzzle_row(puzzle_id: int):
+    """Faol masala. Ishdan chiqarilgan (active=0) masala o'yinda ko'rsatilmaydi,
+    lekin bazadan va foydalanuvchi natijalaridan o'chirilmaydi."""
     with db() as conn:
-        return conn.execute("SELECT * FROM Puzzles WHERE id = ?", (puzzle_id,)).fetchone()
+        return conn.execute(
+            "SELECT * FROM Puzzles WHERE id = ? AND active = 1", (puzzle_id,)
+        ).fetchone()
 
 
 def get_next_puzzle_row(user_id: int, level: int = 0, skip=()):
     """Yechilmagan masala. level=0: reytingga eng yaqin ELO; level 1..3: shu daraja, osondan qiyinga."""
     with db() as conn:
         rating = get_stats_rating(conn, user_id)
-        where, args = "COALESCE(up.solved, 0) = 0", [user_id]
+        where, args = "COALESCE(up.solved, 0) = 0 AND p.active = 1", [user_id]
         if level in LEVELS:
             where += " AND p.level = ?"
             args.append(level)
-            order = "p.elo ASC, p.id ASC"
-        else:
-            order = "ABS(p.elo - ?) ASC, p.id ASC"
         if skip:
             where += " AND p.id NOT IN (%s)" % ",".join(str(int(x)) for x in skip)
+        # reytingga eng yaqin masala (daraja ichida ham) — osonlar ketma-ket kelmaydi
         sql = f"""SELECT p.* FROM Puzzles p
                   LEFT JOIN UserProgress up ON up.puzzle_id = p.id AND up.user_id = ?
-                  WHERE {where} ORDER BY {order} LIMIT 1"""
-        if level not in LEVELS:
-            args.append(rating)
+                  WHERE {where} ORDER BY ABS(p.elo - ?) ASC, p.id ASC LIMIT 1"""
+        args.append(rating)
         return conn.execute(sql, args).fetchone()
 
 
@@ -933,7 +1107,10 @@ def stars_for(mistakes: int) -> int:
 def new_rating(user_rating: int, puzzle_elo: int, stars: int) -> int:
     score = {3: 1.0, 2: 0.65, 1: 0.35}[stars]
     expected = 1.0 / (1.0 + 10 ** ((puzzle_elo - user_rating) / 400.0))
-    return max(100, int(round(user_rating + 32 * (score - expected))))
+    delta = 32 * (score - expected)
+    # oson masalada ham to'g'ri yechim "+0" bo'lib qolmasin; xato uchun jarima cheklangan
+    delta = max(delta, 1.0) if score >= 1.0 else max(delta, -4.0 if score >= 0.65 else -8.0)
+    return max(100, int(round(user_rating + delta)))
 
 
 def record_solve(user_id: int, puzzle_id: int, mistakes: int) -> dict | None:
@@ -1433,6 +1610,8 @@ async def main() -> None:
 if __name__ == "__main__":
     if "--gen" in sys.argv:
         gen_main([a for a in sys.argv[1:] if a != "--gen"])
+    elif "--repair" in sys.argv:
+        repair_main([a for a in sys.argv[1:] if a != "--repair"])
     else:
         try:
             asyncio.run(main())
