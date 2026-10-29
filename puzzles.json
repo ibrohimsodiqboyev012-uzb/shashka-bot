@@ -50439,5 +50439,4069 @@
   ],
   "active": true,
   "rev": 2
+ },
+ {
+  "id": 10681,
+  "title": "Fedorova: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1230,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 4,
+  "page": 4,
+  "initial_board": {
+   "white": [
+    23,
+    26,
+    30
+   ],
+   "black": [
+    8,
+    14,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 23,
+    "to": 18
+   },
+   {
+    "from": 14,
+    "to": 23
+   },
+   {
+    "from": 26,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 12
+   },
+   {
+    "from": 12,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10682,
+  "title": "Fedorova: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1390,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 4,
+  "page": 4,
+  "initial_board": {
+   "white": [
+    13,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32
+   ],
+   "black": [
+    1,
+    2,
+    5,
+    8,
+    10,
+    11,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 13,
+    "to": 9
+   },
+   {
+    "from": 5,
+    "to": 14
+   },
+   {
+    "from": 22,
+    "to": 18
+   },
+   {
+    "from": 14,
+    "to": 23
+   },
+   {
+    "from": 26,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 12
+   },
+   {
+    "from": 12,
+    "to": 3
+   },
+   {
+    "from": 3,
+    "to": 14
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10683,
+  "title": "Fedorova: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1350,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 4,
+  "page": 4,
+  "initial_board": {
+   "white": [
+    22,
+    24,
+    27,
+    28,
+    30
+   ],
+   "black": [
+    2,
+    6,
+    8,
+    13,
+    15
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 17
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 30,
+    "to": 26
+   },
+   {
+    "from": 22,
+    "to": 31
+   },
+   {
+    "from": 24,
+    "to": 20
+   },
+   {
+    "from": 31,
+    "to": 24
+   },
+   {
+    "from": 28,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10684,
+  "title": "Fedorova: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1020,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 4,
+  "page": 4,
+  "initial_board": {
+   "white": [
+    27,
+    28,
+    31
+   ],
+   "black": [
+    11,
+    19,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 27,
+    "to": 24
+   },
+   {
+    "from": 20,
+    "to": 27
+   },
+   {
+    "from": 31,
+    "to": 24
+   },
+   {
+    "from": 24,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 8
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10685,
+  "title": "Fedorova: №4",
+  "difficulty": "Qiyin",
+  "level": 3,
+  "elo": 1550,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 4,
+  "page": 4,
+  "initial_board": {
+   "white": [
+    22,
+    23,
+    27,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    3,
+    6,
+    7,
+    8,
+    16,
+    21
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 17
+   },
+   {
+    "from": 21,
+    "to": 14
+   },
+   {
+    "from": 23,
+    "to": 19
+   },
+   {
+    "from": 16,
+    "to": 23
+   },
+   {
+    "from": 27,
+    "to": 18
+   },
+   {
+    "from": 18,
+    "to": 9
+   },
+   {
+    "from": 9,
+    "to": 2
+   },
+   {
+    "from": 2,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10686,
+  "title": "Fedorova: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1370,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 4,
+  "page": 4,
+  "initial_board": {
+   "white": [
+    22,
+    26,
+    27,
+    28,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    1,
+    2,
+    8,
+    13,
+    15,
+    16,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 18
+   },
+   {
+    "from": 15,
+    "to": 22
+   },
+   {
+    "from": 26,
+    "to": 17
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 31,
+    "to": 26
+   },
+   {
+    "from": 22,
+    "to": 31
+   },
+   {
+    "from": 31,
+    "to": 24
+   },
+   {
+    "from": 28,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 12
+   },
+   {
+    "from": 12,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10687,
+  "title": "Fedorova: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1080,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 4,
+  "page": 4,
+  "initial_board": {
+   "white": [
+    19,
+    26,
+    31
+   ],
+   "black": [
+    9,
+    12,
+    17
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 19,
+    "to": 16
+   },
+   {
+    "from": 12,
+    "to": 19
+   },
+   {
+    "from": 26,
+    "to": 23
+   },
+   {
+    "from": 19,
+    "to": 26
+   },
+   {
+    "from": 31,
+    "to": 22
+   },
+   {
+    "from": 22,
+    "to": 13
+   },
+   {
+    "from": 13,
+    "to": 6
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10688,
+  "title": "Fedorova: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1430,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 4,
+  "page": 4,
+  "initial_board": {
+   "white": [
+    18,
+    21,
+    23,
+    24,
+    27,
+    32
+   ],
+   "black": [
+    5,
+    6,
+    7,
+    12,
+    13,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 21,
+    "to": 17
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 22,
+    "to": 15
+   },
+   {
+    "from": 23,
+    "to": 19
+   },
+   {
+    "from": 16,
+    "to": 23
+   },
+   {
+    "from": 27,
+    "to": 18
+   },
+   {
+    "from": 18,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   },
+   {
+    "from": 2,
+    "to": 13
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10689,
+  "title": "Fedorova: №5",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 810,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 5,
+  "page": 5,
+  "initial_board": {
+   "white": [
+    28
+   ],
+   "white_kings": [
+    3
+   ],
+   "black": [
+    19,
+    20
+   ],
+   "black_kings": [
+    14
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 3,
+    "to": 17
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10690,
+  "title": "Fedorova: №5",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 810,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 5,
+  "page": 5,
+  "initial_board": {
+   "white": [
+    28
+   ],
+   "white_kings": [
+    1
+   ],
+   "black": [
+    2,
+    3
+   ],
+   "black_kings": [
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 1,
+    "to": 15
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10691,
+  "title": "Fedorova: №5",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 5,
+  "page": 5,
+  "initial_board": {
+   "white": [
+    8
+   ],
+   "black": [
+    1,
+    10
+   ],
+   "black_kings": [
+    6
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 8,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10692,
+  "title": "Fedorova: №5",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1070,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 5,
+  "page": 5,
+  "initial_board": {
+   "white": [
+    19,
+    22
+   ],
+   "white_kings": [
+    20
+   ],
+   "black": [
+    12
+   ],
+   "black_kings": [
+    9
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 18
+   },
+   {
+    "from": 9,
+    "to": 23
+   },
+   {
+    "from": 23,
+    "to": 16
+   },
+   {
+    "from": 20,
+    "to": 11
+   },
+   {
+    "from": 12,
+    "to": 16
+   },
+   {
+    "from": 11,
+    "to": 20
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10693,
+  "title": "Fedorova: №9",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 9,
+  "page": 9,
+  "initial_board": {
+   "white": [
+    27,
+    31
+   ],
+   "black": [
+    14,
+    19
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 27,
+    "to": 23
+   },
+   {
+    "from": 19,
+    "to": 26
+   },
+   {
+    "from": 31,
+    "to": 22
+   },
+   {
+    "from": 14,
+    "to": 17
+   },
+   {
+    "from": 22,
+    "to": 13
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10694,
+  "title": "Fedorova: №10",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 10,
+  "page": 10,
+  "initial_board": {
+   "white": [
+    27
+   ],
+   "black": [
+    8
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 27,
+    "to": 24
+   },
+   {
+    "from": 8,
+    "to": 12
+   },
+   {
+    "from": 24,
+    "to": 20
+   },
+   {
+    "from": 12,
+    "to": 16
+   },
+   {
+    "from": 20,
+    "to": 11
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10695,
+  "title": "Fedorova: №10",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1350,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 10,
+  "page": 10,
+  "initial_board": {
+   "white": [
+    15,
+    26
+   ],
+   "black": [
+    8,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 15,
+    "to": 10
+   },
+   {
+    "from": 12,
+    "to": 16
+   },
+   {
+    "from": 26,
+    "to": 22
+   },
+   {
+    "from": 8,
+    "to": 12
+   },
+   {
+    "from": 10,
+    "to": 7
+   },
+   {
+    "from": 16,
+    "to": 20
+   },
+   {
+    "from": 22,
+    "to": 18
+   },
+   {
+    "from": 12,
+    "to": 16
+   },
+   {
+    "from": 7,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10696,
+  "title": "Fedorova: №10",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 10,
+  "page": 10,
+  "initial_board": {
+   "white": [
+    7,
+    28
+   ],
+   "black": [
+    8,
+    19,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 7,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10697,
+  "title": "Fedorova: №11",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 930,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 11,
+  "page": 11,
+  "initial_board": {
+   "white": [
+    9
+   ],
+   "black": [
+    11
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 9,
+    "to": 5
+   },
+   {
+    "from": 11,
+    "to": 16
+   },
+   {
+    "from": 5,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10698,
+  "title": "Fedorova: №11",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 930,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 11,
+  "page": 11,
+  "initial_board": {
+   "white": [
+    9
+   ],
+   "black": [
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 9,
+    "to": 5
+   },
+   {
+    "from": 10,
+    "to": 14
+   },
+   {
+    "from": 5,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10699,
+  "title": "Fedorova: №11",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 800,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 11,
+  "page": 11,
+  "initial_board": {
+   "white": [
+    26,
+    30
+   ],
+   "black": [
+    13,
+    21
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 26,
+    "to": 22
+   },
+   {
+    "from": 21,
+    "to": 25
+   },
+   {
+    "from": 30,
+    "to": 21
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10700,
+  "title": "Fedorova: №11",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 970,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 11,
+  "page": 11,
+  "initial_board": {
+   "white_kings": [
+    1
+   ],
+   "black": [
+    18
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 1,
+    "to": 19
+   },
+   {
+    "from": 18,
+    "to": 22
+   },
+   {
+    "from": 19,
+    "to": 30
+   },
+   {
+    "from": 22,
+    "to": 25
+   },
+   {
+    "from": 30,
+    "to": 21
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10701,
+  "title": "Fedorova: №11",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 910,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 11,
+  "page": 11,
+  "initial_board": {
+   "white_kings": [
+    17
+   ],
+   "black": [
+    15,
+    18
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 17,
+    "to": 26
+   },
+   {
+    "from": 18,
+    "to": 23
+   },
+   {
+    "from": 26,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 10
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10702,
+  "title": "Fedorova: №11",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 11,
+  "page": 11,
+  "initial_board": {
+   "white": [
+    6,
+    32
+   ],
+   "black": [
+    15,
+    19,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 6,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10703,
+  "title": "Fedorova: №11",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 830,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 11,
+  "page": 11,
+  "initial_board": {
+   "white_kings": [
+    3
+   ],
+   "black": [
+    24
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 3,
+    "to": 14
+   },
+   {
+    "from": 24,
+    "to": 27
+   },
+   {
+    "from": 14,
+    "to": 32
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10704,
+  "title": "Fedorova: №11",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 970,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 11,
+  "page": 11,
+  "initial_board": {
+   "white_kings": [
+    9
+   ],
+   "black": [
+    15,
+    19
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 9,
+    "to": 6
+   },
+   {
+    "from": 19,
+    "to": 23
+   },
+   {
+    "from": 6,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 26
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10705,
+  "title": "Fedorova: №12",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 800,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 12,
+  "page": 12,
+  "initial_board": {
+   "white": [
+    13,
+    17
+   ],
+   "black": [
+    10,
+    25
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 17,
+    "to": 14
+   },
+   {
+    "from": 10,
+    "to": 17
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 22,
+    "to": 29
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10706,
+  "title": "Fedorova: №12",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 12,
+  "page": 12,
+  "initial_board": {
+   "white": [
+    21,
+    22,
+    23,
+    27
+   ],
+   "black": [
+    7,
+    10,
+    11,
+    14
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 18
+   },
+   {
+    "from": 11,
+    "to": 15
+   },
+   {
+    "from": 18,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10707,
+  "title": "Fedorova: №12",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 12,
+  "page": 12,
+  "initial_board": {
+   "white": [
+    13,
+    17,
+    27,
+    30
+   ],
+   "black": [
+    3,
+    6,
+    10,
+    18
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 30,
+    "to": 26
+   },
+   {
+    "from": 10,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10708,
+  "title": "Fedorova: №12",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 800,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 12,
+  "page": 12,
+  "initial_board": {
+   "white": [
+    22,
+    25,
+    29
+   ],
+   "black": [
+    13,
+    20,
+    23
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 17
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 25,
+    "to": 18
+   },
+   {
+    "from": 18,
+    "to": 27
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10709,
+  "title": "Fedorova: №12",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1270,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 12,
+  "page": 12,
+  "initial_board": {
+   "white": [
+    12,
+    18,
+    20,
+    22
+   ],
+   "black": [
+    2,
+    3,
+    7,
+    19
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 20,
+    "to": 16
+   },
+   {
+    "from": 3,
+    "to": 8
+   },
+   {
+    "from": 12,
+    "to": 3
+   },
+   {
+    "from": 3,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 24
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10710,
+  "title": "Fedorova: №12",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 12,
+  "page": 12,
+  "initial_board": {
+   "white": [
+    6,
+    13
+   ],
+   "black": [
+    7,
+    23
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 6,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10711,
+  "title": "Fedorova: №12",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 12,
+  "page": 12,
+  "initial_board": {
+   "white": [
+    13,
+    21,
+    32
+   ],
+   "black": [
+    6,
+    10,
+    22
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 21,
+    "to": 17
+   },
+   {
+    "from": 10,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10712,
+  "title": "Fedorova: №13",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 900,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 13,
+  "page": 13,
+  "initial_board": {
+   "white": [
+    18,
+    21,
+    22,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    19
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 14
+   },
+   {
+    "from": 9,
+    "to": 18
+   },
+   {
+    "from": 22,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 24
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10713,
+  "title": "Fedorova: №13",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 880,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 13,
+  "page": 13,
+  "initial_board": {
+   "white": [
+    17,
+    22,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    19
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 17,
+    "to": 14
+   },
+   {
+    "from": 9,
+    "to": 18
+   },
+   {
+    "from": 22,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 24
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10714,
+  "title": "Fedorova: №14",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1320,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 14,
+  "page": 14,
+  "initial_board": {
+   "white": [
+    25,
+    26,
+    28,
+    29,
+    32
+   ],
+   "black": [
+    9,
+    10,
+    11,
+    17,
+    18
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 25,
+    "to": 22
+   },
+   {
+    "from": 18,
+    "to": 25
+   },
+   {
+    "from": 29,
+    "to": 22
+   },
+   {
+    "from": 22,
+    "to": 13
+   },
+   {
+    "from": 13,
+    "to": 6
+   },
+   {
+    "from": 6,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 8
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10715,
+  "title": "Fedorova: №14",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1230,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 14,
+  "page": 14,
+  "initial_board": {
+   "white": [
+    23,
+    24,
+    28
+   ],
+   "black": [
+    8,
+    15,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 24,
+    "to": 19
+   },
+   {
+    "from": 15,
+    "to": 24
+   },
+   {
+    "from": 28,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 12
+   },
+   {
+    "from": 12,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10716,
+  "title": "Fedorova: №14",
+  "difficulty": "Qiyin",
+  "level": 3,
+  "elo": 1550,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 14,
+  "page": 14,
+  "initial_board": {
+   "white": [
+    19,
+    21,
+    22,
+    26,
+    31
+   ],
+   "black": [
+    7,
+    8,
+    10,
+    13,
+    14
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 19,
+    "to": 15
+   },
+   {
+    "from": 10,
+    "to": 19
+   },
+   {
+    "from": 22,
+    "to": 17
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 26,
+    "to": 17
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 3
+   },
+   {
+    "from": 3,
+    "to": 12
+   },
+   {
+    "from": 12,
+    "to": 23
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10717,
+  "title": "Fedorova: №15",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1370,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 15,
+  "page": 15,
+  "initial_board": {
+   "white": [
+    20,
+    24,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    6,
+    7,
+    12,
+    14,
+    21
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 30,
+    "to": 25
+   },
+   {
+    "from": 21,
+    "to": 30
+   },
+   {
+    "from": 24,
+    "to": 19
+   },
+   {
+    "from": 30,
+    "to": 16
+   },
+   {
+    "from": 20,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   },
+   {
+    "from": 2,
+    "to": 9
+   },
+   {
+    "from": 9,
+    "to": 23
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10718,
+  "title": "Fedorova: №15",
+  "difficulty": "Qiyin",
+  "level": 3,
+  "elo": 1650,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 15,
+  "page": 15,
+  "initial_board": {
+   "white": [
+    21,
+    26,
+    29,
+    30,
+    31
+   ],
+   "black": [
+    6,
+    7,
+    13,
+    15,
+    19,
+    23
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 30,
+    "to": 25
+   },
+   {
+    "from": 23,
+    "to": 30
+   },
+   {
+    "from": 31,
+    "to": 26
+   },
+   {
+    "from": 30,
+    "to": 23
+   },
+   {
+    "from": 21,
+    "to": 17
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 25,
+    "to": 18
+   },
+   {
+    "from": 18,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   },
+   {
+    "from": 2,
+    "to": 9
+   },
+   {
+    "from": 9,
+    "to": 27
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10719,
+  "title": "Fedorova: №15",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1370,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 15,
+  "page": 15,
+  "initial_board": {
+   "white": [
+    8,
+    11,
+    16,
+    23,
+    24,
+    30
+   ],
+   "black": [
+    5,
+    9,
+    10,
+    14,
+    17,
+    22
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 30,
+    "to": 25
+   },
+   {
+    "from": 22,
+    "to": 29
+   },
+   {
+    "from": 8,
+    "to": 4
+   },
+   {
+    "from": 29,
+    "to": 8
+   },
+   {
+    "from": 4,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 6
+   },
+   {
+    "from": 6,
+    "to": 13
+   },
+   {
+    "from": 13,
+    "to": 22
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10720,
+  "title": "Fedorova: №15",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1220,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 15,
+  "page": 15,
+  "initial_board": {
+   "white": [
+    18,
+    19,
+    26,
+    31
+   ],
+   "black": [
+    9,
+    10,
+    11,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 15
+   },
+   {
+    "from": 11,
+    "to": 18
+   },
+   {
+    "from": 19,
+    "to": 16
+   },
+   {
+    "from": 12,
+    "to": 19
+   },
+   {
+    "from": 26,
+    "to": 23
+   },
+   {
+    "from": 18,
+    "to": 27
+   },
+   {
+    "from": 31,
+    "to": 24
+   },
+   {
+    "from": 24,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 6
+   },
+   {
+    "from": 6,
+    "to": 13
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10721,
+  "title": "Fedorova: №15",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1080,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 15,
+  "page": 15,
+  "initial_board": {
+   "white": [
+    20,
+    24,
+    26,
+    27,
+    30
+   ],
+   "black": [
+    10,
+    11,
+    12,
+    17,
+    18
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 20,
+    "to": 16
+   },
+   {
+    "from": 11,
+    "to": 20
+   },
+   {
+    "from": 26,
+    "to": 22
+   },
+   {
+    "from": 17,
+    "to": 26
+   },
+   {
+    "from": 30,
+    "to": 23
+   },
+   {
+    "from": 23,
+    "to": 14
+   },
+   {
+    "from": 14,
+    "to": 7
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10722,
+  "title": "Fedorova: №15",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 620,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 15,
+  "page": 15,
+  "initial_board": {
+   "white": [
+    17,
+    18,
+    19,
+    21,
+    23,
+    25,
+    27
+   ],
+   "black": [
+    1,
+    3,
+    4,
+    10,
+    12,
+    14,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 9
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10723,
+  "title": "Fedorova: №16",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 16,
+  "page": 16,
+  "initial_board": {
+   "white": [
+    7
+   ],
+   "black": [
+    1,
+    5,
+    6,
+    9,
+    13
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 7,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10724,
+  "title": "Fedorova: №16",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 910,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 16,
+  "page": 16,
+  "initial_board": {
+   "white_kings": [
+    30
+   ],
+   "black": [
+    6,
+    9,
+    13
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 30,
+    "to": 21
+   },
+   {
+    "from": 13,
+    "to": 17
+   },
+   {
+    "from": 21,
+    "to": 14
+   },
+   {
+    "from": 14,
+    "to": 5
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10725,
+  "title": "Fedorova: №16",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1150,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 16,
+  "page": 16,
+  "initial_board": {
+   "white": [
+    12,
+    15
+   ],
+   "black_kings": [
+    27,
+    31
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 15,
+    "to": 11
+   },
+   {
+    "from": 31,
+    "to": 26
+   },
+   {
+    "from": 11,
+    "to": 8
+   },
+   {
+    "from": 26,
+    "to": 16
+   },
+   {
+    "from": 12,
+    "to": 19
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10726,
+  "title": "Fedorova: №16",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 16,
+  "page": 16,
+  "initial_board": {
+   "white": [
+    8
+   ],
+   "black": [
+    13,
+    14
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 8,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10727,
+  "title": "Fedorova: №16",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 970,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 16,
+  "page": 16,
+  "initial_board": {
+   "white_kings": [
+    14
+   ],
+   "black": [
+    11,
+    16,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 14,
+    "to": 10
+   },
+   {
+    "from": 11,
+    "to": 15
+   },
+   {
+    "from": 10,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 12
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10728,
+  "title": "Fedorova: №16",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 880,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 16,
+  "page": 16,
+  "initial_board": {
+   "white": [
+    5,
+    18,
+    28
+   ],
+   "black": [
+    16,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 14
+   },
+   {
+    "from": 20,
+    "to": 24
+   },
+   {
+    "from": 28,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 12
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10729,
+  "title": "Fedorova: №16",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 830,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 16,
+  "page": 16,
+  "initial_board": {
+   "white_kings": [
+    13
+   ],
+   "black": [
+    3,
+    4,
+    8,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 13,
+    "to": 2
+   },
+   {
+    "from": 3,
+    "to": 7
+   },
+   {
+    "from": 2,
+    "to": 20
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10730,
+  "title": "Fedorova: №16",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 16,
+  "page": 16,
+  "initial_board": {
+   "white": [
+    6,
+    21
+   ],
+   "black": [
+    5
+   ],
+   "black_kings": [
+    11
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 6,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10731,
+  "title": "Fedorova: №17",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 17,
+  "page": 17,
+  "initial_board": {
+   "white": [
+    10,
+    22,
+    23,
+    31
+   ],
+   "black": [
+    1,
+    3,
+    6,
+    8
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 23,
+    "to": 18
+   },
+   {
+    "from": 6,
+    "to": 15
+   },
+   {
+    "from": 18,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10732,
+  "title": "Fedorova: №17",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 17,
+  "page": 17,
+  "initial_board": {
+   "white": [
+    9,
+    21,
+    22
+   ],
+   "black": [
+    2,
+    5,
+    7
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 17
+   },
+   {
+    "from": 5,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10733,
+  "title": "Fedorova: №17",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1270,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 17,
+  "page": 17,
+  "initial_board": {
+   "white": [
+    17,
+    23,
+    24,
+    30,
+    31
+   ],
+   "black": [
+    4,
+    8,
+    10,
+    13,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 24,
+    "to": 19
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 19,
+    "to": 12
+   },
+   {
+    "from": 12,
+    "to": 3
+   },
+   {
+    "from": 3,
+    "to": 17
+   },
+   {
+    "from": 17,
+    "to": 26
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10734,
+  "title": "Fedorova: №18",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1020,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 18,
+  "page": 18,
+  "initial_board": {
+   "white": [
+    16,
+    27,
+    28
+   ],
+   "black": [
+    9,
+    10,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 27,
+    "to": 24
+   },
+   {
+    "from": 12,
+    "to": 19
+   },
+   {
+    "from": 24,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 6
+   },
+   {
+    "from": 6,
+    "to": 13
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10735,
+  "title": "Fedorova: №18",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1290,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 18,
+  "page": 18,
+  "initial_board": {
+   "white": [
+    18,
+    20,
+    28,
+    30
+   ],
+   "black": [
+    7,
+    8,
+    9,
+    14
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 28,
+    "to": 24
+   },
+   {
+    "from": 14,
+    "to": 23
+   },
+   {
+    "from": 24,
+    "to": 19
+   },
+   {
+    "from": 23,
+    "to": 16
+   },
+   {
+    "from": 20,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   },
+   {
+    "from": 2,
+    "to": 13
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10736,
+  "title": "Fedorova: №18",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1430,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 18,
+  "page": 18,
+  "initial_board": {
+   "white": [
+    18,
+    21,
+    27,
+    29,
+    30,
+    32
+   ],
+   "black": [
+    7,
+    8,
+    11,
+    15,
+    16,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 32,
+    "to": 28
+   },
+   {
+    "from": 15,
+    "to": 22
+   },
+   {
+    "from": 30,
+    "to": 26
+   },
+   {
+    "from": 22,
+    "to": 31
+   },
+   {
+    "from": 31,
+    "to": 24
+   },
+   {
+    "from": 28,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 12
+   },
+   {
+    "from": 12,
+    "to": 3
+   },
+   {
+    "from": 3,
+    "to": 10
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10737,
+  "title": "Fedorova: №18",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 18,
+  "page": 18,
+  "initial_board": {
+   "white": [
+    17,
+    24,
+    30
+   ],
+   "black": [
+    7,
+    13,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 24,
+    "to": 20
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 20,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10738,
+  "title": "Fedorova: №18",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1080,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 18,
+  "page": 18,
+  "initial_board": {
+   "white": [
+    16,
+    31,
+    32
+   ],
+   "black": [
+    10,
+    12,
+    18
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 32,
+    "to": 27
+   },
+   {
+    "from": 12,
+    "to": 19
+   },
+   {
+    "from": 27,
+    "to": 23
+   },
+   {
+    "from": 18,
+    "to": 27
+   },
+   {
+    "from": 31,
+    "to": 24
+   },
+   {
+    "from": 24,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 6
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10739,
+  "title": "Fedorova: №18",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1350,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 18,
+  "page": 18,
+  "initial_board": {
+   "white": [
+    17,
+    23,
+    27,
+    28,
+    31,
+    32
+   ],
+   "black": [
+    2,
+    8,
+    10,
+    12,
+    13,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 28,
+    "to": 24
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 23,
+    "to": 18
+   },
+   {
+    "from": 22,
+    "to": 15
+   },
+   {
+    "from": 24,
+    "to": 19
+   },
+   {
+    "from": 16,
+    "to": 23
+   },
+   {
+    "from": 27,
+    "to": 18
+   },
+   {
+    "from": 18,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10740,
+  "title": "Fedorova: №19",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 950,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 19,
+  "page": 19,
+  "initial_board": {
+   "white_kings": [
+    15
+   ],
+   "black_kings": [
+    29
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 15,
+    "to": 4
+   },
+   {
+    "from": 29,
+    "to": 25
+   },
+   {
+    "from": 4,
+    "to": 29
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10741,
+  "title": "Fedorova: №19",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 19,
+  "page": 19,
+  "initial_board": {
+   "white_kings": [
+    1,
+    28
+   ],
+   "black_kings": [
+    32
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 1,
+    "to": 5
+   },
+   {
+    "from": 32,
+    "to": 27
+   },
+   {
+    "from": 5,
+    "to": 32
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10742,
+  "title": "Fedorova: №19",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 19,
+  "page": 19,
+  "initial_board": {
+   "white": [
+    8
+   ],
+   "white_kings": [
+    16
+   ],
+   "black": [
+    25
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 16,
+    "to": 30
+   },
+   {
+    "from": 25,
+    "to": 29
+   },
+   {
+    "from": 8,
+    "to": 4
+   },
+   {
+    "from": 29,
+    "to": 25
+   },
+   {
+    "from": 30,
+    "to": 21
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10743,
+  "title": "Fedorova: №20",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 20,
+  "page": 20,
+  "initial_board": {
+   "white": [
+    8
+   ],
+   "black": [
+    21
+   ],
+   "black_kings": [
+    14
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 8,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10744,
+  "title": "Fedorova: №20",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 20,
+  "page": 20,
+  "initial_board": {
+   "white": [
+    11,
+    21
+   ],
+   "black_kings": [
+    13,
+    32
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 11,
+    "to": 8
+   },
+   {
+    "from": 13,
+    "to": 17
+   },
+   {
+    "from": 21,
+    "to": 14
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10745,
+  "title": "Fedorova: №20",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 20,
+  "page": 20,
+  "initial_board": {
+   "white": [
+    11,
+    12
+   ],
+   "black": [
+    3
+   ],
+   "black_kings": [
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 11,
+    "to": 7
+   },
+   {
+    "from": 3,
+    "to": 8
+   },
+   {
+    "from": 12,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10746,
+  "title": "Fedorova: №20",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 20,
+  "page": 20,
+  "initial_board": {
+   "white": [
+    6,
+    28
+   ],
+   "black": [
+    20
+   ],
+   "black_kings": [
+    11
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 6,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10747,
+  "title": "Fedorova: №20",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 20,
+  "page": 20,
+  "initial_board": {
+   "white": [
+    7,
+    13
+   ],
+   "black": [
+    6,
+    14
+   ],
+   "black_kings": [
+    22
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 7,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10748,
+  "title": "Fedorova: №20",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 20,
+  "page": 20,
+  "initial_board": {
+   "white": [
+    10,
+    13
+   ],
+   "black": [
+    5
+   ],
+   "black_kings": [
+    27
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 10,
+    "to": 7
+   },
+   {
+    "from": 27,
+    "to": 9
+   },
+   {
+    "from": 13,
+    "to": 6
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10749,
+  "title": "Fedorova: №20",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 20,
+  "page": 20,
+  "initial_board": {
+   "white": [
+    8
+   ],
+   "black": [
+    21
+   ],
+   "black_kings": [
+    32
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 8,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10750,
+  "title": "Fedorova: №20",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1070,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 20,
+  "page": 20,
+  "initial_board": {
+   "white": [
+    6,
+    15,
+    19
+   ],
+   "black": [
+    12,
+    25
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 6,
+    "to": 2
+   },
+   {
+    "from": 25,
+    "to": 30
+   },
+   {
+    "from": 15,
+    "to": 10
+   },
+   {
+    "from": 30,
+    "to": 16
+   },
+   {
+    "from": 2,
+    "to": 20
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10751,
+  "title": "Fedorova: №21",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1070,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 21,
+  "page": 21,
+  "initial_board": {
+   "white": [
+    16,
+    28
+   ],
+   "white_kings": [
+    26
+   ],
+   "black": [
+    3,
+    7
+   ],
+   "black_kings": [
+    11
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 26,
+    "to": 31
+   },
+   {
+    "from": 11,
+    "to": 20
+   },
+   {
+    "from": 28,
+    "to": 24
+   },
+   {
+    "from": 20,
+    "to": 27
+   },
+   {
+    "from": 31,
+    "to": 20
+   },
+   {
+    "from": 20,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10752,
+  "title": "Fedorova: №21",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1070,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 21,
+  "page": 21,
+  "initial_board": {
+   "white": [
+    21,
+    24,
+    27
+   ],
+   "white_kings": [
+    31
+   ],
+   "black": [
+    4,
+    12,
+    20
+   ],
+   "black_kings": [
+    30
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 24,
+    "to": 19
+   },
+   {
+    "from": 30,
+    "to": 16
+   },
+   {
+    "from": 27,
+    "to": 24
+   },
+   {
+    "from": 20,
+    "to": 27
+   },
+   {
+    "from": 31,
+    "to": 20
+   },
+   {
+    "from": 20,
+    "to": 11
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10753,
+  "title": "Fedorova: №21",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1070,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 21,
+  "page": 21,
+  "initial_board": {
+   "white": [
+    14,
+    21
+   ],
+   "white_kings": [
+    29
+   ],
+   "black": [
+    6,
+    20
+   ],
+   "black_kings": [
+    19
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 14,
+    "to": 9
+   },
+   {
+    "from": 6,
+    "to": 13
+   },
+   {
+    "from": 21,
+    "to": 17
+   },
+   {
+    "from": 13,
+    "to": 22
+   },
+   {
+    "from": 29,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 28
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10754,
+  "title": "Fedorova: №21",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1170,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 21,
+  "page": 21,
+  "initial_board": {
+   "white": [
+    19,
+    27
+   ],
+   "white_kings": [
+    1
+   ],
+   "black": [
+    12,
+    20,
+    26
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 27,
+    "to": 24
+   },
+   {
+    "from": 20,
+    "to": 27
+   },
+   {
+    "from": 19,
+    "to": 16
+   },
+   {
+    "from": 12,
+    "to": 19
+   },
+   {
+    "from": 1,
+    "to": 24
+   },
+   {
+    "from": 24,
+    "to": 31
+   },
+   {
+    "from": 31,
+    "to": 22
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10755,
+  "title": "Fedorova: №22",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 830,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 22,
+  "page": 22,
+  "initial_board": {
+   "white_kings": [
+    22
+   ],
+   "black": [
+    13,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 31
+   },
+   {
+    "from": 13,
+    "to": 17
+   },
+   {
+    "from": 31,
+    "to": 13
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10756,
+  "title": "Fedorova: №22",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 830,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 22,
+  "page": 22,
+  "initial_board": {
+   "white_kings": [
+    18
+   ],
+   "black": [
+    5,
+    19
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 27
+   },
+   {
+    "from": 19,
+    "to": 23
+   },
+   {
+    "from": 27,
+    "to": 18
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10757,
+  "title": "Fedorova: №22",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1210,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 22,
+  "page": 22,
+  "initial_board": {
+   "white": [
+    15,
+    20
+   ],
+   "black": [
+    5
+   ],
+   "black_kings": [
+    13
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 15,
+    "to": 11
+   },
+   {
+    "from": 13,
+    "to": 17
+   },
+   {
+    "from": 11,
+    "to": 8
+   },
+   {
+    "from": 5,
+    "to": 9
+   },
+   {
+    "from": 20,
+    "to": 16
+   },
+   {
+    "from": 17,
+    "to": 22
+   },
+   {
+    "from": 8,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10758,
+  "title": "Fedorova: №22",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 890,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 22,
+  "page": 22,
+  "initial_board": {
+   "white_kings": [
+    9
+   ],
+   "black": [
+    5,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 9,
+    "to": 6
+   },
+   {
+    "from": 5,
+    "to": 9
+   },
+   {
+    "from": 6,
+    "to": 13
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10759,
+  "title": "Fedorova: №22",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 790,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 22,
+  "page": 22,
+  "initial_board": {
+   "white": [
+    6,
+    28
+   ],
+   "black": [
+    5
+   ],
+   "black_kings": [
+    31
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 6,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10760,
+  "title": "Fedorova: №22",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 830,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 22,
+  "page": 22,
+  "initial_board": {
+   "white_kings": [
+    13
+   ],
+   "black": [
+    5,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 13,
+    "to": 2
+   },
+   {
+    "from": 5,
+    "to": 9
+   },
+   {
+    "from": 2,
+    "to": 13
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10761,
+  "title": "Fedorova: №22",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 830,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 22,
+  "page": 22,
+  "initial_board": {
+   "white_kings": [
+    30
+   ],
+   "black": [
+    1,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 30,
+    "to": 19
+   },
+   {
+    "from": 1,
+    "to": 6
+   },
+   {
+    "from": 19,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10762,
+  "title": "Fedorova: №23",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 23,
+  "page": 23,
+  "initial_board": {
+   "white": [
+    12,
+    19
+   ],
+   "black": [
+    4
+   ],
+   "black_kings": [
+    29
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 19,
+    "to": 16
+   },
+   {
+    "from": 29,
+    "to": 11
+   },
+   {
+    "from": 16,
+    "to": 7
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10763,
+  "title": "Fedorova: №24",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 24,
+  "page": 24,
+  "initial_board": {
+   "white": [
+    28
+   ],
+   "white_kings": [
+    24
+   ],
+   "black": [
+    16
+   ],
+   "black_kings": [
+    23
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 24,
+    "to": 20
+   },
+   {
+    "from": 23,
+    "to": 18
+   },
+   {
+    "from": 20,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 22
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10764,
+  "title": "Fedorova: №24",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1190,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 24,
+  "page": 24,
+  "initial_board": {
+   "white": [
+    6,
+    18,
+    19
+   ],
+   "black": [
+    8
+   ],
+   "black_kings": [
+    29
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 15
+   },
+   {
+    "from": 29,
+    "to": 11
+   },
+   {
+    "from": 6,
+    "to": 2
+   },
+   {
+    "from": 8,
+    "to": 12
+   },
+   {
+    "from": 2,
+    "to": 16
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10765,
+  "title": "Fedorova: №24",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 910,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 24,
+  "page": 24,
+  "initial_board": {
+   "white": [
+    29
+   ],
+   "white_kings": [
+    8
+   ],
+   "black": [
+    10,
+    15,
+    21,
+    24
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 8,
+    "to": 18
+   },
+   {
+    "from": 24,
+    "to": 27
+   },
+   {
+    "from": 18,
+    "to": 32
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10766,
+  "title": "Fedorova: №24",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 810,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 24,
+  "page": 24,
+  "initial_board": {
+   "white": [
+    11,
+    25,
+    30
+   ],
+   "black": [
+    8,
+    14,
+    15,
+    23
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 11,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10767,
+  "title": "Fedorova: №24",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 830,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 24,
+  "page": 24,
+  "initial_board": {
+   "white": [
+    30,
+    32
+   ],
+   "white_kings": [
+    19
+   ],
+   "black": [
+    11,
+    20,
+    22,
+    28
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 19,
+    "to": 6
+   },
+   {
+    "from": 11,
+    "to": 15
+   },
+   {
+    "from": 6,
+    "to": 19
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10768,
+  "title": "Fedorova: №24",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 690,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 24,
+  "page": 24,
+  "initial_board": {
+   "white": [
+    21
+   ],
+   "white_kings": [
+    3
+   ],
+   "black": [
+    6,
+    14
+   ],
+   "black_kings": [
+    18
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 3,
+    "to": 17
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10769,
+  "title": "Fedorova: №24",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 690,
+  "turn": "white",
+  "source": "Fedorova",
+  "book_no": 24,
+  "page": 24,
+  "initial_board": {
+   "white": [
+    20
+   ],
+   "white_kings": [
+    2
+   ],
+   "black": [
+    3,
+    11
+   ],
+   "black_kings": [
+    15
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 2,
+    "to": 16
+   }
+  ],
+  "active": true,
+  "rev": 1
  }
 ]
