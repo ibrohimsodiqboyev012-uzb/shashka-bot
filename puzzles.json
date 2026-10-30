@@ -57122,5 +57122,2474 @@
   ],
   "active": true,
   "rev": 1
+ },
+ {
+  "id": 10822,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 22,
+  "initial_board": {
+   "white": [
+    20,
+    21,
+    23,
+    24,
+    27,
+    28,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    2
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 23,
+    "to": 18
+   },
+   {
+    "from": 2,
+    "to": 6
+   },
+   {
+    "from": 18,
+    "to": 14
+   },
+   {
+    "from": 6,
+    "to": 9
+   },
+   {
+    "from": 14,
+    "to": 5
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10823,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1020,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 27,
+  "initial_board": {
+   "white": [
+    17,
+    19,
+    22,
+    23,
+    24,
+    25,
+    30,
+    32
+   ],
+   "black": [
+    9,
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 17,
+    "to": 13
+   },
+   {
+    "from": 9,
+    "to": 14
+   },
+   {
+    "from": 25,
+    "to": 21
+   },
+   {
+    "from": 10,
+    "to": 15
+   },
+   {
+    "from": 19,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 17
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10824,
+  "title": "Комбинации: №3",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1020,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 3,
+  "page": 30,
+  "initial_board": {
+   "white": [
+    12,
+    18,
+    19,
+    20,
+    23,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31
+   ],
+   "black": [
+    3,
+    13
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 14
+   },
+   {
+    "from": 3,
+    "to": 8
+   },
+   {
+    "from": 12,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10825,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 910,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 33,
+  "initial_board": {
+   "white": [
+    19,
+    20,
+    21,
+    22,
+    28,
+    30,
+    32
+   ],
+   "black": [
+    10,
+    12,
+    14,
+    23,
+    24,
+    26
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 20,
+    "to": 27
+   },
+   {
+    "from": 27,
+    "to": 18
+   },
+   {
+    "from": 18,
+    "to": 9
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10826,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1350,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 45,
+  "initial_board": {
+   "white": [
+    14,
+    23,
+    24,
+    27,
+    32
+   ],
+   "black": [
+    3,
+    4
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 14,
+    "to": 9
+   },
+   {
+    "from": 3,
+    "to": 7
+   },
+   {
+    "from": 32,
+    "to": 28
+   },
+   {
+    "from": 4,
+    "to": 8
+   },
+   {
+    "from": 24,
+    "to": 20
+   },
+   {
+    "from": 7,
+    "to": 10
+   },
+   {
+    "from": 9,
+    "to": 5
+   },
+   {
+    "from": 10,
+    "to": 15
+   },
+   {
+    "from": 5,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10827,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 47,
+  "initial_board": {
+   "white": [
+    16,
+    20,
+    23,
+    27,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    5,
+    21
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 16,
+    "to": 11
+   },
+   {
+    "from": 5,
+    "to": 9
+   },
+   {
+    "from": 11,
+    "to": 7
+   },
+   {
+    "from": 21,
+    "to": 25
+   },
+   {
+    "from": 30,
+    "to": 21
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10828,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 56,
+  "initial_board": {
+   "white": [
+    12,
+    18,
+    19,
+    21,
+    22,
+    23,
+    26,
+    30,
+    31
+   ],
+   "black": [
+    3,
+    4
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 14
+   },
+   {
+    "from": 3,
+    "to": 8
+   },
+   {
+    "from": 12,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10829,
+  "title": "Комбинации: №2",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 56,
+  "initial_board": {
+   "white": [
+    15,
+    19,
+    21,
+    22,
+    23,
+    26,
+    28,
+    31
+   ],
+   "black": [
+    2,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 15,
+    "to": 10
+   },
+   {
+    "from": 2,
+    "to": 6
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10830,
+  "title": "Комбинации: №3",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1120,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 3,
+  "page": 57,
+  "initial_board": {
+   "white": [
+    13,
+    17,
+    19,
+    20,
+    25,
+    26,
+    27,
+    31
+   ],
+   "black": [
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 27,
+    "to": 23
+   },
+   {
+    "from": 10,
+    "to": 15
+   },
+   {
+    "from": 19,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10831,
+  "title": "Комбинации: №5",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1100,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 5,
+  "page": 57,
+  "initial_board": {
+   "white": [
+    19,
+    21,
+    23,
+    25,
+    29,
+    31,
+    32
+   ],
+   "black": [
+    6,
+    9,
+    12,
+    14,
+    17
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 19,
+    "to": 15
+   },
+   {
+    "from": 6,
+    "to": 10
+   },
+   {
+    "from": 15,
+    "to": 6
+   },
+   {
+    "from": 6,
+    "to": 13
+   },
+   {
+    "from": 13,
+    "to": 22
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10832,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 980,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 58,
+  "initial_board": {
+   "white": [
+    13,
+    18,
+    19,
+    22,
+    23,
+    24,
+    26,
+    27,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    1,
+    2,
+    10,
+    11,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 30,
+    "to": 25
+   },
+   {
+    "from": 1,
+    "to": 5
+   },
+   {
+    "from": 18,
+    "to": 15
+   },
+   {
+    "from": 11,
+    "to": 18
+   },
+   {
+    "from": 22,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 6
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10833,
+  "title": "Комбинации: №3",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1120,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 3,
+  "page": 58,
+  "initial_board": {
+   "white": [
+    18,
+    19,
+    20,
+    21,
+    23,
+    24,
+    26,
+    28,
+    29,
+    31
+   ],
+   "black": [
+    3,
+    4,
+    7,
+    11,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 14
+   },
+   {
+    "from": 11,
+    "to": 16
+   },
+   {
+    "from": 20,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10834,
+  "title": "Комбинации: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1110,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 4,
+  "page": 58,
+  "initial_board": {
+   "white": [
+    16,
+    19,
+    21,
+    22,
+    23,
+    24,
+    26,
+    28,
+    30,
+    32
+   ],
+   "black": [
+    2,
+    7,
+    10,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 21,
+    "to": 17
+   },
+   {
+    "from": 10,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10835,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1230,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 59,
+  "initial_board": {
+   "white": [
+    18,
+    19,
+    20,
+    21,
+    23,
+    26,
+    30,
+    32
+   ],
+   "black": [
+    1,
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 21,
+    "to": 17
+   },
+   {
+    "from": 1,
+    "to": 6
+   },
+   {
+    "from": 18,
+    "to": 15
+   },
+   {
+    "from": 10,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10836,
+  "title": "Комбинации: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1250,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 4,
+  "page": 61,
+  "initial_board": {
+   "white": [
+    18,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    30,
+    32
+   ],
+   "black": [
+    2,
+    11,
+    12,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 26,
+    "to": 23
+   },
+   {
+    "from": 2,
+    "to": 6
+   },
+   {
+    "from": 24,
+    "to": 19
+   },
+   {
+    "from": 11,
+    "to": 15
+   },
+   {
+    "from": 19,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10837,
+  "title": "Комбинации: №2",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1020,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 63,
+  "initial_board": {
+   "white": [
+    13,
+    21,
+    22,
+    23,
+    24,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    2,
+    3
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 13,
+    "to": 9
+   },
+   {
+    "from": 2,
+    "to": 6
+   },
+   {
+    "from": 9,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10838,
+  "title": "Комбинации: №1",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 950,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 64,
+  "initial_board": {
+   "white": [
+    17,
+    20,
+    21,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ],
+   "black": [
+    1
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 17,
+    "to": 14
+   },
+   {
+    "from": 1,
+    "to": 5
+   },
+   {
+    "from": 20,
+    "to": 16
+   },
+   {
+    "from": 5,
+    "to": 9
+   },
+   {
+    "from": 14,
+    "to": 5
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10839,
+  "title": "Комбинации: №4",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 4,
+  "page": 68,
+  "initial_board": {
+   "white": [
+    18,
+    19,
+    21,
+    22,
+    23,
+    25,
+    27,
+    32
+   ],
+   "black": [
+    1,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 14
+   },
+   {
+    "from": 1,
+    "to": 5
+   },
+   {
+    "from": 19,
+    "to": 15
+   },
+   {
+    "from": 20,
+    "to": 24
+   },
+   {
+    "from": 27,
+    "to": 20
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10840,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1230,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 69,
+  "initial_board": {
+   "white": [
+    18,
+    19,
+    21,
+    23,
+    24,
+    26,
+    30,
+    32
+   ],
+   "black": [
+    2,
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 21,
+    "to": 17
+   },
+   {
+    "from": 2,
+    "to": 6
+   },
+   {
+    "from": 18,
+    "to": 15
+   },
+   {
+    "from": 10,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10841,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1020,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 73,
+  "initial_board": {
+   "white": [
+    12,
+    20,
+    22,
+    25,
+    26,
+    28,
+    29,
+    30,
+    32
+   ],
+   "black": [
+    14,
+    15,
+    21
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 12,
+    "to": 8
+   },
+   {
+    "from": 14,
+    "to": 18
+   },
+   {
+    "from": 20,
+    "to": 16
+   },
+   {
+    "from": 15,
+    "to": 19
+   },
+   {
+    "from": 22,
+    "to": 15
+   },
+   {
+    "from": 15,
+    "to": 24
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10842,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 77,
+  "initial_board": {
+   "white": [
+    15,
+    17,
+    23,
+    24,
+    27,
+    29,
+    31
+   ],
+   "black": [
+    12,
+    13
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 17,
+    "to": 14
+   },
+   {
+    "from": 12,
+    "to": 16
+   },
+   {
+    "from": 24,
+    "to": 20
+   },
+   {
+    "from": 13,
+    "to": 17
+   },
+   {
+    "from": 14,
+    "to": 21
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10843,
+  "title": "Комбинации: №4",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 4,
+  "page": 84,
+  "initial_board": {
+   "white": [
+    17,
+    19,
+    21,
+    23,
+    24,
+    27,
+    28,
+    31
+   ],
+   "black": [
+    10,
+    13
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 17,
+    "to": 14
+   },
+   {
+    "from": 10,
+    "to": 17
+   },
+   {
+    "from": 21,
+    "to": 14
+   },
+   {
+    "from": 13,
+    "to": 17
+   },
+   {
+    "from": 14,
+    "to": 21
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10844,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 920,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 133,
+  "initial_board": {
+   "white": [
+    18,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    31
+   ],
+   "black": [
+    4,
+    8,
+    11,
+    12,
+    13,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 24,
+    "to": 19
+   },
+   {
+    "from": 11,
+    "to": 15
+   },
+   {
+    "from": 18,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 20
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10845,
+  "title": "Комбинации: №2",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1310,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 137,
+  "initial_board": {
+   "white": [
+    17,
+    20,
+    21,
+    23,
+    25,
+    26,
+    27,
+    28,
+    31,
+    32
+   ],
+   "black": [
+    2,
+    8,
+    10,
+    11,
+    14,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 26,
+    "to": 22
+   },
+   {
+    "from": 10,
+    "to": 15
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 12
+   },
+   {
+    "from": 12,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10846,
+  "title": "Комбинации: №3",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1030,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 3,
+  "page": 157,
+  "initial_board": {
+   "white": [
+    8,
+    12,
+    13,
+    18,
+    20,
+    21,
+    25,
+    26,
+    28,
+    30
+   ],
+   "black": [
+    6,
+    7,
+    10,
+    11
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 8,
+    "to": 15
+   },
+   {
+    "from": 10,
+    "to": 19
+   },
+   {
+    "from": 12,
+    "to": 8
+   },
+   {
+    "from": 7,
+    "to": 10
+   },
+   {
+    "from": 8,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10847,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 162,
+  "initial_board": {
+   "white": [
+    14,
+    17,
+    18,
+    22,
+    23,
+    24,
+    27,
+    28,
+    30,
+    32
+   ],
+   "black": [
+    1,
+    13
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 14,
+    "to": 10
+   },
+   {
+    "from": 1,
+    "to": 5
+   },
+   {
+    "from": 18,
+    "to": 14
+   },
+   {
+    "from": 5,
+    "to": 9
+   },
+   {
+    "from": 14,
+    "to": 5
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10848,
+  "title": "Комбинации: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 4,
+  "page": 162,
+  "initial_board": {
+   "white": [
+    14,
+    17,
+    19,
+    21,
+    23,
+    24,
+    27,
+    31
+   ],
+   "black": [
+    1,
+    5,
+    7,
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 23,
+    "to": 18
+   },
+   {
+    "from": 10,
+    "to": 15
+   },
+   {
+    "from": 18,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10849,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1350,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 166,
+  "initial_board": {
+   "white": [
+    13,
+    17,
+    18,
+    21,
+    23,
+    26,
+    27,
+    28,
+    30,
+    32
+   ],
+   "black": [
+    3,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 13,
+    "to": 9
+   },
+   {
+    "from": 3,
+    "to": 7
+   },
+   {
+    "from": 9,
+    "to": 5
+   },
+   {
+    "from": 12,
+    "to": 16
+   },
+   {
+    "from": 23,
+    "to": 19
+   },
+   {
+    "from": 16,
+    "to": 23
+   },
+   {
+    "from": 23,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10850,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 166,
+  "initial_board": {
+   "white": [
+    17,
+    19,
+    21,
+    23,
+    27,
+    28,
+    30,
+    31,
+    32
+   ],
+   "black": [
+    9,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 17,
+    "to": 13
+   },
+   {
+    "from": 9,
+    "to": 14
+   },
+   {
+    "from": 28,
+    "to": 24
+   },
+   {
+    "from": 14,
+    "to": 17
+   },
+   {
+    "from": 21,
+    "to": 14
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10851,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 169,
+  "initial_board": {
+   "white": [
+    15,
+    27,
+    28
+   ],
+   "black": [
+    1,
+    5,
+    7,
+    13,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 15,
+    "to": 11
+   },
+   {
+    "from": 13,
+    "to": 17
+   },
+   {
+    "from": 11,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10852,
+  "title": "Комбинации: №2",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 176,
+  "initial_board": {
+   "white": [
+    13,
+    18,
+    21,
+    22,
+    24,
+    27,
+    30,
+    32
+   ],
+   "black": [
+    7,
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 21,
+    "to": 17
+   },
+   {
+    "from": 10,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10853,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 181,
+  "initial_board": {
+   "white": [
+    14,
+    18,
+    21,
+    24,
+    27,
+    28,
+    32
+   ],
+   "black": [
+    8
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 14,
+    "to": 9
+   },
+   {
+    "from": 8,
+    "to": 11
+   },
+   {
+    "from": 24,
+    "to": 19
+   },
+   {
+    "from": 11,
+    "to": 15
+   },
+   {
+    "from": 18,
+    "to": 11
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10854,
+  "title": "Комбинации: №4",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1070,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 4,
+  "page": 185,
+  "initial_board": {
+   "white": [
+    12,
+    19,
+    23,
+    27,
+    29,
+    30,
+    31
+   ],
+   "black": [
+    9,
+    10,
+    15
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 12,
+    "to": 8
+   },
+   {
+    "from": 15,
+    "to": 24
+   },
+   {
+    "from": 27,
+    "to": 20
+   },
+   {
+    "from": 9,
+    "to": 14
+   },
+   {
+    "from": 8,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10855,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 187,
+  "initial_board": {
+   "white": [
+    18,
+    20,
+    21,
+    26,
+    27,
+    28,
+    32
+   ],
+   "black": [
+    7,
+    11,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 15
+   },
+   {
+    "from": 11,
+    "to": 18
+   },
+   {
+    "from": 20,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10856,
+  "title": "Комбинации: №3",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 3,
+  "page": 187,
+  "initial_board": {
+   "white": [
+    15,
+    18,
+    26,
+    28,
+    31
+   ],
+   "black": [
+    3,
+    7,
+    9,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 15,
+    "to": 11
+   },
+   {
+    "from": 16,
+    "to": 19
+   },
+   {
+    "from": 11,
+    "to": 2
+   },
+   {
+    "from": 2,
+    "to": 13
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10857,
+  "title": "Комбинации: №2",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 189,
+  "initial_board": {
+   "white": [
+    15,
+    22,
+    23,
+    27,
+    32
+   ],
+   "black": [
+    4
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 15,
+    "to": 11
+   },
+   {
+    "from": 4,
+    "to": 8
+   },
+   {
+    "from": 11,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10858,
+  "title": "Комбинации: №6",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 6,
+  "page": 189,
+  "initial_board": {
+   "white": [
+    18,
+    19,
+    21,
+    23,
+    24,
+    26,
+    28,
+    29,
+    31
+   ],
+   "black": [
+    8,
+    11,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 24,
+    "to": 20
+   },
+   {
+    "from": 11,
+    "to": 15
+   },
+   {
+    "from": 18,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10859,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1130,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 196,
+  "initial_board": {
+   "white": [
+    12,
+    14,
+    20,
+    22,
+    23,
+    24,
+    29,
+    30,
+    32
+   ],
+   "black": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    21,
+    25
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 18
+   },
+   {
+    "from": 3,
+    "to": 8
+   },
+   {
+    "from": 12,
+    "to": 3
+   },
+   {
+    "from": 3,
+    "to": 10
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10860,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1230,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 199,
+  "initial_board": {
+   "white": [
+    13,
+    17,
+    19,
+    21,
+    22,
+    23,
+    26,
+    27,
+    29,
+    32
+   ],
+   "black": [
+    2,
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 22,
+    "to": 18
+   },
+   {
+    "from": 2,
+    "to": 6
+   },
+   {
+    "from": 26,
+    "to": 22
+   },
+   {
+    "from": 10,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10861,
+  "title": "Комбинации: №2",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 199,
+  "initial_board": {
+   "white": [
+    13,
+    18,
+    19,
+    22,
+    24,
+    27,
+    28,
+    30,
+    32
+   ],
+   "black": [
+    8,
+    11
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 13,
+    "to": 9
+   },
+   {
+    "from": 11,
+    "to": 15
+   },
+   {
+    "from": 18,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10862,
+  "title": "Комбинации: №3",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1110,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 3,
+  "page": 203,
+  "initial_board": {
+   "white": [
+    14,
+    17,
+    19,
+    22,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32
+   ],
+   "black": [
+    4,
+    7,
+    10
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 14,
+    "to": 9
+   },
+   {
+    "from": 10,
+    "to": 14
+   },
+   {
+    "from": 17,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10863,
+  "title": "Комбинации: №5",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1090,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 5,
+  "page": 203,
+  "initial_board": {
+   "white": [
+    17,
+    19,
+    22,
+    23,
+    24,
+    30
+   ],
+   "black": [
+    1,
+    4,
+    12,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 24,
+    "to": 20
+   },
+   {
+    "from": 4,
+    "to": 8
+   },
+   {
+    "from": 20,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 4
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10864,
+  "title": "Комбинации: №2",
+  "difficulty": "Oson",
+  "level": 1,
+  "elo": 940,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 208,
+  "initial_board": {
+   "white": [
+    18,
+    19,
+    23,
+    24,
+    26,
+    30
+   ],
+   "black": [
+    1,
+    12
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 18,
+    "to": 14
+   },
+   {
+    "from": 1,
+    "to": 5
+   },
+   {
+    "from": 23,
+    "to": 18
+   },
+   {
+    "from": 12,
+    "to": 16
+   },
+   {
+    "from": 19,
+    "to": 12
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10865,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1010,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 213,
+  "initial_board": {
+   "white": [
+    15,
+    18,
+    19,
+    21,
+    22,
+    23,
+    27,
+    30
+   ],
+   "black": [
+    2,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 15,
+    "to": 10
+   },
+   {
+    "from": 2,
+    "to": 6
+   },
+   {
+    "from": 10,
+    "to": 1
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10866,
+  "title": "Комбинации: №3",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1070,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 3,
+  "page": 215,
+  "initial_board": {
+   "white": [
+    12,
+    27,
+    31
+   ],
+   "black": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    15,
+    16,
+    20
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 12,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 3
+   },
+   {
+    "from": 3,
+    "to": 12
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10867,
+  "title": "Комбинации: №2",
+  "difficulty": "Qiyin",
+  "level": 3,
+  "elo": 1530,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 222,
+  "initial_board": {
+   "white": [
+    14,
+    15,
+    20,
+    27,
+    28,
+    31
+   ],
+   "black": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    11,
+    13,
+    16
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 14,
+    "to": 9
+   },
+   {
+    "from": 5,
+    "to": 14
+   },
+   {
+    "from": 27,
+    "to": 23
+   },
+   {
+    "from": 11,
+    "to": 18
+   },
+   {
+    "from": 18,
+    "to": 27
+   },
+   {
+    "from": 20,
+    "to": 11
+   },
+   {
+    "from": 11,
+    "to": 2
+   },
+   {
+    "from": 2,
+    "to": 9
+   },
+   {
+    "from": 9,
+    "to": 18
+   },
+   {
+    "from": 18,
+    "to": 32
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10868,
+  "title": "Комбинации: №1",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1120,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 1,
+  "page": 225,
+  "initial_board": {
+   "white": [
+    28
+   ],
+   "black": [
+    14,
+    15,
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 28,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 17
+   },
+   {
+    "from": 17,
+    "to": 26
+   },
+   {
+    "from": 26,
+    "to": 19
+   }
+  ],
+  "active": true,
+  "rev": 1
+ },
+ {
+  "id": 10869,
+  "title": "Комбинации: №2",
+  "difficulty": "O'rta",
+  "level": 2,
+  "elo": 1070,
+  "turn": "white",
+  "source": "Комбинации",
+  "book_no": 2,
+  "page": 225,
+  "initial_board": {
+   "white": [
+    28
+   ],
+   "black": [
+    7,
+    15,
+    16,
+    17,
+    18,
+    24,
+    25,
+    26,
+    27
+   ]
+  },
+  "solution_moves": [
+   {
+    "from": 28,
+    "to": 19
+   },
+   {
+    "from": 19,
+    "to": 10
+   },
+   {
+    "from": 10,
+    "to": 3
+   }
+  ],
+  "active": true,
+  "rev": 1
  }
 ]
