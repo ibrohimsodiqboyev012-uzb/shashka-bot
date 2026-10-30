@@ -951,6 +951,8 @@ def init_db() -> None:
         _add_column(conn, "Puzzles", "level", "INTEGER NOT NULL DEFAULT 1")
         _add_column(conn, "UserProgress", "stars", "INTEGER NOT NULL DEFAULT 0")
         _add_column(conn, "Puzzles", "active", "INTEGER NOT NULL DEFAULT 1")
+        _add_column(conn, "Users", "streak", "INTEGER NOT NULL DEFAULT 0")
+        _add_column(conn, "Users", "last_daily", "TEXT")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_up_solved ON UserProgress(solved, solved_at)")
 
 
@@ -1038,8 +1040,9 @@ def upsert_user(user_id: int, username: str | None, full_name: str | None) -> No
 
 def get_stats(user_id: int) -> dict:
     with db() as conn:
-        u = conn.execute("SELECT rating FROM Users WHERE user_id = ?", (user_id,)).fetchone()
+        u = conn.execute("SELECT rating, streak FROM Users WHERE user_id = ?", (user_id,)).fetchone()
         rating = u["rating"] if u else START_RATING
+        streak = u["streak"] if u else 0
         row = conn.execute(
             "SELECT COUNT(*) AS n, COALESCE(SUM(stars), 0) AS s FROM UserProgress WHERE user_id = ? AND solved = 1",
             (user_id,),
@@ -1065,7 +1068,40 @@ def get_stats(user_id: int) -> dict:
         ):
             if r["level"] in lv:
                 lv[r["level"]] = {"total": r["total"], "solved": r["solved"]}
-    return {"rating": rating, "solved": solved, "stars": stars, "total": total, "rank": rank, "levels": lv}
+    return {"rating": rating, "solved": solved, "stars": stars, "total": total, "rank": rank,
+            "levels": lv, "streak": streak}
+
+
+def _today(shift: int = 0) -> str:
+    """Toshkent vaqti bo'yicha sana (kunlik masala uchun)."""
+    hours = int(TZ_OFFSET.split()[0])
+    return time.strftime("%Y-%m-%d", time.gmtime(time.time() + hours * 3600 + shift))
+
+
+def daily_puzzle_id(conn=None) -> int | None:
+    """Kun bo'yicha deterministik masala: har kuni bitta, hamma uchun bir xil."""
+    sql = "SELECT id FROM Puzzles WHERE active = 1 ORDER BY id"
+    if conn is None:
+        with db() as c:
+            rows = [r["id"] for r in c.execute(sql)]
+    else:
+        rows = [r["id"] for r in conn.execute(sql)]
+    if not rows:
+        return None
+    idx = int(hashlib.sha1(_today().encode()).hexdigest(), 16) % len(rows)
+    return rows[idx]
+
+
+def _touch_daily(conn, user_id: int, puzzle_id: int) -> None:
+    """Kunlik masala yechildi — seriyani yangilaydi (o'sha kuni bir marta)."""
+    if puzzle_id != daily_puzzle_id(conn):
+        return
+    st = conn.execute("SELECT streak, last_daily FROM Users WHERE user_id = ?", (user_id,)).fetchone()
+    today = _today()
+    if st and st["last_daily"] != today:
+        streak = (st["streak"] or 0) + 1 if st["last_daily"] == _today(-86400) else 1
+        conn.execute("UPDATE Users SET streak = ?, last_daily = ? WHERE user_id = ?",
+                     (streak, today, user_id))
 
 
 def get_puzzle_row(puzzle_id: int):
@@ -1127,6 +1163,7 @@ def record_solve(user_id: int, puzzle_id: int, mistakes: int) -> dict | None:
             (user_id, puzzle_id),
         ).fetchone()
         if prog and prog["solved"]:
+            _touch_daily(conn, user_id, puzzle_id)
             best = prog["stars"]
             if stars > best:  # qayta yechib yulduzni yaxshilash mumkin
                 conn.execute(
@@ -1148,6 +1185,7 @@ def record_solve(user_id: int, puzzle_id: int, mistakes: int) -> dict | None:
             (user_id, puzzle_id, mistakes, stars),
         )
         conn.execute("UPDATE Users SET rating = ? WHERE user_id = ?", (updated, user_id))
+        _touch_daily(conn, user_id, puzzle_id)
     return {"already_solved": False, "stars": stars, "best_stars": stars, "delta": updated - rating, "rating": updated}
 
 
@@ -1293,6 +1331,24 @@ async def handle_next(request: web.Request) -> web.Response:
     return web.json_response({"done": False, "puzzle": puzzle_payload(row), "stats": stats})
 
 
+async def handle_daily(request: web.Request) -> web.Response:
+    """Kunlik masala + streak holati."""
+    user, err = need_user(request)
+    if err:
+        return err
+    uid = int(user["id"])
+    pid = daily_puzzle_id()
+    row = get_puzzle_row(pid) if pid else None
+    if row is None:
+        return json_error("Kunlik masala topilmadi", 404)
+    with db() as conn:
+        u = conn.execute("SELECT streak, last_daily FROM Users WHERE user_id = ?", (uid,)).fetchone()
+    streak = (u["streak"] or 0) if u else 0
+    solved_today = bool(u and u["last_daily"] == _today())
+    return web.json_response({"done": False, "puzzle": puzzle_payload(row), "stats": get_stats(uid),
+                              "streak": streak, "solved_today": solved_today})
+
+
 async def handle_get_puzzle(request: web.Request) -> web.Response:
     user, err = need_user(request)
     if err:
@@ -1330,6 +1386,7 @@ async def handle_solve(request: web.Request) -> web.Response:
 def build_web_app() -> web.Application:
     app = web.Application()
     app.router.add_get("/", handle_index)
+    app.router.add_get("/api/daily", handle_daily)
     app.router.add_get("/api/puzzle/next", handle_next)
     app.router.add_get(r"/api/puzzle/{pid:\d+}", handle_get_puzzle)
     app.router.add_post("/api/solve", handle_solve)

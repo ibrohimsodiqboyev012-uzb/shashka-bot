@@ -57,6 +57,7 @@
     <div class="chip"><b id="rating">–</b><span>ELO reyting</span></div>
     <div class="chip"><b id="solved">–</b><span>yechilgan</span></div>
     <div class="chip"><b id="stars">–</b><span>⭐ yulduz</span></div>
+    <div class="chip"><b id="streak">–</b><span>🔥 kunlik</span></div>
   </div>
   <div class="tabs" id="tabs"></div>
 
@@ -92,6 +93,7 @@ const LEVELS = [
   {id:3, name:'Qiyin', range:'1500–2500'},
 ];
 let level = 0, puz = null, board = new Map(), steps = [], idx = 0, played = [];
+let dailyMode = new URLSearchParams(location.search).get('daily') === '1';   // 🎯 kunlik masala
 let mistakes = 0, user = 'w', flipped = false, sel = null, locked = true, last = null, stats = null;
 let lastMover = null, skipped = [];
 
@@ -118,6 +120,7 @@ function renderStats() {
   $('rating').textContent = stats.rating;
   $('solved').textContent = stats.solved + '/' + stats.total;
   $('stars').textContent = stats.stars;
+  $('streak').textContent = stats.streak || 0;
   $('tabs').innerHTML = LEVELS.map(l => {
     const s = l.id ? stats.levels[l.id] : null;
     const sub = l.id ? (l.range + ' · ' + s.solved + '/' + s.total) : l.range;
@@ -226,6 +229,8 @@ async function finish() {
     if (res.already_solved) t = 'Oldin yechilgan • eng yaxshi natija: ' + res.best_stars + '⭐';
     else t = 'ELO: <b class="' + (res.delta < 0 ? 'neg' : '') + '">' + (res.delta > 0 ? '+' : '') + res.delta + '</b> → ' + res.rating;
     t += mistakes ? ' • xatolar: ' + mistakes : ' • xatosiz!';
+    if (dailyMode) t += '<br>🔥 Kunlik seriya: <b>' + (res.stats.streak || 0) + ' kun</b>';
+    dailyMode = false;
     $('resText').innerHTML = t;
     $('res').style.display = 'flex';
     setMsg('Masala yechildi va avtomatik saqlandi ✅', 'ok');
@@ -235,7 +240,8 @@ async function finish() {
 async function loadNext() {
   $('res').style.display = 'none'; setMsg('Yuklanmoqda…'); locked = true;
   try {
-    const j = await api('/api/puzzle/next?level=' + level + '&skip=' + skipped.join(','));
+    const j = dailyMode ? await api('/api/daily')
+      : await api('/api/puzzle/next?level=' + level + '&skip=' + skipped.join(','));
     stats = j.stats; renderStats();
     if (j.done) { $('game').style.display = 'none'; $('empty').style.display = 'block'; setMsg(''); return; }
     $('game').style.display = 'block'; $('empty').style.display = 'none';
@@ -251,7 +257,7 @@ async function loadNext() {
 }
 
 $('restart').onclick = () => { if (!puz || $('res').style.display === 'flex') return; const m = mistakes; loadBoard(); mistakes = m; setMsg(''); advance(); };
-$('skip').onclick = () => { if (puz && $('res').style.display !== 'flex') skipped.push(puz.id); loadNext(); };
+$('skip').onclick = () => { if (puz && $('res').style.display !== 'flex' && !dailyMode) skipped.push(puz.id); dailyMode = false; loadNext(); };
 $('nextBtn').onclick = loadNext;
 loadNext();
 </script>
