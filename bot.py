@@ -849,59 +849,100 @@ def install_snapshot(data: bytes) -> bool:
     return True
 
 
+def _is_backup_doc(msg) -> bool:
+    doc = getattr(msg, "document", None)
+    return bool(doc and (doc.file_name or "").endswith(".db.gz"))
+
+
+async def find_backups(bot, limit: int = 100) -> list:
+    """Zaxira chatidagi barcha .db.gz fayllar — yangisidan eskisiga."""
+    found = []
+    try:
+        async for msg in bot.get_chat_history(BACKUP_CHAT_ID, limit=limit):
+            if _is_backup_doc(msg):
+                found.append(msg)
+    except Exception as exc:
+        log.warning("Zaxiralar ro'yxatini olib bo'lmadi: %s", exc)
+    return found
+
+
+async def drop_backup_message(bot, message_id: int) -> None:
+    """Avval pin yechiladi, keyin xabar o'chiriladi."""
+    try:
+        await bot.unpin_chat_message(BACKUP_CHAT_ID, message_id=message_id)
+    except Exception:
+        pass
+    try:
+        await bot.delete_message(BACKUP_CHAT_ID, message_id)
+    except Exception:
+        pass
+
+
 async def restore_backup_if_needed(bot) -> None:
-    """Baza fayli yo'q bo'lsa (hosting tozalangan), biriktirilgan zaxirani Telegram'dan tiklaydi."""
+    """Baza yo'q bo'lsa eng yangi zaxiradan tiklaydi; har holatda oxirgi zaxira ID sini eslab qoladi."""
     global _last_backup_msg
     if not BACKUP_CHAT_ID:
         log.warning("BACKUP_CHAT_ID o'rnatilmagan — zaxira o'chiq, ma'lumot yo'qolishi mumkin!")
         return
+    backups = await find_backups(bot)
+    if backups:
+        # Restartdan keyin ham eskisini o'chira olishimiz uchun eslab qolamiz.
+        _last_backup_msg = backups[0].message_id
     if os.path.exists(DB_PATH):
         return
-    try:
-        chat = await bot.get_chat(BACKUP_CHAT_ID)
-        pm = getattr(chat, "pinned_message", None)
-        doc = getattr(pm, "document", None)
-        if not doc:
-            log.info("Tiklash uchun zaxira topilmadi (birinchi ishga tushish).")
-            return
-        buf = io.BytesIO()
-        await bot.download(doc.file_id, destination=buf)
-        if await asyncio.to_thread(install_snapshot, buf.getvalue()):
-            _last_backup_msg = pm.message_id
-            log.info("Baza Telegram zaxirasidan tiklandi.")
-        else:
-            log.error("Zaxira buzilgan, tiklanmadi.")
-    except Exception as exc:
-        log.warning("Zaxiradan tiklab bo'lmadi: %s", exc)
+    if not backups:
+        log.info("Tiklash uchun zaxira topilmadi (birinchi ishga tushish).")
+        return
+    for msg in backups[:5]:
+        try:
+            buf = io.BytesIO()
+            await bot.download(msg.document.file_id, destination=buf)
+            if await asyncio.to_thread(install_snapshot, buf.getvalue()):
+                _last_backup_msg = msg.message_id
+                log.info("Baza Telegram zaxirasidan tiklandi (%s).", msg.document.file_name)
+                return
+            log.warning("Zaxira buzilgan (%s) — keyingi nusxa sinaladi.", msg.document.file_name)
+        except Exception as exc:
+            log.warning("Zaxira %s dan tiklab bo'lmadi: %s", msg.message_id, exc)
+    log.error("Hech qanday zaxiradan tiklanmadi.")
 
 
 async def send_backup(bot) -> None:
     global _dirty, _last_backup_msg
     if not BACKUP_CHAT_ID or not os.path.exists(DB_PATH):
         return
+    data = None
+    sent = None
+    for attempt in range(3):
+        try:
+            if data is None:
+                data = await asyncio.to_thread(make_snapshot)
+            name = time.strftime("shashka-%Y%m%d-%H%M%S.db.gz")
+            sent = await bot.send_document(
+                BACKUP_CHAT_ID, BufferedInputFile(data, filename=name),
+                caption="💾 Baza zaxirasi", disable_notification=True,
+            )
+            break
+        except Exception as exc:
+            log.warning("Zaxira yuborilmadi (%d/3): %s", attempt + 1, exc)
+            await asyncio.sleep(3 * (attempt + 1))
+    if sent is None:
+        _dirty = True   # keyingi davrda qayta uriniladi
+        return
     _dirty = False
     try:
-        data = await asyncio.to_thread(make_snapshot)
-        name = time.strftime("shashka-%Y%m%d-%H%M%S.db.gz")
-        msg = await bot.send_document(
-            BACKUP_CHAT_ID, BufferedInputFile(data, filename=name),
-            caption="💾 Baza zaxirasi", disable_notification=True,
-        )
-        await bot.pin_chat_message(BACKUP_CHAT_ID, msg.message_id, disable_notification=True)
-        old, _last_backup_msg = _last_backup_msg, msg.message_id
-        if old:
-            for fn in (bot.unpin_chat_message, bot.delete_message):
-                try:
-                    if fn is bot.unpin_chat_message:
-                        await fn(BACKUP_CHAT_ID, message_id=old)
-                    else:
-                        await fn(BACKUP_CHAT_ID, old)
-                except Exception:
-                    pass
-        log.info("Zaxira yuborildi (%d KB)", len(data) // 1024)
+        await bot.pin_chat_message(BACKUP_CHAT_ID, sent.message_id, disable_notification=True)
     except Exception as exc:
-        _dirty = True  # keyingi safar qayta uriniladi
-        log.warning("Zaxira yuborilmadi: %s", exc)
+        log.warning("Zaxira pin qilinmadi: %s", exc)
+    old, _last_backup_msg = _last_backup_msg, sent.message_id
+    # Chatda qolib ketgan eski nusxalarni ham tozalaymiz (restartdan keyin ham).
+    leftover = {m.message_id for m in await find_backups(bot)} - {sent.message_id}
+    if old:
+        leftover.add(old)
+    for mid in leftover:
+        await drop_backup_message(bot, mid)
+    log.info("Zaxira yuborildi (%d KB), eski nusxa: %d ta o'chirildi",
+             len(data) // 1024, len(leftover))
 
 
 async def backup_loop(bot) -> None:
@@ -1465,6 +1506,15 @@ LESSONS = [
 
 
 
+def flame_line(streak: int, done_today: bool) -> str:
+    """Kunlik seriya (🔥) bayonoti — profil va menyuda ishlatiladi."""
+    if done_today:
+        return f"🔥 Seriya: <b>{streak} kun</b> — bugungi masala yechildi ✅"
+    if streak:
+        return f"🔥 Seriya: <b>{streak} kun</b> — bugun yechsangiz davom etadi"
+    return "🔥 Seriya: <b>0 kun</b> — bugun birinchi qadam (olovni yoqing!)"
+
+
 def main_menu() -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(
         keyboard=[
@@ -1489,9 +1539,14 @@ def display_name(row: dict) -> str:
 async def cmd_start(message: Message) -> None:
     u = message.from_user
     upsert_user(u.id, u.username, u.full_name)
+    s = get_stats(u.id)
+    with db() as conn:
+        d = conn.execute("SELECT last_daily FROM Users WHERE user_id = ?", (u.id,)).fetchone()
+    done_today = bool(d and d["last_daily"] == _today())
     await message.answer(
         f"Salom, <b>{html.escape(u.first_name or 'do‘st')}</b>! 👋\n\n"
-        "Bu yerda rus shashkasi kombinatsiyalarini yechib, reyting va ⭐ yulduzlar to'plashingiz mumkin.\n"
+        "Bu yerda rus shashkasi kombinatsiyalarini yechib, reyting va ⭐ yulduzlar to'plashingiz mumkin.\n\n"
+        f"{flame_line(s['streak'], done_today)}\n\n"
         "Quyidagi menyudan tanlang:",
         reply_markup=main_menu(),
     )
@@ -1631,16 +1686,26 @@ async def show_profile(message: Message) -> None:
     upsert_user(u.id, u.username, u.full_name)
     s = get_stats(u.id)
     lv = s["levels"]
+    with db() as conn:
+        d = conn.execute("SELECT last_daily FROM Users WHERE user_id = ?", (u.id,)).fetchone()
+    done_today = bool(d and d["last_daily"] == _today())
     levels_txt = "\n".join(
         f"   • {LEVELS[k][0]}–{LEVELS[k][1]}: {lv[k]['solved']} / {lv[k]['total']}" for k in (1, 2, 3)
     )
+    kb = None
+    if WEBAPP_URL.startswith("https://") and not done_today:
+        kb = InlineKeyboardMarkup(inline_keyboard=[[
+            InlineKeyboardButton(text="🔥 Kunlik masalani yechish", web_app=WebAppInfo(url=daily_webapp_url()))
+        ]])
     await message.answer(
         f"👤 <b>{html.escape(u.full_name)}</b>\n\n"
         f"📈 ELO reyting: <b>{s['rating']}</b>" + (f" (o'rin: {s['rank']})" if s["rank"] else "") + "\n"
         f"✅ Yechilgan: <b>{s['solved']}</b> / {s['total']}\n"
         f"⭐ Yulduzlar: <b>{s['stars']}</b>\n"
-        f"📅 Bugun yechilgan: <b>{today_solved(u.id)}</b>\n\n"
-        f"Darajalar bo'yicha:\n{levels_txt}"
+        f"📅 Bugun yechilgan: <b>{today_solved(u.id)}</b>\n"
+        f"{flame_line(s['streak'], done_today)}\n\n"
+        f"Darajalar bo'yicha:\n{levels_txt}",
+        reply_markup=kb,
     )
 
 
