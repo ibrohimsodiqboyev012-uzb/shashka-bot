@@ -121,6 +121,10 @@ function renderStats() {
   $('solved').textContent = stats.solved + '/' + stats.total;
   $('stars').textContent = stats.stars;
   $('streak').textContent = stats.streak || 0;
+  const streakChip = $('streak').parentElement;
+  streakChip.style.cursor = 'pointer';
+  streakChip.title = 'Kunlik masalani yechish';
+  streakChip.onclick = () => { dailyMode = true; skipped = []; loadNext(); };
   $('tabs').innerHTML = LEVELS.map(l => {
     const s = l.id ? stats.levels[l.id] : null;
     const sub = l.id ? (l.range + ' · ' + s.solved + '/' + s.total) : l.range;
@@ -248,7 +252,7 @@ async function loadNext() {
     puz = j.puzzle; loadBoard(); mistakes = 0;
     user = puz.turn === 'black' ? 'b' : 'w';
     flipped = user === 'b';   // foydalanuvchi donalari doim pastda
-    $('title').textContent = puz.title;
+    $('title').textContent = (dailyMode ? '🔥 Kunlik • ' : '') + puz.title;
     $('elo').textContent = 'ELO ' + puz.elo + ' • ' + puz.difficulty;
     $('turn').innerHTML = '<i style="background:' + (user === 'w' ? '#fff' : '#222') + '"></i>' +
       (user === 'w' ? 'Oq' : 'Qora') + ' yuradi va yutadi';

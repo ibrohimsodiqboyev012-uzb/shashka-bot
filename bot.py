@@ -92,6 +92,8 @@ BTN_PUZZLES = "🧩 Masalalar yechish (WebApp)"
 BTN_LESSONS = "📚 Darslar"
 BTN_RATING = "🏆 Reyting"
 BTN_PROFILE = "👤 Profil"
+BTN_DAILY = "🔥 Kunlik masala"
+DAILY_HOUR = int(os.getenv("DAILY_HOUR", "9"))   # Toshkent vaqti bo'yicha kunlik eslatma soati
 
 
 # ==========================================================================
@@ -953,6 +955,7 @@ def init_db() -> None:
         _add_column(conn, "Puzzles", "active", "INTEGER NOT NULL DEFAULT 1")
         _add_column(conn, "Users", "streak", "INTEGER NOT NULL DEFAULT 0")
         _add_column(conn, "Users", "last_daily", "TEXT")
+        _add_column(conn, "Users", "last_notice", "TEXT")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_up_solved ON UserProgress(solved, solved_at)")
 
 
@@ -1040,9 +1043,9 @@ def upsert_user(user_id: int, username: str | None, full_name: str | None) -> No
 
 def get_stats(user_id: int) -> dict:
     with db() as conn:
-        u = conn.execute("SELECT rating, streak FROM Users WHERE user_id = ?", (user_id,)).fetchone()
+        u = conn.execute("SELECT rating, streak, last_daily FROM Users WHERE user_id = ?", (user_id,)).fetchone()
         rating = u["rating"] if u else START_RATING
-        streak = u["streak"] if u else 0
+        streak = effective_streak(u["streak"], u["last_daily"]) if u else 0
         row = conn.execute(
             "SELECT COUNT(*) AS n, COALESCE(SUM(stars), 0) AS s FROM UserProgress WHERE user_id = ? AND solved = 1",
             (user_id,),
@@ -1076,6 +1079,20 @@ def _today(shift: int = 0) -> str:
     """Toshkent vaqti bo'yicha sana (kunlik masala uchun)."""
     hours = int(TZ_OFFSET.split()[0])
     return time.strftime("%Y-%m-%d", time.gmtime(time.time() + hours * 3600 + shift))
+
+
+def effective_streak(streak: int | None, last_daily: str | None) -> int:
+    """Seriya faqat bugun yoki kecha yechilgan bo'lsa davom etadi; aks holda olov o'chgan (0)."""
+    if last_daily in (_today(), _today(-86400)):
+        return int(streak or 0)
+    return 0
+
+
+def daily_webapp_url() -> str:
+    """Kunlik masalani to'g'ridan-to'g'ri ochadigan WebApp havolasi."""
+    if not WEBAPP_URL:
+        return ""
+    return WEBAPP_URL + ("&" if "?" in WEBAPP_URL else "?") + "daily=1"
 
 
 def daily_puzzle_id(conn=None) -> int | None:
@@ -1343,7 +1360,7 @@ async def handle_daily(request: web.Request) -> web.Response:
         return json_error("Kunlik masala topilmadi", 404)
     with db() as conn:
         u = conn.execute("SELECT streak, last_daily FROM Users WHERE user_id = ?", (uid,)).fetchone()
-    streak = (u["streak"] or 0) if u else 0
+    streak = effective_streak(u["streak"], u["last_daily"]) if u else 0
     solved_today = bool(u and u["last_daily"] == _today())
     return web.json_response({"done": False, "puzzle": puzzle_payload(row), "stats": get_stats(uid),
                               "streak": streak, "solved_today": solved_today})
@@ -1444,7 +1461,7 @@ def main_menu() -> ReplyKeyboardMarkup:
         keyboard=[
             [KeyboardButton(text=BTN_PUZZLES)],
             [KeyboardButton(text=BTN_LESSONS), KeyboardButton(text=BTN_RATING)],
-            [KeyboardButton(text=BTN_PROFILE)],
+            [KeyboardButton(text=BTN_DAILY), KeyboardButton(text=BTN_PROFILE)],
         ],
         resize_keyboard=True,
     )
@@ -1484,6 +1501,27 @@ async def open_puzzles(message: Message) -> None:
         inline_keyboard=[[InlineKeyboardButton(text="▶️ Masalalarni ochish", web_app=WebAppInfo(url=WEBAPP_URL))]]
     )
     await message.answer("Tayyormisiz? Taxtani ochish uchun tugmani bosing 👇", reply_markup=kb)
+
+
+@router.message(F.text == BTN_DAILY)
+async def open_daily(message: Message) -> None:
+    u = message.from_user
+    upsert_user(u.id, u.username, u.full_name)
+    if not WEBAPP_URL.startswith("https://"):
+        await message.answer(
+            "⚠️ WebApp manzili sozlanmagan. <code>WEBAPP_URL</code> (HTTPS) o'zgaruvchisini o'rnating."
+        )
+        return
+    s = get_stats(u.id)
+    kb = InlineKeyboardMarkup(inline_keyboard=[[
+        InlineKeyboardButton(text="🔥 Kunlik masalani ochish", web_app=WebAppInfo(url=daily_webapp_url()))
+    ]])
+    await message.answer(
+        "🔥 <b>Kunlik masala</b>\n\n"
+        f"Seriyangiz: <b>{s['streak']} kun</b>\n"
+        "Bugun yechmasangiz seriya uzilib, ertaga noldan boshlanadi.",
+        reply_markup=kb,
+    )
 
 
 @router.message(F.text == BTN_LESSONS)
@@ -1597,6 +1635,61 @@ async def show_profile(message: Message) -> None:
     )
 
 
+# ---- Kunlik eslatma: barcha foydalanuvchilarga kuniga bir marta xabar ----
+async def send_daily_notices(bot) -> int:
+    """Bugungi kunlik masala haqida barcha foydalanuvchilarga xabar yuboradi.
+
+    Har foydalanuvchi kuniga bir marta oladi (Users.last_notice), shuning uchun
+    bot qayta ishga tushsa ham xabar takrorlanmaydi."""
+    if not WEBAPP_URL.startswith("https://") or daily_puzzle_id() is None:
+        return 0
+    today = _today()
+    with db() as conn:
+        uids = [r["user_id"] for r in conn.execute(
+            "SELECT user_id FROM Users WHERE COALESCE(last_notice, '') <> ?", (today,))]
+    sent = 0
+    kb = InlineKeyboardMarkup(inline_keyboard=[[
+        InlineKeyboardButton(text="🔥 Kunlik masalani yechish", web_app=WebAppInfo(url=daily_webapp_url()))
+    ]])
+    for uid in uids:
+        with db() as conn:
+            u = conn.execute("SELECT streak, last_daily FROM Users WHERE user_id = ?", (uid,)).fetchone()
+            streak = effective_streak(u["streak"], u["last_daily"]) if u else 0
+            conn.execute("UPDATE Users SET last_notice = ? WHERE user_id = ?", (today, uid))
+        text = (
+            "🔥 <b>Kunlik masala tayyor!</b>\n\n"
+            "Bugungi kombinatsiyani yechib, seriyangizni davom ettiring.\n"
+            f"🔥 Seriya: <b>{streak} kun</b>\n\n"
+            "⚠️ Bugun yechmasangiz seriya uziladi va ertaga <b>noldan</b> boshlanadi — olov o'chadi."
+        )
+        try:
+            await bot.send_message(uid, text, reply_markup=kb)
+            sent += 1
+        except Exception as exc:   # foydalanuvchi botni bloklagan bo'lishi mumkin
+            log.info("Kunlik xabar yuborilmadi (%s): %s", uid, exc)
+        await asyncio.sleep(0.05)
+    if sent:
+        log.info("Kunlik eslatma yuborildi: %d ta", sent)
+    return sent
+
+
+async def daily_notice_loop(bot) -> None:
+    """Har kuni DAILY_HOUR da (Toshkent vaqti) barcha foydalanuvchilarga eslatma yuboradi."""
+    await asyncio.sleep(15)
+    last_day = ""
+    while True:
+        try:
+            hours = int(TZ_OFFSET.split()[0])
+            hour = int(time.strftime("%H", time.gmtime(time.time() + hours * 3600)))
+            today = _today()
+            if hour >= DAILY_HOUR and last_day != today:
+                last_day = today
+                await send_daily_notices(bot)
+        except Exception as exc:
+            log.warning("Kunlik eslatma xatosi: %s", exc)
+        await asyncio.sleep(60)
+
+
 # ---- Fon rejimida masalalar generatsiyasi ----
 async def auto_generate_loop() -> None:
     """Masalalar soni AUTO_TARGET dan kam bo'lsa, bot ishlayotgan paytda ham generatorni fon jarayonida yuritadi."""
@@ -1650,12 +1743,14 @@ async def main() -> None:
 
     gen_task = asyncio.create_task(auto_generate_loop())
     backup_task = asyncio.create_task(backup_loop(bot))
+    notice_task = asyncio.create_task(daily_notice_loop(bot))
     try:
         await bot.delete_webhook(drop_pending_updates=True)
         await dp.start_polling(bot)
     finally:
         gen_task.cancel()
         backup_task.cancel()
+        notice_task.cancel()
         try:
             await send_backup(bot)   # to'xtashdan oldin oxirgi zaxira
         except Exception:
