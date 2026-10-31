@@ -21,7 +21,7 @@
   .tab.on { background:var(--acc); color:#1b1b1b; }
   .info { display:flex; justify-content:space-between; align-items:center; gap:8px; margin:0 2px 2px; }
   .info .t { font-weight:700; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; } .info .e { color:var(--mut); font-size:12px; white-space:nowrap; }
-  .turn { margin:0 2px 6px; font-size:13px; color:var(--mut); height:18px; }
+  .turn { margin:0 2px 6px; font-size:13px; line-height:1.3; color:var(--mut); min-height:18px; }
   .turn i { display:inline-block; width:12px; height:12px; border-radius:50%; vertical-align:-1px; margin-right:5px; border:1px solid #888; }
   #stage { position:relative; width:min(100%, 50dvh); margin:0 auto; }
   #wrap { display:grid; grid-template-columns:16px 1fr; grid-template-rows:auto 16px; }
@@ -255,7 +255,7 @@ async function loadNext() {
     $('title').textContent = (dailyMode ? '🔥 Kunlik • ' : '') + puz.title;
     $('elo').textContent = 'ELO ' + puz.elo + ' • ' + puz.difficulty;
     $('turn').innerHTML = '<i style="background:' + (user === 'w' ? '#fff' : '#222') + '"></i>' +
-      (user === 'w' ? 'Oq' : 'Qora') + ' yuradi va yutadi';
+      (puz.task || ((user === 'w' ? 'Oq' : 'Qora') + ' yuradi va yutadi'));
     setMsg(''); await advance();
   } catch (e) { setMsg(e.message, 'bad'); }
 }

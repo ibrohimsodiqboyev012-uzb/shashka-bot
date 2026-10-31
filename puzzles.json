@@ -70,7 +70,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10002,
@@ -138,7 +140,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10003,
@@ -202,7 +206,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10004,
@@ -252,7 +258,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10005,
@@ -331,8 +339,10 @@
     "to": 14
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10006,
@@ -404,7 +414,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10007,
@@ -466,7 +478,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10008,
@@ -521,7 +535,9 @@
    }
   ],
   "active": true,
-  "rev": 3
+  "rev": 4,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10009,
@@ -579,7 +595,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10010,
@@ -636,8 +654,10 @@
     "to": 22
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10011,
@@ -700,8 +720,10 @@
     "to": 5
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10012,
@@ -747,8 +769,10 @@
     "to": 15
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10013,
@@ -807,8 +831,10 @@
     "to": 17
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10014,
@@ -860,7 +886,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10015,
@@ -916,7 +944,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10016,
@@ -962,7 +992,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10017,
@@ -1022,7 +1054,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10018,
@@ -1080,7 +1114,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10019,
@@ -1154,7 +1190,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10020,
@@ -1228,7 +1266,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10021,
@@ -1298,7 +1338,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10022,
@@ -1371,8 +1413,10 @@
     "to": 14
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10023,
@@ -1452,7 +1496,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10024,
@@ -1530,7 +1576,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10025,
@@ -1592,7 +1640,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10026,
@@ -1656,7 +1706,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10027,
@@ -1722,7 +1774,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10028,
@@ -1782,7 +1836,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10029,
@@ -1844,7 +1900,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10030,
@@ -1909,7 +1967,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10031,
@@ -1982,8 +2042,10 @@
     "to": 14
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10032,
@@ -2045,7 +2107,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10033,
@@ -2111,7 +2175,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10034,
@@ -2175,7 +2241,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10035,
@@ -2243,7 +2311,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10036,
@@ -2315,7 +2385,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10037,
@@ -2365,7 +2437,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10038,
@@ -2429,7 +2503,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10039,
@@ -2497,7 +2573,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10040,
@@ -2557,7 +2635,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10041,
@@ -2635,7 +2715,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10042,
@@ -2705,7 +2787,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10043,
@@ -2776,8 +2860,10 @@
     "to": 15
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10044,
@@ -2837,7 +2923,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10045,
@@ -2903,7 +2991,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10046,
@@ -2969,7 +3059,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10047,
@@ -3045,7 +3137,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10048,
@@ -3111,7 +3205,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10049,
@@ -3181,7 +3277,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10050,
@@ -3249,7 +3347,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10051,
@@ -3311,7 +3411,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10052,
@@ -3363,7 +3465,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10053,
@@ -3430,7 +3534,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10054,
@@ -3488,7 +3594,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10055,
@@ -3554,7 +3662,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10056,
@@ -3613,8 +3723,10 @@
     "to": 4
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10057,
@@ -3680,7 +3792,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10058,
@@ -3742,7 +3856,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10059,
@@ -3832,8 +3948,10 @@
     "to": 6
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10060,
@@ -3897,7 +4015,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10061,
@@ -3951,7 +4071,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10062,
@@ -4010,8 +4132,10 @@
     "to": 11
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10063,
@@ -4081,7 +4205,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10064,
@@ -4153,7 +4279,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10065,
@@ -4215,7 +4343,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10066,
@@ -4291,7 +4421,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10067,
@@ -4355,7 +4487,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10068,
@@ -4420,7 +4554,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10069,
@@ -4492,7 +4628,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10070,
@@ -4564,7 +4702,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10071,
@@ -4648,7 +4788,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10072,
@@ -4716,7 +4858,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10073,
@@ -4788,7 +4932,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10074,
@@ -4851,7 +4997,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10075,
@@ -4921,7 +5069,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10076,
@@ -4996,8 +5146,10 @@
     "to": 18
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10077,
@@ -5076,7 +5228,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10078,
@@ -5153,7 +5307,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10079,
@@ -5235,7 +5391,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10080,
@@ -5290,7 +5448,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10081,
@@ -5348,7 +5508,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10082,
@@ -5414,7 +5576,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10083,
@@ -5489,8 +5653,10 @@
     "to": 19
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10084,
@@ -5554,7 +5720,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10085,
@@ -5614,7 +5782,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10086,
@@ -5676,7 +5846,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10087,
@@ -5754,7 +5926,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10088,
@@ -5833,7 +6007,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10089,
@@ -5895,7 +6071,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10090,
@@ -5951,7 +6129,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10091,
@@ -6029,7 +6209,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10092,
@@ -6099,7 +6281,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10093,
@@ -6168,7 +6352,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10094,
@@ -6230,7 +6416,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10095,
@@ -6301,8 +6489,10 @@
     "to": 18
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10096,
@@ -6376,7 +6566,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10097,
@@ -6433,8 +6625,10 @@
     "to": 11
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10098,
@@ -6498,7 +6692,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10099,
@@ -6564,7 +6760,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10100,
@@ -6634,7 +6832,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10101,
@@ -6704,7 +6904,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10102,
@@ -6758,7 +6960,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10103,
@@ -6832,7 +7036,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10104,
@@ -6904,7 +7110,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10105,
@@ -6964,7 +7172,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10106,
@@ -7044,7 +7254,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10107,
@@ -7110,7 +7322,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10108,
@@ -7186,7 +7400,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10109,
@@ -7264,7 +7480,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10110,
@@ -7330,7 +7548,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10111,
@@ -7404,7 +7624,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10112,
@@ -7454,7 +7676,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10113,
@@ -7523,7 +7747,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10114,
@@ -7601,7 +7827,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10115,
@@ -7676,7 +7904,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10116,
@@ -7740,7 +7970,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10117,
@@ -7812,7 +8044,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10118,
@@ -7882,7 +8116,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10119,
@@ -7942,7 +8178,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10120,
@@ -7982,7 +8220,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10121,
@@ -8046,7 +8286,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10122,
@@ -8118,7 +8360,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10123,
@@ -8190,7 +8434,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10124,
@@ -8266,7 +8512,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10125,
@@ -8350,7 +8598,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10126,
@@ -8421,7 +8671,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10127,
@@ -8503,7 +8755,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10128,
@@ -8581,7 +8835,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10129,
@@ -8668,8 +8924,10 @@
     "to": 18
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10130,
@@ -8739,7 +8997,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10131,
@@ -8791,7 +9051,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10132,
@@ -8857,7 +9119,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10133,
@@ -8933,7 +9197,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10134,
@@ -8997,7 +9263,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10135,
@@ -9069,7 +9337,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10136,
@@ -9141,7 +9411,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10137,
@@ -9217,7 +9489,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10138,
@@ -9285,7 +9559,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10139,
@@ -9352,8 +9628,10 @@
     "to": 4
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10140,
@@ -9433,7 +9711,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10141,
@@ -9517,7 +9797,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10142,
@@ -9597,7 +9879,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10143,
@@ -9682,7 +9966,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10144,
@@ -9752,7 +10038,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10145,
@@ -9824,7 +10112,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10146,
@@ -9866,7 +10156,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10147,
@@ -9940,7 +10232,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10148,
@@ -10007,8 +10301,10 @@
     "to": 1
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10149,
@@ -10082,7 +10378,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10150,
@@ -10156,7 +10454,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10151,
@@ -10225,7 +10525,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10152,
@@ -10276,7 +10578,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10153,
@@ -10358,7 +10662,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10154,
@@ -10436,7 +10742,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10155,
@@ -10514,7 +10822,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10156,
@@ -10596,7 +10906,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10157,
@@ -10674,7 +10986,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10158,
@@ -10747,8 +11061,10 @@
     "to": 12
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10159,
@@ -10826,7 +11142,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10160,
@@ -10895,7 +11213,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10161,
@@ -10965,7 +11285,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10162,
@@ -11043,7 +11365,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10163,
@@ -11127,7 +11451,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10164,
@@ -11199,7 +11525,9 @@
    }
   ],
   "active": true,
-  "rev": 3
+  "rev": 4,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10165,
@@ -11281,7 +11609,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10166,
@@ -11355,7 +11685,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10167,
@@ -11412,7 +11744,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10168,
@@ -11484,7 +11818,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10169,
@@ -11557,7 +11893,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10170,
@@ -11623,7 +11961,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10171,
@@ -11665,7 +12005,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10172,
@@ -11733,7 +12075,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10173,
@@ -11807,7 +12151,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10174,
@@ -11891,7 +12237,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10175,
@@ -11968,8 +12316,10 @@
     "to": 13
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10176,
@@ -12041,7 +12391,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10177,
@@ -12111,7 +12463,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10178,
@@ -12187,7 +12541,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10179,
@@ -12255,7 +12611,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10180,
@@ -12318,8 +12676,10 @@
     "to": 23
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10181,
@@ -12402,8 +12762,10 @@
     "to": 22
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10182,
@@ -12465,7 +12827,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10183,
@@ -12536,8 +12900,10 @@
     "to": 2
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10184,
@@ -12609,7 +12975,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10185,
@@ -12661,7 +13029,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10186,
@@ -12739,7 +13109,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10187,
@@ -12777,7 +13149,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10188,
@@ -12848,8 +13222,10 @@
     "to": 4
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10189,
@@ -12919,7 +13295,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10190,
@@ -12993,7 +13371,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10191,
@@ -13073,7 +13453,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10192,
@@ -13156,7 +13538,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10193,
@@ -13208,7 +13592,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10194,
@@ -13276,7 +13662,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10195,
@@ -13350,7 +13738,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10196,
@@ -13436,7 +13826,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10197,
@@ -13488,7 +13880,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10198,
@@ -13547,7 +13941,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10199,
@@ -13619,7 +14015,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10200,
@@ -13695,7 +14093,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10201,
@@ -13778,8 +14178,10 @@
     "to": 17
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10202,
@@ -13868,7 +14270,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10203,
@@ -13945,8 +14349,10 @@
     "to": 10
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10204,
@@ -14034,7 +14440,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10205,
@@ -14076,7 +14484,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10206,
@@ -14156,7 +14566,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10207,
@@ -14238,7 +14650,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10208,
@@ -14325,8 +14739,10 @@
     "to": 22
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10209,
@@ -14384,7 +14800,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10210,
@@ -14452,7 +14870,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10211,
@@ -14532,7 +14952,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10212,
@@ -14588,7 +15010,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10213,
@@ -14656,7 +15080,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10214,
@@ -14703,8 +15129,10 @@
     "to": 26
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10215,
@@ -14784,7 +15212,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10216,
@@ -14826,7 +15256,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10217,
@@ -14892,7 +15324,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10218,
@@ -14962,7 +15396,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10219,
@@ -15001,7 +15437,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10220,
@@ -15065,7 +15503,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10221,
@@ -15150,8 +15590,10 @@
     "to": 27
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10222,
@@ -15227,7 +15669,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10223,
@@ -15277,7 +15721,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10224,
@@ -15364,8 +15810,10 @@
     "to": 5
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10225,
@@ -15433,7 +15881,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10226,
@@ -15505,8 +15955,10 @@
     "to": 21
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10227,
@@ -15581,7 +16033,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10228,
@@ -15653,7 +16107,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10229,
@@ -15739,7 +16195,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10230,
@@ -15815,7 +16273,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10231,
@@ -15870,8 +16330,10 @@
     "to": 23
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10232,
@@ -15945,7 +16407,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10233,
@@ -15993,7 +16457,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10234,
@@ -16044,8 +16510,10 @@
     "to": 27
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10235,
@@ -16125,7 +16593,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10236,
@@ -16195,7 +16665,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10237,
@@ -16261,7 +16733,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10238,
@@ -16305,8 +16779,10 @@
     "to": 5
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10239,
@@ -16390,7 +16866,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10240,
@@ -16447,7 +16925,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10241,
@@ -16528,7 +17008,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10242,
@@ -16590,7 +17072,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10243,
@@ -16667,8 +17151,10 @@
     "to": 27
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10244,
@@ -16760,7 +17246,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10245,
@@ -16840,7 +17328,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10246,
@@ -16926,7 +17416,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10247,
@@ -17012,7 +17504,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10248,
@@ -17096,7 +17590,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10249,
@@ -17177,8 +17673,10 @@
     "to": 4
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10250,
@@ -17240,8 +17738,10 @@
     "to": 29
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10251,
@@ -17329,7 +17829,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10252,
@@ -17405,7 +17907,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10253,
@@ -17467,7 +17971,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10254,
@@ -17557,7 +18063,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10255,
@@ -17637,7 +18145,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10256,
@@ -17682,7 +18192,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10257,
@@ -17768,7 +18280,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10258,
@@ -17859,7 +18373,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10259,
@@ -17953,7 +18469,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10260,
@@ -18051,7 +18569,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10261,
@@ -18129,7 +18649,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10262,
@@ -18211,7 +18733,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10263,
@@ -18293,7 +18817,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10264,
@@ -18367,7 +18893,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10265,
@@ -18453,7 +18981,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10266,
@@ -18539,7 +19069,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10267,
@@ -18621,7 +19153,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10268,
@@ -18718,7 +19252,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10269,
@@ -18816,7 +19352,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10270,
@@ -18896,7 +19434,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10271,
@@ -18941,7 +19481,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10272,
@@ -19029,7 +19571,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10273,
@@ -19119,7 +19663,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10274,
@@ -19166,7 +19712,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10275,
@@ -19259,7 +19807,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10276,
@@ -19349,7 +19899,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10277,
@@ -19405,7 +19957,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10278,
@@ -19499,7 +20053,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10279,
@@ -19558,7 +20114,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10280,
@@ -19598,8 +20156,10 @@
     "to": 31
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10281,
@@ -19693,7 +20253,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10282,
@@ -19779,7 +20341,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10283,
@@ -19826,7 +20390,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10284,
@@ -19914,7 +20480,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10285,
@@ -20006,7 +20574,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10286,
@@ -20046,7 +20616,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10287,
@@ -20128,7 +20700,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10288,
@@ -20214,7 +20788,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10289,
@@ -20323,7 +20899,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10290,
@@ -20371,7 +20949,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10291,
@@ -20453,7 +21033,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10292,
@@ -20539,7 +21121,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10293,
@@ -20629,7 +21213,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10294,
@@ -20721,8 +21307,10 @@
     "to": 5
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10295,
@@ -20806,7 +21394,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10296,
@@ -20892,7 +21482,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10297,
@@ -20979,8 +21571,10 @@
     "to": 5
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10298,
@@ -21066,7 +21660,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10299,
@@ -21148,7 +21744,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10300,
@@ -21231,8 +21829,10 @@
     "to": 28
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10301,
@@ -21310,7 +21910,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10302,
@@ -21344,7 +21946,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10303,
@@ -21400,7 +22004,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10304,
@@ -21477,8 +22083,10 @@
     "to": 12
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10305,
@@ -21515,7 +22123,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10306,
@@ -21597,7 +22207,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10307,
@@ -21671,7 +22283,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10308,
@@ -21704,7 +22318,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10309,
@@ -21750,7 +22366,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10310,
@@ -21838,7 +22456,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10311,
@@ -21928,7 +22548,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10312,
@@ -22020,7 +22642,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10313,
@@ -22061,7 +22685,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10314,
@@ -22151,7 +22777,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10315,
@@ -22206,8 +22834,10 @@
     "to": 19
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10316,
@@ -22263,7 +22893,9 @@
    }
   ],
   "active": true,
-  "rev": 3
+  "rev": 4,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10317,
@@ -22359,7 +22991,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10318,
@@ -22411,7 +23045,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10319,
@@ -22505,7 +23141,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10320,
@@ -22599,7 +23237,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10321,
@@ -22690,8 +23330,10 @@
     "to": 14
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10322,
@@ -22757,7 +23399,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10323,
@@ -22860,7 +23504,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10324,
@@ -22916,7 +23562,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10325,
@@ -23018,7 +23666,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10326,
@@ -23112,7 +23762,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10327,
@@ -23164,7 +23816,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10328,
@@ -23260,7 +23914,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10329,
@@ -23347,7 +24003,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10330,
@@ -23398,8 +24056,10 @@
     "to": 26
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10331,
@@ -23489,7 +24149,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10332,
@@ -23572,7 +24234,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10333,
@@ -23666,7 +24330,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10334,
@@ -23754,7 +24420,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10335,
@@ -23849,7 +24517,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10336,
@@ -23942,7 +24612,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10337,
@@ -24001,7 +24673,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10338,
@@ -24089,7 +24763,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10339,
@@ -24136,7 +24812,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10340,
@@ -24226,7 +24904,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10341,
@@ -24286,7 +24966,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10342,
@@ -24386,7 +25068,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10343,
@@ -24486,7 +25170,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10344,
@@ -24538,7 +25224,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10345,
@@ -24652,7 +25340,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10346,
@@ -24762,7 +25452,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10347,
@@ -24862,7 +25554,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10348,
@@ -24930,7 +25624,9 @@
    }
   ],
   "active": true,
-  "rev": 3
+  "rev": 4,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10349,
@@ -24998,7 +25694,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10350,
@@ -25070,7 +25768,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10351,
@@ -25123,8 +25823,10 @@
     "to": 15
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10352,
@@ -25198,7 +25900,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10353,
@@ -25258,7 +25962,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10354,
@@ -25300,7 +26006,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10355,
@@ -25361,7 +26069,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10356,
@@ -25419,7 +26129,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10357,
@@ -25514,8 +26226,10 @@
     "to": 30
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10358,
@@ -25571,7 +26285,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10359,
@@ -25638,8 +26354,10 @@
     "to": 4
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10360,
@@ -25698,7 +26416,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10361,
@@ -25774,7 +26494,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10362,
@@ -25859,7 +26581,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10363,
@@ -25897,7 +26621,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10364,
@@ -25977,7 +26703,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10365,
@@ -26029,7 +26757,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10366,
@@ -26079,7 +26809,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10367,
@@ -26130,8 +26862,10 @@
     "to": 25
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10368,
@@ -26213,8 +26947,10 @@
     "to": 13
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10369,
@@ -26284,7 +27020,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10370,
@@ -26365,7 +27103,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10371,
@@ -26445,7 +27185,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10372,
@@ -26489,7 +27231,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10373,
@@ -26575,7 +27319,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10374,
@@ -26637,7 +27383,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10375,
@@ -26679,7 +27427,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10376,
@@ -26759,7 +27509,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10377,
@@ -26839,7 +27591,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10378,
@@ -26923,7 +27677,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10379,
@@ -27001,7 +27757,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10380,
@@ -27077,7 +27835,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10381,
@@ -27165,8 +27925,10 @@
     "to": 31
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10382,
@@ -27204,8 +27966,10 @@
     "to": 17
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10383,
@@ -27251,7 +28015,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10384,
@@ -27329,7 +28095,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10385,
@@ -27398,7 +28166,10 @@
     "to": 2
    }
   ],
-  "active": true
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik",
+  "rev": 2
  },
  {
   "id": 10386,
@@ -27436,7 +28207,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10387,
@@ -27521,8 +28294,10 @@
     "to": 16
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10388,
@@ -27601,8 +28376,10 @@
     "to": 30
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10389,
@@ -27694,7 +28471,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10390,
@@ -27787,8 +28566,10 @@
     "to": 19
    }
   ],
-  "rev": 3,
-  "active": true
+  "rev": 4,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10391,
@@ -27884,7 +28665,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10392,
@@ -27997,7 +28780,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10393,
@@ -28098,8 +28883,10 @@
     "to": 21
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10394,
@@ -28194,7 +28981,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10395,
@@ -28238,7 +29027,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10396,
@@ -28319,7 +29110,10 @@
     "to": 23
    }
   ],
-  "active": true
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik",
+  "rev": 2
  },
  {
   "id": 10397,
@@ -28408,7 +29202,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10398,
@@ -28494,7 +29290,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10399,
@@ -28581,8 +29379,10 @@
     "to": 20
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10400,
@@ -28666,7 +29466,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10401,
@@ -28740,7 +29542,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10402,
@@ -28810,7 +29614,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10403,
@@ -28882,7 +29688,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10404,
@@ -28959,7 +29767,10 @@
     "to": 13
    }
   ],
-  "active": true
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik",
+  "rev": 2
  },
  {
   "id": 10405,
@@ -29041,7 +29852,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10406,
@@ -29122,7 +29935,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10407,
@@ -29184,7 +29999,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10408,
@@ -29223,8 +30040,10 @@
     "to": 28
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10409,
@@ -29276,7 +30095,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10410,
@@ -29337,8 +30158,10 @@
     "to": 30
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10411,
@@ -29414,7 +30237,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10412,
@@ -29489,7 +30314,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10413,
@@ -29579,7 +30406,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10414,
@@ -29619,7 +30448,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10415,
@@ -29663,7 +30494,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10416,
@@ -29743,7 +30576,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10417,
@@ -29830,7 +30665,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10418,
@@ -29916,7 +30753,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10419,
@@ -30002,7 +30841,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10420,
@@ -30037,8 +30878,10 @@
     "to": 16
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10421,
@@ -30116,7 +30959,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10422,
@@ -30185,7 +31030,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10423,
@@ -30268,7 +31115,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10424,
@@ -30322,7 +31171,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10425,
@@ -30408,7 +31259,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10426,
@@ -30502,7 +31355,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10427,
@@ -30582,7 +31437,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10428,
@@ -30627,7 +31484,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10429,
@@ -30680,8 +31539,10 @@
     "to": 26
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10430,
@@ -30786,7 +31647,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10431,
@@ -30887,7 +31750,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10432,
@@ -30983,7 +31848,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10433,
@@ -31070,7 +31937,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10434,
@@ -31164,8 +32033,10 @@
     "to": 24
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10435,
@@ -31259,7 +32130,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10436,
@@ -31346,8 +32219,10 @@
     "to": 30
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10437,
@@ -31439,7 +32314,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10438,
@@ -31531,7 +32408,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10439,
@@ -31613,7 +32492,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10440,
@@ -31709,7 +32590,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10441,
@@ -31751,7 +32634,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10442,
@@ -31831,7 +32716,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10443,
@@ -31909,7 +32796,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10444,
@@ -31953,7 +32842,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10445,
@@ -32049,7 +32940,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10446,
@@ -32103,7 +32996,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10447,
@@ -32186,8 +33081,10 @@
     "to": 20
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10448,
@@ -32263,7 +33160,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10449,
@@ -32353,7 +33252,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10450,
@@ -32451,8 +33352,10 @@
     "to": 24
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10451,
@@ -32524,7 +33427,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10452,
@@ -32579,8 +33484,10 @@
     "to": 30
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10453,
@@ -32666,7 +33573,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10454,
@@ -32760,7 +33669,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10455,
@@ -32852,7 +33763,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10456,
@@ -32908,7 +33821,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10457,
@@ -32970,7 +33885,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10458,
@@ -33058,7 +33975,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10459,
@@ -33150,7 +34069,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10460,
@@ -33244,7 +34165,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10461,
@@ -33340,7 +34263,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10462,
@@ -33404,7 +34329,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10463,
@@ -33456,7 +34383,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10464,
@@ -33551,7 +34480,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10465,
@@ -33641,7 +34572,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10466,
@@ -33721,7 +34654,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10467,
@@ -33811,7 +34746,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10468,
@@ -33853,7 +34790,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10469,
@@ -33939,7 +34878,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10470,
@@ -34040,7 +34981,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10471,
@@ -34133,8 +35076,10 @@
     "to": 13
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10472,
@@ -34232,7 +35177,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10473,
@@ -34275,7 +35222,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10474,
@@ -34354,7 +35303,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10475,
@@ -34454,7 +35405,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10476,
@@ -34544,7 +35497,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10477,
@@ -34622,7 +35577,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10478,
@@ -34667,7 +35624,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10479,
@@ -34753,7 +35712,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10480,
@@ -34845,7 +35806,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10481,
@@ -34939,7 +35902,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10482,
@@ -35007,7 +35972,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10483,
@@ -35067,7 +36034,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10484,
@@ -35149,7 +36118,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10485,
@@ -35247,7 +36218,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10486,
@@ -35315,7 +36288,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10487,
@@ -35357,7 +36332,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10488,
@@ -35401,7 +36378,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10489,
@@ -35494,8 +36473,10 @@
     "to": 31
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10490,
@@ -35578,7 +36559,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10491,
@@ -35630,7 +36613,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10492,
@@ -35703,7 +36688,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10493,
@@ -35799,8 +36786,10 @@
     "to": 13
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10494,
@@ -35884,7 +36873,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10495,
@@ -35939,7 +36930,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10496,
@@ -36029,7 +37022,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10497,
@@ -36123,7 +37118,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10498,
@@ -36206,7 +37203,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10499,
@@ -36262,7 +37261,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10500,
@@ -36358,7 +37359,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10501,
@@ -36446,7 +37449,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10502,
@@ -36484,7 +37489,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10503,
@@ -36534,7 +37541,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10504,
@@ -36618,7 +37627,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10505,
@@ -36696,7 +37707,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10506,
@@ -36784,7 +37797,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10507,
@@ -36871,8 +37886,10 @@
     "to": 23
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10508,
@@ -36960,7 +37977,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10509,
@@ -37058,7 +38077,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10510,
@@ -37144,8 +38165,10 @@
     "to": 14
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10511,
@@ -37197,7 +38220,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10512,
@@ -37246,8 +38271,10 @@
     "to": 30
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10513,
@@ -37345,7 +38372,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10514,
@@ -37431,7 +38460,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10515,
@@ -37470,7 +38501,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10516,
@@ -37559,8 +38592,10 @@
     "to": 16
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10517,
@@ -37605,7 +38640,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10518,
@@ -37703,7 +38740,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10519,
@@ -37743,7 +38782,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10520,
@@ -37785,7 +38826,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10521,
@@ -37888,8 +38931,10 @@
     "to": 13
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10522,
@@ -37981,7 +39026,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10523,
@@ -38083,7 +39130,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10524,
@@ -38177,7 +39226,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10525,
@@ -38267,7 +39318,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10526,
@@ -38311,7 +39364,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10527,
@@ -38407,7 +39462,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10528,
@@ -38507,7 +39564,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10529,
@@ -38562,7 +39621,9 @@
    }
   ],
   "active": true,
-  "rev": 3
+  "rev": 4,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10530,
@@ -38612,7 +39673,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10531,
@@ -38716,8 +39779,10 @@
     "to": 22
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10532,
@@ -38767,7 +39832,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10533,
@@ -38855,7 +39922,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10534,
@@ -38947,7 +40016,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10535,
@@ -39024,7 +40095,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10536,
@@ -39126,7 +40199,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10537,
@@ -39180,7 +40255,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10538,
@@ -39230,7 +40307,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10539,
@@ -39281,7 +40360,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10540,
@@ -39369,7 +40450,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10541,
@@ -39433,7 +40516,9 @@
    }
   ],
   "active": true,
-  "rev": 3
+  "rev": 4,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10542,
@@ -39530,8 +40615,10 @@
     "to": 20
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10543,
@@ -39577,7 +40664,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10544,
@@ -39631,7 +40720,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10545,
@@ -39727,7 +40818,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10546,
@@ -39763,7 +40856,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10547,
@@ -39874,8 +40969,10 @@
     "to": 23
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10548,
@@ -39928,7 +41025,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10549,
@@ -39981,8 +41080,10 @@
     "to": 32
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10550,
@@ -40038,7 +41139,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10551,
@@ -40136,7 +41239,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10552,
@@ -40231,8 +41336,10 @@
     "to": 15
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10553,
@@ -40283,7 +41390,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10554,
@@ -40383,7 +41492,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10555,
@@ -40463,7 +41574,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10556,
@@ -40557,7 +41670,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10557,
@@ -40612,8 +41727,10 @@
     "to": 17
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10558,
@@ -40700,8 +41817,10 @@
     "to": 13
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10559,
@@ -40754,7 +41873,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10560,
@@ -40792,7 +41913,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10561,
@@ -40890,7 +42013,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10562,
@@ -40948,7 +42073,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10563,
@@ -41000,7 +42127,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10564,
@@ -41081,7 +42210,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10565,
@@ -41167,8 +42298,10 @@
     "to": 2
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10566,
@@ -41270,7 +42403,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10567,
@@ -41362,7 +42497,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10568,
@@ -41460,7 +42597,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10569,
@@ -41552,7 +42691,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10570,
@@ -41605,7 +42746,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10571,
@@ -41716,7 +42859,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10572,
@@ -41771,7 +42916,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10573,
@@ -41824,7 +42971,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10574,
@@ -41866,7 +43015,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10575,
@@ -41964,7 +43115,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10576,
@@ -42068,7 +43221,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10577,
@@ -42110,7 +43265,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10578,
@@ -42209,8 +43366,10 @@
     "to": 5
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10579,
@@ -42300,7 +43459,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10580,
@@ -42356,7 +43517,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10581,
@@ -42456,7 +43619,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10582,
@@ -42492,7 +43657,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10583,
@@ -42534,7 +43701,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10584,
@@ -42638,7 +43807,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10585,
@@ -42744,7 +43915,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10586,
@@ -42853,7 +44026,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10587,
@@ -42957,7 +44132,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10588,
@@ -43003,7 +44180,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10589,
@@ -43054,7 +44233,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10590,
@@ -43152,7 +44333,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10591,
@@ -43252,7 +44435,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10592,
@@ -43359,8 +44544,10 @@
     "to": 10
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10593,
@@ -43476,8 +44663,10 @@
     "to": 28
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10594,
@@ -43528,7 +44717,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10595,
@@ -43580,7 +44771,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10596,
@@ -43636,8 +44829,10 @@
     "to": 5
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10597,
@@ -43701,7 +44896,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10598,
@@ -43808,8 +45005,10 @@
     "to": 20
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10599,
@@ -43927,7 +45126,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10600,
@@ -43967,7 +45168,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10601,
@@ -44017,7 +45220,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10602,
@@ -44056,7 +45261,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10603,
@@ -44096,7 +45303,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10604,
@@ -44210,7 +45419,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10605,
@@ -44328,7 +45539,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10606,
@@ -44434,8 +45647,10 @@
     "to": 19
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10607,
@@ -44543,7 +45758,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10608,
@@ -44661,7 +45878,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10609,
@@ -44789,7 +46008,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10610,
@@ -44909,7 +46130,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10611,
@@ -44963,7 +46186,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10612,
@@ -45026,7 +46251,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10613,
@@ -45107,7 +46334,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10614,
@@ -45191,8 +46420,10 @@
     "to": 20
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10615,
@@ -45247,8 +46478,10 @@
     "to": 24
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10616,
@@ -45297,7 +46530,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10617,
@@ -45393,7 +46628,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10618,
@@ -45483,7 +46720,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10619,
@@ -45573,7 +46812,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10620,
@@ -45609,7 +46850,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10621,
@@ -45702,7 +46945,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10622,
@@ -45752,7 +46997,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10623,
@@ -45846,7 +47093,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10624,
@@ -45926,7 +47175,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10625,
@@ -45970,8 +47221,10 @@
     "to": 27
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10626,
@@ -46066,7 +47319,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10627,
@@ -46171,8 +47426,10 @@
     "to": 24
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10628,
@@ -46288,7 +47545,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10629,
@@ -46376,7 +47635,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10630,
@@ -46472,7 +47733,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10631,
@@ -46510,7 +47773,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10632,
@@ -46608,7 +47873,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10633,
@@ -46702,7 +47969,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10634,
@@ -46807,7 +48076,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10635,
@@ -46894,7 +48165,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10636,
@@ -46992,7 +48265,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10637,
@@ -47098,7 +48373,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10638,
@@ -47198,7 +48475,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10639,
@@ -47293,7 +48572,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10640,
@@ -47341,7 +48622,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10641,
@@ -47458,8 +48741,10 @@
     "to": 14
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10642,
@@ -47511,7 +48796,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10643,
@@ -47574,7 +48861,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10644,
@@ -47614,7 +48903,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10645,
@@ -47714,7 +49005,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10646,
@@ -47776,7 +49069,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10647,
@@ -47835,7 +49130,9 @@
    }
   ],
   "active": true,
-  "rev": 3
+  "rev": 4,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10648,
@@ -47874,7 +49171,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10649,
@@ -47925,8 +49224,10 @@
     "to": 21
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10650,
@@ -47968,7 +49269,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10651,
@@ -48014,7 +49317,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10652,
@@ -48114,7 +49419,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10653,
@@ -48204,7 +49511,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10654,
@@ -48259,7 +49568,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10655,
@@ -48353,7 +49664,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10656,
@@ -48457,7 +49770,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10657,
@@ -48549,7 +49864,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10658,
@@ -48649,7 +49966,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10659,
@@ -48697,7 +50016,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10660,
@@ -48751,7 +50072,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10661,
@@ -48853,7 +50176,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10662,
@@ -48893,7 +50218,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10663,
@@ -48949,7 +50276,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10664,
@@ -49057,7 +50386,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10665,
@@ -49159,7 +50490,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10666,
@@ -49269,7 +50602,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10667,
@@ -49367,7 +50702,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10668,
@@ -49405,7 +50742,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10669,
@@ -49503,8 +50842,10 @@
     "to": 19
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10670,
@@ -49605,8 +50946,10 @@
     "to": 1
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10671,
@@ -49658,7 +51001,9 @@
    }
   ],
   "active": true,
-  "rev": 3
+  "rev": 4,
+  "task": "Qora yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10672,
@@ -49760,7 +51105,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10673,
@@ -49863,8 +51210,10 @@
     "to": 32
    }
   ],
-  "rev": 4,
-  "active": true
+  "rev": 5,
+  "active": true,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10674,
@@ -49975,8 +51324,10 @@
     "to": 2
    }
   ],
-  "rev": 4,
-  "active": false
+  "rev": 5,
+  "active": false,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10675,
@@ -50034,7 +51385,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10676,
@@ -50146,7 +51499,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10677,
@@ -50200,7 +51555,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Qora yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10678,
@@ -50317,7 +51674,10 @@
     "to": 29
    }
   ],
-  "active": true
+  "active": true,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish",
+  "rev": 2
  },
  {
   "id": 10679,
@@ -50376,7 +51736,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10680,
@@ -50438,7 +51800,9 @@
    }
   ],
   "active": true,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10681,
@@ -50485,7 +51849,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10682,
@@ -50552,7 +51918,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10683,
@@ -50619,7 +51987,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10684,
@@ -50666,7 +52036,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10685,
@@ -50735,7 +52107,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10686,
@@ -50810,7 +52184,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10687,
@@ -50865,7 +52241,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10688,
@@ -50934,7 +52312,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10689,
@@ -50968,7 +52348,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10690,
@@ -51002,7 +52384,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10691,
@@ -51033,7 +52417,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10692,
@@ -51087,7 +52473,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10693,
@@ -51132,7 +52520,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10694,
@@ -51175,7 +52565,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10695,
@@ -51236,7 +52628,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10696,
@@ -51266,7 +52660,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10697,
@@ -51301,7 +52697,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10698,
@@ -51336,7 +52734,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10699,
@@ -51373,7 +52773,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10700,
@@ -51416,7 +52818,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10701,
@@ -51456,7 +52860,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10702,
@@ -51486,7 +52892,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10703,
@@ -51521,7 +52929,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10704,
@@ -51561,7 +52971,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10705,
@@ -51602,7 +53014,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10706,
@@ -51647,7 +53061,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10707,
@@ -51692,7 +53108,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10708,
@@ -51735,7 +53153,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10709,
@@ -51784,7 +53204,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10710,
@@ -51813,7 +53235,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10711,
@@ -51856,7 +53280,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10712,
@@ -51915,7 +53341,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10713,
@@ -51972,7 +53400,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10714,
@@ -52031,7 +53461,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10715,
@@ -52078,7 +53510,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10716,
@@ -52145,7 +53579,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10717,
@@ -52208,7 +53644,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10718,
@@ -52284,7 +53722,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10719,
@@ -52349,7 +53789,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10720,
@@ -52418,7 +53860,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10721,
@@ -52477,7 +53921,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10722,
@@ -52516,7 +53962,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10723,
@@ -52547,7 +53995,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10724,
@@ -52588,7 +54038,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10725,
@@ -52633,7 +54085,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10726,
@@ -52661,7 +54115,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10727,
@@ -52702,7 +54158,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10728,
@@ -52744,7 +54202,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10729,
@@ -52782,7 +54242,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10730,
@@ -52813,7 +54275,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10731,
@@ -52858,7 +54322,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10732,
@@ -52901,7 +54367,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10733,
@@ -52956,7 +54424,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10734,
@@ -53003,7 +54473,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10735,
@@ -53060,7 +54532,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10736,
@@ -53129,7 +54603,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10737,
@@ -53172,7 +54648,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10738,
@@ -53227,7 +54705,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10739,
@@ -53296,7 +54776,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10740,
@@ -53331,7 +54813,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10741,
@@ -53367,7 +54851,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10742,
@@ -53413,7 +54899,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10743,
@@ -53443,7 +54931,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10744,
@@ -53480,7 +54970,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10745,
@@ -53519,7 +55011,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10746,
@@ -53550,7 +55044,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10747,
@@ -53582,7 +55078,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10748,
@@ -53621,7 +55119,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10749,
@@ -53651,7 +55151,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10750,
@@ -53697,7 +55199,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10751,
@@ -53752,7 +55256,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10752,
@@ -53809,7 +55315,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10753,
@@ -53864,7 +55372,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10754,
@@ -53921,7 +55431,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10755,
@@ -53957,7 +55469,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10756,
@@ -53993,7 +55507,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10757,
@@ -54048,7 +55564,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10758,
@@ -54084,7 +55602,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10759,
@@ -54115,7 +55635,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta yurish bilan yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10760,
@@ -54151,7 +55673,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10761,
@@ -54187,7 +55711,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10762,
@@ -54226,7 +55752,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10763,
@@ -54271,7 +55799,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10764,
@@ -54319,7 +55849,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10765,
@@ -54360,7 +55892,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10766,
@@ -54392,7 +55926,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10767,
@@ -54434,7 +55970,9 @@
    }
   ],
   "active": true,
-  "rev": 1
+  "rev": 2,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10768,
@@ -54468,7 +56006,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10769,
@@ -54502,7 +56042,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10770,
@@ -54547,7 +56089,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10771,
@@ -54584,7 +56128,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10772,
@@ -54629,7 +56175,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10773,
@@ -54676,7 +56224,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10774,
@@ -54719,7 +56269,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10775,
@@ -54778,7 +56330,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10776,
@@ -54827,7 +56381,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10777,
@@ -54874,7 +56430,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10778,
@@ -54922,7 +56480,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10779,
@@ -54965,7 +56525,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10780,
@@ -55013,7 +56575,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10781,
@@ -55063,7 +56627,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10782,
@@ -55115,7 +56681,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10783,
@@ -55172,7 +56740,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10784,
@@ -55223,7 +56793,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10785,
@@ -55273,7 +56845,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10786,
@@ -55326,7 +56900,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10787,
@@ -55377,7 +56953,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10788,
@@ -55430,7 +57008,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10789,
@@ -55473,7 +57053,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10790,
@@ -55511,7 +57093,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10791,
@@ -55558,7 +57142,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10792,
@@ -55600,7 +57186,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10793,
@@ -55649,7 +57237,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10794,
@@ -55700,7 +57290,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10795,
@@ -55748,7 +57340,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10796,
@@ -55804,7 +57398,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10797,
@@ -55852,7 +57448,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10798,
@@ -55902,7 +57500,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10799,
@@ -55945,7 +57545,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10800,
@@ -55994,7 +57596,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10801,
@@ -56060,7 +57664,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10802,
@@ -56131,7 +57737,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10803,
@@ -56179,7 +57787,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10804,
@@ -56231,7 +57841,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10805,
@@ -56282,7 +57894,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10806,
@@ -56328,7 +57942,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10807,
@@ -56373,7 +57989,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10808,
@@ -56425,7 +58043,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10809,
@@ -56470,7 +58090,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10810,
@@ -56532,7 +58154,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10811,
@@ -56598,7 +58222,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10812,
@@ -56641,7 +58267,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10813,
@@ -56686,7 +58314,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10814,
@@ -56741,7 +58371,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10815,
@@ -56806,7 +58438,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10816,
@@ -56852,7 +58486,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10817,
@@ -56905,7 +58541,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10818,
@@ -56949,7 +58587,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10819,
@@ -57006,7 +58646,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10820,
@@ -57058,7 +58700,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10821,
@@ -57121,7 +58765,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: urishdan boshlab yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10822,
@@ -57172,7 +58818,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10823,
@@ -57227,7 +58875,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10824,
@@ -57273,7 +58923,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10825,
@@ -57319,7 +58971,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10826,
@@ -57383,7 +59037,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10827,
@@ -57433,7 +59089,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10828,
@@ -57477,7 +59135,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10829,
@@ -57520,7 +59180,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10830,
@@ -57572,7 +59234,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10831,
@@ -57625,7 +59289,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10832,
@@ -57686,7 +59352,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10833,
@@ -57738,7 +59406,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10834,
@@ -57789,7 +59459,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10835,
@@ -57844,7 +59516,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10836,
@@ -57903,7 +59577,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10837,
@@ -57949,7 +59625,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10838,
@@ -58003,7 +59681,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10839,
@@ -58054,7 +59734,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10840,
@@ -58109,7 +59791,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10841,
@@ -58166,7 +59850,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10842,
@@ -58216,7 +59902,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10843,
@@ -58267,7 +59955,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin raqibni yurishsiz qoldiradi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10844,
@@ -58320,7 +60010,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10845,
@@ -58381,7 +60073,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10846,
@@ -58436,7 +60130,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10847,
@@ -58489,7 +60185,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10848,
@@ -58538,7 +60236,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10849,
@@ -58607,7 +60307,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10850,
@@ -58659,7 +60361,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10851,
@@ -58700,7 +60404,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10852,
@@ -58747,7 +60453,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10853,
@@ -58796,7 +60504,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10854,
@@ -58847,7 +60557,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10855,
@@ -58894,7 +60606,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10856,
@@ -58940,7 +60654,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10857,
@@ -58979,7 +60695,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10858,
@@ -59028,7 +60746,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10859,
@@ -59081,7 +60801,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10860,
@@ -59138,7 +60860,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10861,
@@ -59186,7 +60910,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va raqibni yurishsiz qoldiradi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10862,
@@ -59237,7 +60963,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10863,
@@ -59284,7 +61012,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10864,
@@ -59333,7 +61063,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10865,
@@ -59376,7 +61108,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi va yutadi.",
+  "task_kind": "yurish"
  },
  {
   "id": 10866,
@@ -59424,7 +61158,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10867,
@@ -59499,7 +61235,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: avval tosh berib (qurbonlik), keyin yutadi.",
+  "task_kind": "qurbonlik"
  },
  {
   "id": 10868,
@@ -59547,7 +61285,9 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  },
  {
   "id": 10869,
@@ -59590,6 +61330,8 @@
    }
   ],
   "active": false,
-  "rev": 2
+  "rev": 3,
+  "task": "Oq yuradi: bitta urish bilan yutadi.",
+  "task_kind": "urish"
  }
 ]
