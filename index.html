@@ -103,11 +103,14 @@ const rcToSq = (r,c) => r*4 + (r%2===0 ? (c-1)/2 : c/2) + 1;
 const key = (r,c) => r+','+c;
 
 async function api(path, body) {
-  const r = await fetch(path, {
+  const opts = {
     method: body ? 'POST' : 'GET',
     headers: {'X-Init-Data': INIT, 'Content-Type': 'application/json'},
     body: body ? JSON.stringify(body) : undefined
-  });
+  };
+  let r;
+  try { r = await fetch(path, opts); }
+  catch (e) { await sleep(1500); r = await fetch(path, opts); }   // server uyg'onayotganda uzilish
   const j = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(j.error || 'Xatolik');
   return j;
@@ -243,6 +246,7 @@ async function finish() {
 
 async function loadNext() {
   $('res').style.display = 'none'; setMsg('Yuklanmoqda…'); locked = true;
+  const slow = setTimeout(() => setMsg("Server uyg'onmoqda, 1-2 daqiqa kutish mumkin…"), 4000);
   try {
     const j = dailyMode ? await api('/api/daily')
       : await api('/api/puzzle/next?level=' + level + '&skip=' + skipped.join(','));
@@ -258,6 +262,7 @@ async function loadNext() {
       (puz.task || ((user === 'w' ? 'Oq' : 'Qora') + ' yuradi va yutadi'));
     setMsg(''); await advance();
   } catch (e) { setMsg(e.message, 'bad'); }
+  finally { clearTimeout(slow); }
 }
 
 $('restart').onclick = () => { if (!puz || $('res').style.display === 'flex') return; const m = mistakes; loadBoard(); mistakes = m; setMsg(''); advance(); };

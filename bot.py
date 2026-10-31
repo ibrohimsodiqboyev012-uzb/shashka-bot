@@ -1329,6 +1329,12 @@ async def handle_index(request: web.Request) -> web.StreamResponse:
     return web.FileResponse(BASE_DIR / "index.html", headers={"Cache-Control": "no-store"})
 
 
+async def handle_health(request: web.Request) -> web.Response:
+    """Uyg'oq turish uchun yengil nuqta: bazaga tegmaydi, darhol javob beradi."""
+    return web.json_response({"ok": True, "ts": int(time.time())},
+                             headers={"Cache-Control": "no-store"})
+
+
 async def handle_next(request: web.Request) -> web.Response:
     user, err = need_user(request)
     if err:
@@ -1403,6 +1409,7 @@ async def handle_solve(request: web.Request) -> web.Response:
 def build_web_app() -> web.Application:
     app = web.Application()
     app.router.add_get("/", handle_index)
+    app.router.add_get("/health", handle_health)
     app.router.add_get("/api/daily", handle_daily)
     app.router.add_get("/api/puzzle/next", handle_next)
     app.router.add_get(r"/api/puzzle/{pid:\d+}", handle_get_puzzle)
