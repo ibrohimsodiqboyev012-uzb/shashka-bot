@@ -36,6 +36,8 @@ from multiprocessing import Pool
 from pathlib import Path
 from urllib.parse import parse_qsl
 
+import aiohttp
+
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
@@ -1697,6 +1699,32 @@ async def daily_notice_loop(bot) -> None:
         await asyncio.sleep(60)
 
 
+# ---- O'zini uyg'oq ushlab turish (Render bepul instansiyasi uxlab qolmasin) ----
+KEEPALIVE_START_DELAY = float(os.getenv("KEEPALIVE_START_DELAY", "60"))
+KEEPALIVE_INTERVAL = float(os.getenv("KEEPALIVE_INTERVAL", "600"))
+
+
+async def keepalive_loop() -> None:
+    """Servis o'zining /health nuqtasiga davriy murojaat qiladi.
+
+    Render bepul rejasi 15 daqiqa kiruvchi so'rov bo'lmasa instansiyani to'xtatadi;
+    Telegram polli esa chiquvchi trafik bo'lgani uchun hisobga olinmaydi. Shu ping
+    servisni uyg'oq ushlab turadi va kunlik eslatma loopi ham ishlashda davom etadi."""
+    url = (WEBAPP_URL or "").rstrip("/")
+    if not (url.startswith("https://") or url.startswith(("http://127.0.0.1", "http://localhost"))):
+        return
+    await asyncio.sleep(KEEPALIVE_START_DELAY)
+    timeout = aiohttp.ClientTimeout(total=20)
+    async with aiohttp.ClientSession(timeout=timeout) as session:
+        while True:
+            try:
+                async with session.get(url + "/health") as resp:
+                    await resp.read()
+            except Exception as exc:
+                log.debug("Keep-alive ping xatosi: %s", exc)
+            await asyncio.sleep(KEEPALIVE_INTERVAL)
+
+
 # ---- Fon rejimida masalalar generatsiyasi ----
 async def auto_generate_loop() -> None:
     """Masalalar soni AUTO_TARGET dan kam bo'lsa, bot ishlayotgan paytda ham generatorni fon jarayonida yuritadi."""
@@ -1751,6 +1779,7 @@ async def main() -> None:
     gen_task = asyncio.create_task(auto_generate_loop())
     backup_task = asyncio.create_task(backup_loop(bot))
     notice_task = asyncio.create_task(daily_notice_loop(bot))
+    keep_task = asyncio.create_task(keepalive_loop())
     try:
         await bot.delete_webhook(drop_pending_updates=True)
         await dp.start_polling(bot)
@@ -1758,6 +1787,7 @@ async def main() -> None:
         gen_task.cancel()
         backup_task.cancel()
         notice_task.cancel()
+        keep_task.cancel()
         try:
             await send_backup(bot)   # to'xtashdan oldin oxirgi zaxira
         except Exception:
