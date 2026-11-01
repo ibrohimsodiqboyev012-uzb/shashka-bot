@@ -42,7 +42,7 @@ from aiogram import Bot, Dispatcher, F, Router
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.exceptions import TelegramBadRequest
-from aiogram.filters import CommandStart
+from aiogram.filters import Command, CommandStart
 from aiogram.types import (
     CallbackQuery,
     InlineKeyboardButton,
@@ -878,6 +878,41 @@ async def drop_backup_message(bot, message_id: int) -> None:
         pass
 
 
+def _save_bytes(path: str, data: bytes) -> None:
+    with open(path, "wb") as f:
+        f.write(data)
+
+
+async def restore_from_message(bot, msg) -> bool:
+    """Berilgan xabardagi zaxira faylidan bazani tiklaydi.
+
+    Tiklashdan oldin joriy baza `.before-restore.db.gz` nomi bilan saqlab qo'yiladi.
+    """
+    global _last_backup_msg
+    doc = getattr(msg, "document", None)
+    if not doc:
+        return False
+    try:
+        buf = io.BytesIO()
+        await bot.download(doc.file_id, destination=buf)
+        data = buf.getvalue()
+        if os.path.exists(DB_PATH):
+            try:
+                old = await asyncio.to_thread(make_snapshot)
+                await asyncio.to_thread(_save_bytes, DB_PATH + ".before-restore.db.gz", old)
+            except Exception as exc:
+                log.warning("Joriy bazani saqlab bo'lmadi: %s", exc)
+        if not await asyncio.to_thread(install_snapshot, data):
+            log.warning("Zaxira buzilgan: %s", doc.file_name)
+            return False
+        _last_backup_msg = msg.message_id
+        log.info("Baza tiklandi: %s", doc.file_name)
+        return True
+    except Exception as exc:
+        log.warning("Zaxiradan tiklab bo'lmadi (%s): %s", msg.message_id, exc)
+        return False
+
+
 async def restore_backup_if_needed(bot) -> None:
     """Baza yo'q bo'lsa eng yangi zaxiradan tiklaydi; har holatda oxirgi zaxira ID sini eslab qoladi."""
     global _last_backup_msg
@@ -894,16 +929,9 @@ async def restore_backup_if_needed(bot) -> None:
         log.info("Tiklash uchun zaxira topilmadi (birinchi ishga tushish).")
         return
     for msg in backups[:5]:
-        try:
-            buf = io.BytesIO()
-            await bot.download(msg.document.file_id, destination=buf)
-            if await asyncio.to_thread(install_snapshot, buf.getvalue()):
-                _last_backup_msg = msg.message_id
-                log.info("Baza Telegram zaxirasidan tiklandi (%s).", msg.document.file_name)
-                return
-            log.warning("Zaxira buzilgan (%s) — keyingi nusxa sinaladi.", msg.document.file_name)
-        except Exception as exc:
-            log.warning("Zaxira %s dan tiklab bo'lmadi: %s", msg.message_id, exc)
+        if await restore_from_message(bot, msg):
+            return
+        log.warning("Zaxira %s sinaldi, keyingisiga o'tildi.", msg.message_id)
     log.error("Hech qanday zaxiradan tiklanmadi.")
 
 
@@ -934,15 +962,18 @@ async def send_backup(bot) -> None:
         await bot.pin_chat_message(BACKUP_CHAT_ID, sent.message_id, disable_notification=True)
     except Exception as exc:
         log.warning("Zaxira pin qilinmadi: %s", exc)
-    old, _last_backup_msg = _last_backup_msg, sent.message_id
-    # Chatda qolib ketgan eski nusxalarni ham tozalaymiz (restartdan keyin ham).
-    leftover = {m.message_id for m in await find_backups(bot)} - {sent.message_id}
-    if old:
-        leftover.add(old)
-    for mid in leftover:
-        await drop_backup_message(bot, mid)
+    _last_backup_msg = sent.message_id
+    # Chatda qolib ketgan eski nusxalarni tozalaymiz (restartdan keyin ham),
+    # lekin eng yangi 3 nusxa zaxira sifatida saqlanadi.
+    backups = await find_backups(bot)          # yangisidan eskisiga
+    keep = {m.message_id for m in backups[:3]} | {sent.message_id}
+    removed = 0
+    for m in backups:
+        if m.message_id not in keep:
+            await drop_backup_message(bot, m.message_id)
+            removed += 1
     log.info("Zaxira yuborildi (%d KB), eski nusxa: %d ta o'chirildi",
-             len(data) // 1024, len(leftover))
+             len(data) // 1024, removed)
 
 
 async def backup_loop(bot) -> None:
@@ -1707,6 +1738,83 @@ async def show_profile(message: Message) -> None:
         f"Darajalar bo'yicha:\n{levels_txt}",
         reply_markup=kb,
     )
+
+
+# ---- Zaxirani qo'lda tiklash (faqat egasi uchun) ----
+ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "").replace(" ", "").split(",") if x.lstrip("-").isdigit()}
+
+
+def _is_admin(user_id: int) -> bool:
+    return user_id == BACKUP_CHAT_ID or user_id in ADMIN_IDS
+
+
+def _db_counts() -> tuple[int, int]:
+    with db() as conn:
+        users = conn.execute("SELECT COUNT(*) FROM Users").fetchone()[0]
+        solved = conn.execute("SELECT COUNT(*) FROM UserProgress WHERE solved = 1").fetchone()[0]
+    return users, solved
+
+
+async def _do_restore(message: Message, target) -> None:
+    await message.answer("⏳ Zaxira yuklanmoqda va tekshirilmoqda…")
+    if await restore_from_message(message.bot, target):
+        users, solved = await asyncio.to_thread(_db_counts)
+        await message.answer(
+            f"✅ Baza tiklandi: <code>{target.document.file_name}</code>\n\n"
+            f"👥 Foydalanuvchilar: <b>{users}</b>\n"
+            f"✅ Yechilgan masalalar: <b>{solved}</b>\n\n"
+            "Joriy baza <code>bot.db.before-restore.db.gz</code> sifatida saqlandi."
+        )
+    else:
+        await message.answer(
+            "❌ Bu fayl ochilmadi yoki buzilgan.\n"
+            "Boshqa zaxira faylini yuborib, unga javoban <code>/restore</code> yozing."
+        )
+
+
+async def _pick_restore_target(message: Message):
+    """Tiklash uchun faylni tanlaydi: javobdagi fayl → qadalgan zaxira → eng yangi zaxira."""
+    reply_doc = getattr(message.reply_to_message, "document", None)
+    if reply_doc and (reply_doc.file_name or "").endswith(".db.gz"):
+        return message.reply_to_message
+    try:
+        chat = await message.bot.get_chat(BACKUP_CHAT_ID)
+        pm = getattr(chat, "pinned_message", None)
+        if pm is not None and _is_backup_doc(pm):
+            return pm
+    except Exception as exc:
+        log.warning("Qadalgan zaxirani olib bo'lmadi: %s", exc)
+    backups = await find_backups(message.bot)
+    return backups[0] if backups else None
+
+
+@router.message(Command("restore"))
+async def cmd_restore(message: Message) -> None:
+    if not _is_admin(message.from_user.id):
+        await message.answer("⛔ Bu buyruq faqat bot egasi uchun.")
+        return
+    if not BACKUP_CHAT_ID:
+        await message.answer("⚠️ <code>BACKUP_CHAT_ID</code> o'rnatilmagan.")
+        return
+    target = await _pick_restore_target(message)
+    if target is None:
+        await message.answer(
+            "Zaxira fayl topilmadi. Zaxira faylini shu chatga yuborib, unga javoban "
+            "<code>/restore</code> yozing."
+        )
+        return
+    await _do_restore(message, target)
+
+
+@router.message(F.document, F.caption.startswith("/restore"))
+async def cmd_restore_file(message: Message) -> None:
+    if not _is_admin(message.from_user.id):
+        await message.answer("⛔ Bu buyruq faqat bot egasi uchun.")
+        return
+    if not (message.document.file_name or "").endswith(".db.gz"):
+        await message.answer("⚠️ Faqat <code>.db.gz</code> zaxira fayli qabul qilinadi.")
+        return
+    await _do_restore(message, message)
 
 
 # ---- Kunlik eslatma: barcha foydalanuvchilarga kuniga bir marta xabar ----
